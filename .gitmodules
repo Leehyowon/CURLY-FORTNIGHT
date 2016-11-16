@@ -1,0 +1,3 @@
+[submodule "get_information/WebDeveloperInformationWebsite"]
+	path = get_information/WebDeveloperInformationWebsite
+	url = https://github.com/arpitparasana/WebDeveloperInformationWebsite
