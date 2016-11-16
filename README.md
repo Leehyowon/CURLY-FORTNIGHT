@@ -1,5 +1,5 @@
 #Department of Computer Science & Engineering
-<img src="http://cafe.naver.com/tellrererere/2943.gif" height="200">
+<img src="http://cafe.naver.com/tellrererere/2943" height="200">
 
 In this program, you can see information and notice of department of computer science, hanyang university.
 ==========================================================
