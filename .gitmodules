@@ -4,3 +4,6 @@
 [submodule "get_information/calendar"]
 	path = get_information/calendar
 	url = https://github.com/react-component/calendar
+[submodule "get_information/scheduler"]
+	path = get_information/scheduler
+	url = https://github.com/shotdog/scheduler
