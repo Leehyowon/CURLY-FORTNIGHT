@@ -10,6 +10,6 @@
 * LAB
 * A contact number related to the department
 * Curriculum
-* Facilites(department office, SMASH room, academy room)
+* Facilites(department office, department room, SMASH room, academy room)
 
 
