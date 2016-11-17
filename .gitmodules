@@ -10,3 +10,15 @@
 [submodule "get_information/Web"]
 	path = get_information/Web
 	url = https://github.com/CodingClubWebStudy/Web
+[submodule "get_information/from_repositories/WebDeveloperInformationWebsite"]
+	path = get_information/from_repositories/WebDeveloperInformationWebsite
+	url = https://github.com/arpitparasana/WebDeveloperInformationWebsite
+[submodule "get_information/from_repositories/calendar"]
+	path = get_information/from_repositories/calendar
+	url = https://github.com/react-component/calendar
+[submodule "get_information/from_repositories/Web"]
+	path = get_information/from_repositories/Web
+	url = https://github.com/CodingClubWebStudy/Web
+[submodule "get_information/from_repositories/scheduler"]
+	path = get_information/from_repositories/scheduler
+	url = https://github.com/shotdog/scheduler
