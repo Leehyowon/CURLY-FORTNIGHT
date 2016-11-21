@@ -22,3 +22,6 @@
 [submodule "get_information/from_repositories/scheduler"]
 	path = get_information/from_repositories/scheduler
 	url = https://github.com/shotdog/scheduler
+[submodule "get_information/from_repositories/WebPlatformWG"]
+	path = get_information/from_repositories/WebPlatformWG
+	url = https://github.com/w3c/WebPlatformWG
