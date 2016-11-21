@@ -25,3 +25,6 @@
 [submodule "get_information/from_repositories/WebPlatformWG"]
 	path = get_information/from_repositories/WebPlatformWG
 	url = https://github.com/w3c/WebPlatformWG
+[submodule "get_information/from_repositories/school-website"]
+	path = get_information/from_repositories/school-website
+	url = https://github.com/shishuvan/school-website
