@@ -31,3 +31,6 @@
 [submodule "get_information/from_repositories/d-calendar"]
 	path = get_information/from_repositories/d-calendar
 	url = https://github.com/subpopular/d-calendar
+[submodule "get_information/from_repositories/google-calendar"]
+	path = get_information/from_repositories/google-calendar
+	url = https://github.com/GoogleWebComponents/google-calendar
