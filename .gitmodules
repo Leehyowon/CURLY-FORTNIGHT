@@ -49,3 +49,6 @@
 [submodule "get_information/from_repositories/jQuery.Simple-Event-Calendar"]
 	path = get_information/from_repositories/jQuery.Simple-Event-Calendar
 	url = https://github.com/philipehsing/jQuery.Simple-Event-Calendar
+[submodule "get_information/from_repositories/loopback-example-passport"]
+	path = get_information/from_repositories/loopback-example-passport
+	url = https://github.com/strongloop/loopback-example-passport
