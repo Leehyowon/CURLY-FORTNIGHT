@@ -34,3 +34,6 @@
 [submodule "get_information/from_repositories/google-calendar"]
 	path = get_information/from_repositories/google-calendar
 	url = https://github.com/GoogleWebComponents/google-calendar
+[submodule "get_information/from_repositories/angular-material-calendar"]
+	path = get_information/from_repositories/angular-material-calendar
+	url = https://github.com/jsmodules/angular-material-calendar
