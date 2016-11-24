@@ -40,3 +40,6 @@
 [submodule "get_information/from_repositories/Lunar-Solar-Calendar-Converter"]
 	path = get_information/from_repositories/Lunar-Solar-Calendar-Converter
 	url = https://github.com/isee15/Lunar-Solar-Calendar-Converter
+[submodule "get_information/from_repositories/angular2_calendar"]
+	path = get_information/from_repositories/angular2_calendar
+	url = https://github.com/djsmith42/angular2_calendar
