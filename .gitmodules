@@ -52,3 +52,6 @@
 [submodule "get_information/from_repositories/loopback-example-passport"]
 	path = get_information/from_repositories/loopback-example-passport
 	url = https://github.com/strongloop/loopback-example-passport
+[submodule "get_information/from_repositories/DepartmentWebsite"]
+	path = get_information/from_repositories/DepartmentWebsite
+	url = https://github.com/marina-bard/DepartmentWebsite
