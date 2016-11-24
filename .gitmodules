@@ -37,3 +37,6 @@
 [submodule "get_information/from_repositories/angular-material-calendar"]
 	path = get_information/from_repositories/angular-material-calendar
 	url = https://github.com/jsmodules/angular-material-calendar
+[submodule "get_information/from_repositories/Lunar-Solar-Calendar-Converter"]
+	path = get_information/from_repositories/Lunar-Solar-Calendar-Converter
+	url = https://github.com/isee15/Lunar-Solar-Calendar-Converter
