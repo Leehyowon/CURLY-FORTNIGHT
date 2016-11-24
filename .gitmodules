@@ -58,3 +58,6 @@
 [submodule "get_information/from_repositories/docs.c9.io"]
 	path = get_information/from_repositories/docs.c9.io
 	url = https://github.com/c9/docs.c9.io
+[submodule "get_information/from_repositories/web-design-standards"]
+	path = get_information/from_repositories/web-design-standards
+	url = https://github.com/18F/web-design-standards
