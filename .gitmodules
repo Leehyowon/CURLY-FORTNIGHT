@@ -55,3 +55,6 @@
 [submodule "get_information/from_repositories/DepartmentWebsite"]
 	path = get_information/from_repositories/DepartmentWebsite
 	url = https://github.com/marina-bard/DepartmentWebsite
+[submodule "get_information/from_repositories/docs.c9.io"]
+	path = get_information/from_repositories/docs.c9.io
+	url = https://github.com/c9/docs.c9.io
