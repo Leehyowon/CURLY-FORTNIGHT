@@ -46,3 +46,6 @@
 [submodule "get_information/from_repositories/Calendario"]
 	path = get_information/from_repositories/Calendario
 	url = https://github.com/codrops/Calendario
+[submodule "get_information/from_repositories/jQuery.Simple-Event-Calendar"]
+	path = get_information/from_repositories/jQuery.Simple-Event-Calendar
+	url = https://github.com/philipehsing/jQuery.Simple-Event-Calendar
