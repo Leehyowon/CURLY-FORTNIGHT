@@ -43,3 +43,6 @@
 [submodule "get_information/from_repositories/angular2_calendar"]
 	path = get_information/from_repositories/angular2_calendar
 	url = https://github.com/djsmith42/angular2_calendar
+[submodule "get_information/from_repositories/Calendario"]
+	path = get_information/from_repositories/Calendario
+	url = https://github.com/codrops/Calendario
