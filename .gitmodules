@@ -67,3 +67,6 @@
 [submodule "docs.c9.io"]
 	path = docs.c9.io
 	url = https://github.com/c9/docs.c9.io
+[submodule "Lunar-Solar-Calendar-Converter"]
+	path = Lunar-Solar-Calendar-Converter
+	url = https://github.com/isee15/Lunar-Solar-Calendar-Converter
