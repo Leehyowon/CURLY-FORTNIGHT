@@ -70,3 +70,6 @@
 [submodule "Lunar-Solar-Calendar-Converter"]
 	path = Lunar-Solar-Calendar-Converter
 	url = https://github.com/isee15/Lunar-Solar-Calendar-Converter
+[submodule "angular2_calendar"]
+	path = angular2_calendar
+	url = https://github.com/djsmith42/angular2_calendar
