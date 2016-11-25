@@ -100,3 +100,6 @@
 [submodule "get_information/from_repositories/web-design-in-4-minutes"]
 	path = get_information/from_repositories/web-design-in-4-minutes
 	url = https://github.com/jgthms/web-design-in-4-minutes
+[submodule "get_information/from_repositories/Glyphr-Studio-1"]
+	path = get_information/from_repositories/Glyphr-Studio-1
+	url = https://github.com/glyphr-studio/Glyphr-Studio-1
