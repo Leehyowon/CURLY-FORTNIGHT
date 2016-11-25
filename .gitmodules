@@ -85,3 +85,6 @@
 [submodule "web-design-in-4-minutes"]
 	path = web-design-in-4-minutes
 	url = https://github.com/jgthms/web-design-in-4-minutes
+[submodule "Glyphr-Studio-1"]
+	path = Glyphr-Studio-1
+	url = https://github.com/glyphr-studio/Glyphr-Studio-1
