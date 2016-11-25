@@ -82,3 +82,6 @@
 [submodule "web-design-standards"]
 	path = web-design-standards
 	url = https://github.com/18F/web-design-standards
+[submodule "web-design-in-4-minutes"]
+	path = web-design-in-4-minutes
+	url = https://github.com/jgthms/web-design-in-4-minutes
