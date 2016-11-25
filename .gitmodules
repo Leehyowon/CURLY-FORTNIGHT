@@ -79,3 +79,6 @@
 [submodule "google-calendar"]
 	path = google-calendar
 	url = https://github.com/GoogleWebComponents/google-calendar
+[submodule "web-design-standards"]
+	path = web-design-standards
+	url = https://github.com/18F/web-design-standards
