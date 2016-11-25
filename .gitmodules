@@ -61,3 +61,6 @@
 [submodule "get_information/from_repositories/web-design-standards"]
 	path = get_information/from_repositories/web-design-standards
 	url = https://github.com/18F/web-design-standards
+[submodule "AWS-VPN-Server-Setup"]
+	path = AWS-VPN-Server-Setup
+	url = https://github.com/webdigi/AWS-VPN-Server-Setup
