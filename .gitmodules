@@ -91,3 +91,6 @@
 [submodule "socialmedia-leak"]
 	path = socialmedia-leak
 	url = https://github.com/RobinLinus/socialmedia-leak
+[submodule "QuickLogin"]
+	path = QuickLogin
+	url = https://github.com/PayBas/QuickLogin
