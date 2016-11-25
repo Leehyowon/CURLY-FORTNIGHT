@@ -64,3 +64,6 @@
 [submodule "AWS-VPN-Server-Setup"]
 	path = AWS-VPN-Server-Setup
 	url = https://github.com/webdigi/AWS-VPN-Server-Setup
+[submodule "docs.c9.io"]
+	path = docs.c9.io
+	url = https://github.com/c9/docs.c9.io
