@@ -73,3 +73,6 @@
 [submodule "angular2_calendar"]
 	path = angular2_calendar
 	url = https://github.com/djsmith42/angular2_calendar
+[submodule "d-calendar"]
+	path = d-calendar
+	url = https://github.com/subpopular/d-calendar
