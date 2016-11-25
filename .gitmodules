@@ -94,3 +94,6 @@
 [submodule "QuickLogin"]
 	path = QuickLogin
 	url = https://github.com/PayBas/QuickLogin
+[submodule "get_information/from_repositories/AWS-VPN-Server-Setup"]
+	path = get_information/from_repositories/AWS-VPN-Server-Setup
+	url = https://github.com/webdigi/AWS-VPN-Server-Setup
