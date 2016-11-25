@@ -76,3 +76,6 @@
 [submodule "d-calendar"]
 	path = d-calendar
 	url = https://github.com/subpopular/d-calendar
+[submodule "google-calendar"]
+	path = google-calendar
+	url = https://github.com/GoogleWebComponents/google-calendar
