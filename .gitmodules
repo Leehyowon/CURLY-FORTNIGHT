@@ -97,3 +97,6 @@
 [submodule "get_information/from_repositories/AWS-VPN-Server-Setup"]
 	path = get_information/from_repositories/AWS-VPN-Server-Setup
 	url = https://github.com/webdigi/AWS-VPN-Server-Setup
+[submodule "get_information/from_repositories/web-design-in-4-minutes"]
+	path = get_information/from_repositories/web-design-in-4-minutes
+	url = https://github.com/jgthms/web-design-in-4-minutes
