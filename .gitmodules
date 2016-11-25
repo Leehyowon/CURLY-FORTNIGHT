@@ -103,3 +103,6 @@
 [submodule "get_information/from_repositories/Glyphr-Studio-1"]
 	path = get_information/from_repositories/Glyphr-Studio-1
 	url = https://github.com/glyphr-studio/Glyphr-Studio-1
+[submodule "get_information/from_repositories/socialmedia-leak"]
+	path = get_information/from_repositories/socialmedia-leak
+	url = https://github.com/RobinLinus/socialmedia-leak
