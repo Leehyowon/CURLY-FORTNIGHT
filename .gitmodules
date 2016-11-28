@@ -181,3 +181,6 @@
 [submodule "get_information/from_repositories/ROS-road-line-junction-extraction"]
 	path = get_information/from_repositories/ROS-road-line-junction-extraction
 	url = https://github.com/tmadl/ROS-road-line-junction-extraction
+[submodule "get_information/from_repositories/list"]
+	path = get_information/from_repositories/list
+	url = https://github.com/publicsuffix/list
