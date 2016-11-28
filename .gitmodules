@@ -190,3 +190,6 @@
 [submodule "get_information/from_repositories/Webplate"]
 	path = get_information/from_repositories/Webplate
 	url = https://github.com/chrishumboldt/Webplate
+[submodule "get_information/from_repositories/frog"]
+	path = get_information/from_repositories/frog
+	url = https://github.com/greghendershott/frog
