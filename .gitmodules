@@ -175,3 +175,6 @@
 [submodule "get_information/from_repositories/php-graph-sdk"]
 	path = get_information/from_repositories/php-graph-sdk
 	url = https://github.com/facebook/php-graph-sdk
+[submodule "get_information/from_repositories/retrospectiva"]
+	path = get_information/from_repositories/retrospectiva
+	url = https://github.com/dim/retrospectiva
