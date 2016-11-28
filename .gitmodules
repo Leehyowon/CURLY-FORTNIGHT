@@ -142,3 +142,6 @@
 [submodule "get_information/from_repositories/instagram-search"]
 	path = get_information/from_repositories/instagram-search
 	url = https://github.com/osahyoun/instagram-search
+[submodule "get_information/from_repositories/Sourcerer"]
+	path = get_information/from_repositories/Sourcerer
+	url = https://github.com/Mondego/Sourcerer
