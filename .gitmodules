@@ -115,3 +115,6 @@
 [submodule "get_information/from_repositories/bootstrap-suggest"]
 	path = get_information/from_repositories/bootstrap-suggest
 	url = https://github.com/lodev09/bootstrap-suggest
+[submodule "get_information/from_repositories/newsprint"]
+	path = get_information/from_repositories/newsprint
+	url = https://github.com/rodati/newsprint
