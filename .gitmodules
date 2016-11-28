@@ -118,3 +118,6 @@
 [submodule "get_information/from_repositories/newsprint"]
 	path = get_information/from_repositories/newsprint
 	url = https://github.com/rodati/newsprint
+[submodule "get_information/from_repositories/Kanbanion"]
+	path = get_information/from_repositories/Kanbanion
+	url = https://github.com/nmaggioni/Kanbanion
