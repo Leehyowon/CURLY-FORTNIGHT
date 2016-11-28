@@ -136,3 +136,6 @@
 [submodule "get_information/from_repositories/ahmia"]
 	path = get_information/from_repositories/ahmia
 	url = https://github.com/juhanurmi/ahmia
+[submodule "get_information/from_repositories/bootstrap-list-filter"]
+	path = get_information/from_repositories/bootstrap-list-filter
+	url = https://github.com/stefanocudini/bootstrap-list-filter
