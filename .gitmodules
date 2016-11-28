@@ -109,3 +109,6 @@
 [submodule "get_information/from_repositories/QuickLogin"]
 	path = get_information/from_repositories/QuickLogin
 	url = https://github.com/PayBas/QuickLogin
+[submodule "bootstrap-suggest"]
+	path = bootstrap-suggest
+	url = https://github.com/lodev09/bootstrap-suggest
