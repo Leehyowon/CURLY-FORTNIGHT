@@ -139,3 +139,6 @@
 [submodule "get_information/from_repositories/bootstrap-list-filter"]
 	path = get_information/from_repositories/bootstrap-list-filter
 	url = https://github.com/stefanocudini/bootstrap-list-filter
+[submodule "get_information/from_repositories/instagram-search"]
+	path = get_information/from_repositories/instagram-search
+	url = https://github.com/osahyoun/instagram-search
