@@ -196,3 +196,6 @@
 [submodule "get_information/from_repositories/jquery-localize"]
 	path = get_information/from_repositories/jquery-localize
 	url = https://github.com/coderifous/jquery-localize
+[submodule "get_information/from_repositories/jasperproject.github.io"]
+	path = get_information/from_repositories/jasperproject.github.io
+	url = https://github.com/jasperproject/jasperproject.github.io
