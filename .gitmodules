@@ -154,3 +154,6 @@
 [submodule "get_information/from_repositories/socket.io"]
 	path = get_information/from_repositories/socket.io
 	url = https://github.com/socketio/socket.io
+[submodule "get_information/from_repositories/serverless"]
+	path = get_information/from_repositories/serverless
+	url = https://github.com/serverless/serverless
