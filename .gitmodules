@@ -166,3 +166,6 @@
 [submodule "get_information/from_repositories/vault"]
 	path = get_information/from_repositories/vault
 	url = https://github.com/hashicorp/vault
+[submodule "get_information/from_repositories/blackbox"]
+	path = get_information/from_repositories/blackbox
+	url = https://github.com/StackExchange/blackbox
