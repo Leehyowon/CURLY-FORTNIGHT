@@ -172,3 +172,6 @@
 [submodule "get_information/from_repositories/confidant"]
 	path = get_information/from_repositories/confidant
 	url = https://github.com/lyft/confidant
+[submodule "get_information/from_repositories/php-graph-sdk"]
+	path = get_information/from_repositories/php-graph-sdk
+	url = https://github.com/facebook/php-graph-sdk
