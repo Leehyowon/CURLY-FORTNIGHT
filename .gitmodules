@@ -157,3 +157,6 @@
 [submodule "get_information/from_repositories/serverless"]
 	path = get_information/from_repositories/serverless
 	url = https://github.com/serverless/serverless
+[submodule "get_information/from_repositories/shadowsocks-windows"]
+	path = get_information/from_repositories/shadowsocks-windows
+	url = https://github.com/shadowsocks/shadowsocks-windows
