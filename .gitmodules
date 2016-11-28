@@ -205,3 +205,6 @@
 [submodule "get_information/from_repositories/bonsai"]
 	path = get_information/from_repositories/bonsai
 	url = https://github.com/benschwarz/bonsai
+[submodule "get_information/from_repositories/pygreen"]
+	path = get_information/from_repositories/pygreen
+	url = https://github.com/nicolas-van/pygreen
