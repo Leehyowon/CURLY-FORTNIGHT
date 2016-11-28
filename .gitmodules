@@ -187,3 +187,6 @@
 [submodule "get_information/from_repositories/Mvc"]
 	path = get_information/from_repositories/Mvc
 	url = https://github.com/aspnet/Mvc
+[submodule "get_information/from_repositories/Webplate"]
+	path = get_information/from_repositories/Webplate
+	url = https://github.com/chrishumboldt/Webplate
