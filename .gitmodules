@@ -130,3 +130,6 @@
 [submodule "get_information/from_repositories/brewformulas.org"]
 	path = get_information/from_repositories/brewformulas.org
 	url = https://github.com/zedtux/brewformulas.org
+[submodule "get_information/from_repositories/qis"]
+	path = get_information/from_repositories/qis
+	url = https://github.com/propublica/qis
