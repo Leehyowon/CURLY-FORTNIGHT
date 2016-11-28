@@ -121,3 +121,6 @@
 [submodule "get_information/from_repositories/Kanbanion"]
 	path = get_information/from_repositories/Kanbanion
 	url = https://github.com/nmaggioni/Kanbanion
+[submodule "get_information/from_repositories/inout2"]
+	path = get_information/from_repositories/inout2
+	url = https://github.com/xd1936/inout2
