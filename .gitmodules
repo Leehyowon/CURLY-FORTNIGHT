@@ -148,3 +148,6 @@
 [submodule "get_information/from_repositories/awesome-slider"]
 	path = get_information/from_repositories/awesome-slider
 	url = https://github.com/rcaferati/awesome-slider
+[submodule "get_information/from_repositories/IngressMosaicMissionMap"]
+	path = get_information/from_repositories/IngressMosaicMissionMap
+	url = https://github.com/tallistroan/IngressMosaicMissionMap
