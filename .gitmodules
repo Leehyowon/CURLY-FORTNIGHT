@@ -184,3 +184,6 @@
 [submodule "get_information/from_repositories/list"]
 	path = get_information/from_repositories/list
 	url = https://github.com/publicsuffix/list
+[submodule "get_information/from_repositories/Mvc"]
+	path = get_information/from_repositories/Mvc
+	url = https://github.com/aspnet/Mvc
