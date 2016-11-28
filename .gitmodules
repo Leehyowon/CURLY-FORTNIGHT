@@ -178,3 +178,6 @@
 [submodule "get_information/from_repositories/retrospectiva"]
 	path = get_information/from_repositories/retrospectiva
 	url = https://github.com/dim/retrospectiva
+[submodule "get_information/from_repositories/ROS-road-line-junction-extraction"]
+	path = get_information/from_repositories/ROS-road-line-junction-extraction
+	url = https://github.com/tmadl/ROS-road-line-junction-extraction
