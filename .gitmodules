@@ -169,3 +169,6 @@
 [submodule "get_information/from_repositories/blackbox"]
 	path = get_information/from_repositories/blackbox
 	url = https://github.com/StackExchange/blackbox
+[submodule "get_information/from_repositories/confidant"]
+	path = get_information/from_repositories/confidant
+	url = https://github.com/lyft/confidant
