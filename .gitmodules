@@ -133,3 +133,6 @@
 [submodule "get_information/from_repositories/qis"]
 	path = get_information/from_repositories/qis
 	url = https://github.com/propublica/qis
+[submodule "get_information/from_repositories/ahmia"]
+	path = get_information/from_repositories/ahmia
+	url = https://github.com/juhanurmi/ahmia
