@@ -193,3 +193,6 @@
 [submodule "get_information/from_repositories/frog"]
 	path = get_information/from_repositories/frog
 	url = https://github.com/greghendershott/frog
+[submodule "get_information/from_repositories/jquery-localize"]
+	path = get_information/from_repositories/jquery-localize
+	url = https://github.com/coderifous/jquery-localize
