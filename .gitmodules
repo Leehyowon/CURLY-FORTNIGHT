@@ -127,3 +127,6 @@
 [submodule "get_information/from_repositories/bglar.github.io"]
 	path = get_information/from_repositories/bglar.github.io
 	url = https://github.com/bglar/bglar.github.io
+[submodule "get_information/from_repositories/brewformulas.org"]
+	path = get_information/from_repositories/brewformulas.org
+	url = https://github.com/zedtux/brewformulas.org
