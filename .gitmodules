@@ -145,3 +145,6 @@
 [submodule "get_information/from_repositories/Sourcerer"]
 	path = get_information/from_repositories/Sourcerer
 	url = https://github.com/Mondego/Sourcerer
+[submodule "get_information/from_repositories/awesome-slider"]
+	path = get_information/from_repositories/awesome-slider
+	url = https://github.com/rcaferati/awesome-slider
