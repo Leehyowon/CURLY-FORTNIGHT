@@ -163,3 +163,6 @@
 [submodule "get_information/from_repositories/RQShineLabel"]
 	path = get_information/from_repositories/RQShineLabel
 	url = https://github.com/zipme/RQShineLabel
+[submodule "get_information/from_repositories/vault"]
+	path = get_information/from_repositories/vault
+	url = https://github.com/hashicorp/vault
