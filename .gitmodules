@@ -151,3 +151,6 @@
 [submodule "get_information/from_repositories/IngressMosaicMissionMap"]
 	path = get_information/from_repositories/IngressMosaicMissionMap
 	url = https://github.com/tallistroan/IngressMosaicMissionMap
+[submodule "get_information/from_repositories/socket.io"]
+	path = get_information/from_repositories/socket.io
+	url = https://github.com/socketio/socket.io
