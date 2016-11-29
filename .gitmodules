@@ -229,3 +229,6 @@
 [submodule "get_information/from_repositories/pageinfo"]
 	path = get_information/from_repositories/pageinfo
 	url = https://github.com/nytlabs/pageinfo
+[submodule "get_information/from_repositories/Embed"]
+	path = get_information/from_repositories/Embed
+	url = https://github.com/oscarotero/Embed
