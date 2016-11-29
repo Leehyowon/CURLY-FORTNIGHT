@@ -238,3 +238,6 @@
 [submodule "get_information/from_repositories/foodsoft"]
 	path = get_information/from_repositories/foodsoft
 	url = https://github.com/foodcoops/foodsoft
+[submodule "get_information/from_repositories/rabel"]
+	path = get_information/from_repositories/rabel
+	url = https://github.com/daqing/rabel
