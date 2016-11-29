@@ -208,3 +208,6 @@
 [submodule "get_information/from_repositories/pygreen"]
 	path = get_information/from_repositories/pygreen
 	url = https://github.com/nicolas-van/pygreen
+[submodule "get_information/from_repositories/site"]
+	path = get_information/from_repositories/site
+	url = https://github.com/locomotivecms/site
