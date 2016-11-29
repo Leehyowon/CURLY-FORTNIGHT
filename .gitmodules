@@ -226,3 +226,6 @@
 [submodule "get_information/from_repositories/Web-Karma"]
 	path = get_information/from_repositories/Web-Karma
 	url = https://github.com/usc-isi-i2/Web-Karma
+[submodule "get_information/from_repositories/pageinfo"]
+	path = get_information/from_repositories/pageinfo
+	url = https://github.com/nytlabs/pageinfo
