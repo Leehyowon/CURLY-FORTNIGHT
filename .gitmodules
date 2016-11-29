@@ -235,3 +235,6 @@
 [submodule "get_information/from_repositories/FoodAlarm"]
 	path = get_information/from_repositories/FoodAlarm
 	url = https://github.com/bushmonkey/FoodAlarm
+[submodule "get_information/from_repositories/foodsoft"]
+	path = get_information/from_repositories/foodsoft
+	url = https://github.com/foodcoops/foodsoft
