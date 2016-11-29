@@ -241,3 +241,6 @@
 [submodule "get_information/from_repositories/rabel"]
 	path = get_information/from_repositories/rabel
 	url = https://github.com/daqing/rabel
+[submodule "get_information/from_repositories/SchedulePlanningWebsite"]
+	path = get_information/from_repositories/SchedulePlanningWebsite
+	url = https://github.com/eliarons/SchedulePlanningWebsite
