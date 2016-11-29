@@ -211,3 +211,6 @@
 [submodule "get_information/from_repositories/site"]
 	path = get_information/from_repositories/site
 	url = https://github.com/locomotivecms/site
+[submodule "get_information/from_repositories/stacey-site"]
+	path = get_information/from_repositories/stacey-site
+	url = https://github.com/kolber/stacey-site
