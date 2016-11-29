@@ -220,3 +220,6 @@
 [submodule "get_information/from_repositories/openlava-web"]
 	path = get_information/from_repositories/openlava-web
 	url = https://github.com/irvined1982/openlava-web
+[submodule "get_information/from_repositories/jqModal"]
+	path = get_information/from_repositories/jqModal
+	url = https://github.com/briceburg/jqModal
