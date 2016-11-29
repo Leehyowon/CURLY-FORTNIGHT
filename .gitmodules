@@ -232,3 +232,6 @@
 [submodule "get_information/from_repositories/Embed"]
 	path = get_information/from_repositories/Embed
 	url = https://github.com/oscarotero/Embed
+[submodule "get_information/from_repositories/FoodAlarm"]
+	path = get_information/from_repositories/FoodAlarm
+	url = https://github.com/bushmonkey/FoodAlarm
