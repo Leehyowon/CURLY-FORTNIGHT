@@ -223,3 +223,6 @@
 [submodule "get_information/from_repositories/jqModal"]
 	path = get_information/from_repositories/jqModal
 	url = https://github.com/briceburg/jqModal
+[submodule "get_information/from_repositories/Web-Karma"]
+	path = get_information/from_repositories/Web-Karma
+	url = https://github.com/usc-isi-i2/Web-Karma
