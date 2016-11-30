@@ -262,3 +262,6 @@
 [submodule "get_information/from_repositories/webdriver.io"]
 	path = get_information/from_repositories/webdriver.io
 	url = https://github.com/webdriverio/webdriver.io
+[submodule "get_information/from_repositories/resurrectionremix-website"]
+	path = get_information/from_repositories/resurrectionremix-website
+	url = https://github.com/xenon92/resurrectionremix-website
