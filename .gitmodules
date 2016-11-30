@@ -268,3 +268,6 @@
 [submodule "get_information/from_repositories/MaterialLogin"]
 	path = get_information/from_repositories/MaterialLogin
 	url = https://github.com/fanrunqi/MaterialLogin
+[submodule "get_information/from_repositories/node-login"]
+	path = get_information/from_repositories/node-login
+	url = https://github.com/braitsch/node-login
