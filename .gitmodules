@@ -277,3 +277,6 @@
 [submodule "get_information/from_repositories/groundwork"]
 	path = get_information/from_repositories/groundwork
 	url = https://github.com/groundworkcss/groundwork
+[submodule "get_information/from_repositories/react-material"]
+	path = get_information/from_repositories/react-material
+	url = https://github.com/BerkeleyTrue/react-material
