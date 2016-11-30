@@ -250,3 +250,6 @@
 [submodule "get_information/from_repositories/totorojs.org"]
 	path = get_information/from_repositories/totorojs.org
 	url = https://github.com/totorojs/totorojs.org
+[submodule "get_information/from_repositories/kicad-website"]
+	path = get_information/from_repositories/kicad-website
+	url = https://github.com/KiCad/kicad-website
