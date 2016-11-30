@@ -247,3 +247,6 @@
 [submodule "get_information/from_repositories/website"]
 	path = get_information/from_repositories/website
 	url = https://github.com/phalcon/website
+[submodule "get_information/from_repositories/totorojs.org"]
+	path = get_information/from_repositories/totorojs.org
+	url = https://github.com/totorojs/totorojs.org
