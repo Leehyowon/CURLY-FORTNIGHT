@@ -256,3 +256,6 @@
 [submodule "get_information/from_repositories/lab2023.com"]
 	path = get_information/from_repositories/lab2023.com
 	url = https://github.com/lab2023/lab2023.com
+[submodule "get_information/from_repositories/textpattern-com-website"]
+	path = get_information/from_repositories/textpattern-com-website
+	url = https://github.com/textpattern/textpattern-com-website
