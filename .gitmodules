@@ -253,3 +253,6 @@
 [submodule "get_information/from_repositories/kicad-website"]
 	path = get_information/from_repositories/kicad-website
 	url = https://github.com/KiCad/kicad-website
+[submodule "get_information/from_repositories/lab2023.com"]
+	path = get_information/from_repositories/lab2023.com
+	url = https://github.com/lab2023/lab2023.com
