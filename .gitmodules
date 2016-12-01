@@ -283,3 +283,6 @@
 [submodule "get_information/from_repositories/fullcalendar"]
 	path = get_information/from_repositories/fullcalendar
 	url = https://github.com/fullcalendar/fullcalendar
+[submodule "get_information/from_repositories/rome"]
+	path = get_information/from_repositories/rome
+	url = https://github.com/bevacqua/rome
