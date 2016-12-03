@@ -295,3 +295,6 @@
 [submodule "get_information/from_repositories/angular.js"]
 	path = get_information/from_repositories/angular.js
 	url = https://github.com/angular/angular.js
+[submodule "get_information/from_repositories/vue"]
+	path = get_information/from_repositories/vue
+	url = https://github.com/vuejs/vue
