@@ -301,3 +301,6 @@
 [submodule "get_information/from_repositories/express"]
 	path = get_information/from_repositories/express
 	url = https://github.com/expressjs/express
+[submodule "get_information/from_repositories/django"]
+	path = get_information/from_repositories/django
+	url = https://github.com/django/django
