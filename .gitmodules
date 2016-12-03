@@ -292,3 +292,6 @@
 [submodule "get_information/from_repositories/bootstrap"]
 	path = get_information/from_repositories/bootstrap
 	url = https://github.com/twbs/bootstrap
+[submodule "get_information/from_repositories/angular.js"]
+	path = get_information/from_repositories/angular.js
+	url = https://github.com/angular/angular.js
