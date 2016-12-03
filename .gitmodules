@@ -298,3 +298,6 @@
 [submodule "get_information/from_repositories/vue"]
 	path = get_information/from_repositories/vue
 	url = https://github.com/vuejs/vue
+[submodule "get_information/from_repositories/express"]
+	path = get_information/from_repositories/express
+	url = https://github.com/expressjs/express
