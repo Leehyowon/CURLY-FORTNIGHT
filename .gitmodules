@@ -346,3 +346,6 @@
 [submodule "get_information/from_repositories/Kingfisher"]
 	path = get_information/from_repositories/Kingfisher
 	url = https://github.com/onevcat/Kingfisher
+[submodule "get_information/from_repositories/beautiful-web-type"]
+	path = get_information/from_repositories/beautiful-web-type
+	url = https://github.com/ubuwaits/beautiful-web-type
