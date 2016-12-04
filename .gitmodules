@@ -322,3 +322,6 @@
 [submodule "get_information/from_repositories/vapor"]
 	path = get_information/from_repositories/vapor
 	url = https://github.com/vapor/vapor
+[submodule "get_information/from_repositories/revel"]
+	path = get_information/from_repositories/revel
+	url = https://github.com/revel/revel
