@@ -316,3 +316,6 @@
 [submodule "get_information/from_repositories/uikit"]
 	path = get_information/from_repositories/uikit
 	url = https://github.com/uikit/uikit
+[submodule "get_information/from_repositories/webpack-dashboard"]
+	path = get_information/from_repositories/webpack-dashboard
+	url = https://github.com/FormidableLabs/webpack-dashboard
