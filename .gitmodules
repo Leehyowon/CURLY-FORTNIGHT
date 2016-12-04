@@ -304,3 +304,6 @@
 [submodule "get_information/from_repositories/django"]
 	path = get_information/from_repositories/django
 	url = https://github.com/django/django
+[submodule "get_information/from_repositories/martini"]
+	path = get_information/from_repositories/martini
+	url = https://github.com/go-martini/martini
