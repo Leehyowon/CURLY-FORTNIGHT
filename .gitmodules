@@ -334,3 +334,6 @@
 [submodule "get_information/from_repositories/colors"]
 	path = get_information/from_repositories/colors
 	url = https://github.com/mrmrs/colors
+[submodule "get_information/from_repositories/howler.js"]
+	path = get_information/from_repositories/howler.js
+	url = https://github.com/goldfire/howler.js
