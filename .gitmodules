@@ -361,3 +361,6 @@
 [submodule "get_information/from_repositories/dropwizard"]
 	path = get_information/from_repositories/dropwizard
 	url = https://github.com/dropwizard/dropwizard
+[submodule "get_information/from_repositories/Kitura"]
+	path = get_information/from_repositories/Kitura
+	url = https://github.com/IBM-Swift/Kitura
