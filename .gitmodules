@@ -352,3 +352,6 @@
 [submodule "get_information/from_repositories/seajs"]
 	path = get_information/from_repositories/seajs
 	url = https://github.com/seajs/seajs
+[submodule "get_information/from_repositories/echo"]
+	path = get_information/from_repositories/echo
+	url = https://github.com/labstack/echo
