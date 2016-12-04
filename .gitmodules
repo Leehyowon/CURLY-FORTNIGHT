@@ -355,3 +355,6 @@
 [submodule "get_information/from_repositories/echo"]
 	path = get_information/from_repositories/echo
 	url = https://github.com/labstack/echo
+[submodule "get_information/from_repositories/element"]
+	path = get_information/from_repositories/element
+	url = https://github.com/ElemeFE/element
