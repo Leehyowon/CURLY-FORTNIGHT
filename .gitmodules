@@ -328,3 +328,6 @@
 [submodule "get_information/from_repositories/cphalcon"]
 	path = get_information/from_repositories/cphalcon
 	url = https://github.com/phalcon/cphalcon
+[submodule "get_information/from_repositories/gremlins.js"]
+	path = get_information/from_repositories/gremlins.js
+	url = https://github.com/marmelab/gremlins.js
