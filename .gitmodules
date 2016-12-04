@@ -373,3 +373,6 @@
 [submodule "get_information/from_repositories/topcoat"]
 	path = get_information/from_repositories/topcoat
 	url = https://github.com/topcoat/topcoat
+[submodule "get_information/from_repositories/browser-logos"]
+	path = get_information/from_repositories/browser-logos
+	url = https://github.com/alrra/browser-logos
