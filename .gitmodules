@@ -349,3 +349,6 @@
 [submodule "get_information/from_repositories/beautiful-web-type"]
 	path = get_information/from_repositories/beautiful-web-type
 	url = https://github.com/ubuwaits/beautiful-web-type
+[submodule "get_information/from_repositories/seajs"]
+	path = get_information/from_repositories/seajs
+	url = https://github.com/seajs/seajs
