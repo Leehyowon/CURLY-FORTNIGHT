@@ -313,3 +313,6 @@
 [submodule "get_information/from_repositories/nativefier"]
 	path = get_information/from_repositories/nativefier
 	url = https://github.com/jiahaog/nativefier
+[submodule "get_information/from_repositories/uikit"]
+	path = get_information/from_repositories/uikit
+	url = https://github.com/uikit/uikit
