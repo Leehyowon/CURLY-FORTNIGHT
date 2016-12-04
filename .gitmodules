@@ -367,3 +367,6 @@
 [submodule "get_information/from_repositories/puma"]
 	path = get_information/from_repositories/puma
 	url = https://github.com/puma/puma
+[submodule "get_information/from_repositories/tracking.js"]
+	path = get_information/from_repositories/tracking.js
+	url = https://github.com/eduardolundgren/tracking.js
