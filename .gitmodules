@@ -364,3 +364,6 @@
 [submodule "get_information/from_repositories/Kitura"]
 	path = get_information/from_repositories/Kitura
 	url = https://github.com/IBM-Swift/Kitura
+[submodule "get_information/from_repositories/puma"]
+	path = get_information/from_repositories/puma
+	url = https://github.com/puma/puma
