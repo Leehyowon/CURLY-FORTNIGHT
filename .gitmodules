@@ -319,3 +319,6 @@
 [submodule "get_information/from_repositories/webpack-dashboard"]
 	path = get_information/from_repositories/webpack-dashboard
 	url = https://github.com/FormidableLabs/webpack-dashboard
+[submodule "get_information/from_repositories/vapor"]
+	path = get_information/from_repositories/vapor
+	url = https://github.com/vapor/vapor
