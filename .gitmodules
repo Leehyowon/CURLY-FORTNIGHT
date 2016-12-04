@@ -340,3 +340,6 @@
 [submodule "get_information/from_repositories/gotty"]
 	path = get_information/from_repositories/gotty
 	url = https://github.com/yudai/gotty
+[submodule "get_information/from_repositories/WebFundamentals"]
+	path = get_information/from_repositories/WebFundamentals
+	url = https://github.com/google/WebFundamentals
