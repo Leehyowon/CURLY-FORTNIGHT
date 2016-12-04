@@ -307,3 +307,6 @@
 [submodule "get_information/from_repositories/martini"]
 	path = get_information/from_repositories/martini
 	url = https://github.com/go-martini/martini
+[submodule "get_information/from_repositories/iscroll"]
+	path = get_information/from_repositories/iscroll
+	url = https://github.com/cubiq/iscroll
