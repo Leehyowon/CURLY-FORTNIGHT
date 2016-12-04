@@ -325,3 +325,6 @@
 [submodule "get_information/from_repositories/revel"]
 	path = get_information/from_repositories/revel
 	url = https://github.com/revel/revel
+[submodule "get_information/from_repositories/cphalcon"]
+	path = get_information/from_repositories/cphalcon
+	url = https://github.com/phalcon/cphalcon
