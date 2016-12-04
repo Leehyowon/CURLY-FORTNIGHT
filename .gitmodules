@@ -370,3 +370,6 @@
 [submodule "get_information/from_repositories/tracking.js"]
 	path = get_information/from_repositories/tracking.js
 	url = https://github.com/eduardolundgren/tracking.js
+[submodule "get_information/from_repositories/topcoat"]
+	path = get_information/from_repositories/topcoat
+	url = https://github.com/topcoat/topcoat
