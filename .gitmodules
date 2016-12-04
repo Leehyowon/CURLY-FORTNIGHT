@@ -358,3 +358,6 @@
 [submodule "get_information/from_repositories/element"]
 	path = get_information/from_repositories/element
 	url = https://github.com/ElemeFE/element
+[submodule "get_information/from_repositories/dropwizard"]
+	path = get_information/from_repositories/dropwizard
+	url = https://github.com/dropwizard/dropwizard
