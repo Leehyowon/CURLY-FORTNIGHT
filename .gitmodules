@@ -331,3 +331,6 @@
 [submodule "get_information/from_repositories/gremlins.js"]
 	path = get_information/from_repositories/gremlins.js
 	url = https://github.com/marmelab/gremlins.js
+[submodule "get_information/from_repositories/colors"]
+	path = get_information/from_repositories/colors
+	url = https://github.com/mrmrs/colors
