@@ -337,3 +337,6 @@
 [submodule "get_information/from_repositories/howler.js"]
 	path = get_information/from_repositories/howler.js
 	url = https://github.com/goldfire/howler.js
+[submodule "get_information/from_repositories/gotty"]
+	path = get_information/from_repositories/gotty
+	url = https://github.com/yudai/gotty
