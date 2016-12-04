@@ -310,3 +310,6 @@
 [submodule "get_information/from_repositories/iscroll"]
 	path = get_information/from_repositories/iscroll
 	url = https://github.com/cubiq/iscroll
+[submodule "get_information/from_repositories/nativefier"]
+	path = get_information/from_repositories/nativefier
+	url = https://github.com/jiahaog/nativefier
