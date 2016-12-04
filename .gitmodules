@@ -343,3 +343,6 @@
 [submodule "get_information/from_repositories/WebFundamentals"]
 	path = get_information/from_repositories/WebFundamentals
 	url = https://github.com/google/WebFundamentals
+[submodule "get_information/from_repositories/Kingfisher"]
+	path = get_information/from_repositories/Kingfisher
+	url = https://github.com/onevcat/Kingfisher
