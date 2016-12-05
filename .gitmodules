@@ -397,3 +397,6 @@
 [submodule "get_information/from_repositories/passenger"]
 	path = get_information/from_repositories/passenger
 	url = https://github.com/phusion/passenger
+[submodule "get_information/from_repositories/ng-cordova"]
+	path = get_information/from_repositories/ng-cordova
+	url = https://github.com/driftyco/ng-cordova
