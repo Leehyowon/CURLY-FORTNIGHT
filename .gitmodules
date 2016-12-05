@@ -391,3 +391,6 @@
 [submodule "get_information/from_repositories/react-primer-draft"]
 	path = get_information/from_repositories/react-primer-draft
 	url = https://github.com/mikechau/react-primer-draft
+[submodule "get_information/from_repositories/OS.js"]
+	path = get_information/from_repositories/OS.js
+	url = https://github.com/os-js/OS.js
