@@ -400,3 +400,6 @@
 [submodule "get_information/from_repositories/ng-cordova"]
 	path = get_information/from_repositories/ng-cordova
 	url = https://github.com/driftyco/ng-cordova
+[submodule "get_information/from_repositories/apidoc"]
+	path = get_information/from_repositories/apidoc
+	url = https://github.com/apidoc/apidoc
