@@ -394,3 +394,6 @@
 [submodule "get_information/from_repositories/OS.js"]
 	path = get_information/from_repositories/OS.js
 	url = https://github.com/os-js/OS.js
+[submodule "get_information/from_repositories/passenger"]
+	path = get_information/from_repositories/passenger
+	url = https://github.com/phusion/passenger
