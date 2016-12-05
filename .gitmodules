@@ -409,3 +409,6 @@
 [submodule "get_information/from_repositories/yui3"]
 	path = get_information/from_repositories/yui3
 	url = https://github.com/yui/yui3
+[submodule "get_information/from_repositories/webmagic"]
+	path = get_information/from_repositories/webmagic
+	url = https://github.com/code4craft/webmagic
