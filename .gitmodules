@@ -406,3 +406,6 @@
 [submodule "get_information/from_repositories/iron"]
 	path = get_information/from_repositories/iron
 	url = https://github.com/iron/iron
+[submodule "get_information/from_repositories/yui3"]
+	path = get_information/from_repositories/yui3
+	url = https://github.com/yui/yui3
