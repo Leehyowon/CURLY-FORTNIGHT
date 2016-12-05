@@ -388,3 +388,6 @@
 [submodule "get_information/from_repositories/faye"]
 	path = get_information/from_repositories/faye
 	url = https://github.com/faye/faye
+[submodule "get_information/from_repositories/react-primer-draft"]
+	path = get_information/from_repositories/react-primer-draft
+	url = https://github.com/mikechau/react-primer-draft
