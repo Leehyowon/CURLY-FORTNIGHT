@@ -379,3 +379,6 @@
 [submodule "get_information/from_repositories/webpy"]
 	path = get_information/from_repositories/webpy
 	url = https://github.com/webpy/webpy
+[submodule "get_information/from_repositories/mobile-boilerplate"]
+	path = get_information/from_repositories/mobile-boilerplate
+	url = https://github.com/h5bp/mobile-boilerplate
