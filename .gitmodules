@@ -385,3 +385,6 @@
 [submodule "get_information/from_repositories/sharelatex"]
 	path = get_information/from_repositories/sharelatex
 	url = https://github.com/sharelatex/sharelatex
+[submodule "get_information/from_repositories/faye"]
+	path = get_information/from_repositories/faye
+	url = https://github.com/faye/faye
