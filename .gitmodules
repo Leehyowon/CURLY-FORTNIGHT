@@ -376,3 +376,6 @@
 [submodule "get_information/from_repositories/browser-logos"]
 	path = get_information/from_repositories/browser-logos
 	url = https://github.com/alrra/browser-logos
+[submodule "get_information/from_repositories/webpy"]
+	path = get_information/from_repositories/webpy
+	url = https://github.com/webpy/webpy
