@@ -382,3 +382,6 @@
 [submodule "get_information/from_repositories/mobile-boilerplate"]
 	path = get_information/from_repositories/mobile-boilerplate
 	url = https://github.com/h5bp/mobile-boilerplate
+[submodule "get_information/from_repositories/sharelatex"]
+	path = get_information/from_repositories/sharelatex
+	url = https://github.com/sharelatex/sharelatex
