@@ -448,3 +448,6 @@
 [submodule "get_information/from_repositories/freegeoip"]
 	path = get_information/from_repositories/freegeoip
 	url = https://github.com/fiorix/freegeoip
+[submodule "get_information/from_repositories/docpad"]
+	path = get_information/from_repositories/docpad
+	url = https://github.com/docpad/docpad
