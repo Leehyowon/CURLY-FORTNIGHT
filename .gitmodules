@@ -457,3 +457,6 @@
 [submodule "get_information/from_repositories/blockly"]
 	path = get_information/from_repositories/blockly
 	url = https://github.com/google/blockly
+[submodule "get_information/from_repositories/GCDWebServer"]
+	path = get_information/from_repositories/GCDWebServer
+	url = https://github.com/swisspol/GCDWebServer
