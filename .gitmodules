@@ -484,3 +484,6 @@
 [submodule "get_information/from_repositories/HeadlessBrowsers"]
 	path = get_information/from_repositories/HeadlessBrowsers
 	url = https://github.com/dhamaniasad/HeadlessBrowsers
+[submodule "get_information/from_repositories/wttr.in"]
+	path = get_information/from_repositories/wttr.in
+	url = https://github.com/chubin/wttr.in
