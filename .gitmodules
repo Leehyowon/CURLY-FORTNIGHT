@@ -445,3 +445,6 @@
 [submodule "get_information/from_repositories/hummingbird"]
 	path = get_information/from_repositories/hummingbird
 	url = https://github.com/mnutt/hummingbird
+[submodule "get_information/from_repositories/freegeoip"]
+	path = get_information/from_repositories/freegeoip
+	url = https://github.com/fiorix/freegeoip
