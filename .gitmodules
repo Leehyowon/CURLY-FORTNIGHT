@@ -454,3 +454,6 @@
 [submodule "get_information/from_repositories/generator-webapp"]
 	path = get_information/from_repositories/generator-webapp
 	url = https://github.com/yeoman/generator-webapp
+[submodule "get_information/from_repositories/blockly"]
+	path = get_information/from_repositories/blockly
+	url = https://github.com/google/blockly
