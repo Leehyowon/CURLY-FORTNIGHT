@@ -469,3 +469,6 @@
 [submodule "get_information/from_repositories/sanic"]
 	path = get_information/from_repositories/sanic
 	url = https://github.com/channelcat/sanic
+[submodule "get_information/from_repositories/react-dates"]
+	path = get_information/from_repositories/react-dates
+	url = https://github.com/airbnb/react-dates
