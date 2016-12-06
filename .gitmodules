@@ -424,3 +424,6 @@
 [submodule "get_information/from_repositories/volt"]
 	path = get_information/from_repositories/volt
 	url = https://github.com/voltrb/volt
+[submodule "get_information/from_repositories/x-ray"]
+	path = get_information/from_repositories/x-ray
+	url = https://github.com/lapwinglabs/x-ray
