@@ -466,3 +466,6 @@
 [submodule "get_information/from_repositories/websocket"]
 	path = get_information/from_repositories/websocket
 	url = https://github.com/gorilla/websocket
+[submodule "get_information/from_repositories/sanic"]
+	path = get_information/from_repositories/sanic
+	url = https://github.com/channelcat/sanic
