@@ -478,3 +478,6 @@
 [submodule "get_information/from_repositories/openresty"]
 	path = get_information/from_repositories/openresty
 	url = https://github.com/openresty/openresty
+[submodule "get_information/from_repositories/hubpress.io"]
+	path = get_information/from_repositories/hubpress.io
+	url = https://github.com/HubPress/hubpress.io
