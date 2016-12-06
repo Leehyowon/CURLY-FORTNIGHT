@@ -439,3 +439,6 @@
 [submodule "get_information/from_repositories/emmet"]
 	path = get_information/from_repositories/emmet
 	url = https://github.com/emmetio/emmet
+[submodule "get_information/from_repositories/anijs"]
+	path = get_information/from_repositories/anijs
+	url = https://github.com/anijs/anijs
