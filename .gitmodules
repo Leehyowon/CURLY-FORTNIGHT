@@ -463,3 +463,6 @@
 [submodule "get_information/from_repositories/jsoneditor"]
 	path = get_information/from_repositories/jsoneditor
 	url = https://github.com/josdejong/jsoneditor
+[submodule "get_information/from_repositories/websocket"]
+	path = get_information/from_repositories/websocket
+	url = https://github.com/gorilla/websocket
