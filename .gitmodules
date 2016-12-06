@@ -412,3 +412,6 @@
 [submodule "get_information/from_repositories/webmagic"]
 	path = get_information/from_repositories/webmagic
 	url = https://github.com/code4craft/webmagic
+[submodule "get_information/from_repositories/hanami"]
+	path = get_information/from_repositories/hanami
+	url = https://github.com/hanami/hanami
