@@ -481,3 +481,6 @@
 [submodule "get_information/from_repositories/hubpress.io"]
 	path = get_information/from_repositories/hubpress.io
 	url = https://github.com/HubPress/hubpress.io
+[submodule "get_information/from_repositories/HeadlessBrowsers"]
+	path = get_information/from_repositories/HeadlessBrowsers
+	url = https://github.com/dhamaniasad/HeadlessBrowsers
