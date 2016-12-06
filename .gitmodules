@@ -451,3 +451,6 @@
 [submodule "get_information/from_repositories/docpad"]
 	path = get_information/from_repositories/docpad
 	url = https://github.com/docpad/docpad
+[submodule "get_information/from_repositories/generator-webapp"]
+	path = get_information/from_repositories/generator-webapp
+	url = https://github.com/yeoman/generator-webapp
