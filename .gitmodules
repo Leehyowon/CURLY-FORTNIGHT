@@ -490,3 +490,6 @@
 [submodule "get_information/from_repositories/turbolinks"]
 	path = get_information/from_repositories/turbolinks
 	url = https://github.com/turbolinks/turbolinks
+[submodule "get_information/from_repositories/Java-WebSocket"]
+	path = get_information/from_repositories/Java-WebSocket
+	url = https://github.com/TooTallNate/Java-WebSocket
