@@ -415,3 +415,6 @@
 [submodule "get_information/from_repositories/hanami"]
 	path = get_information/from_repositories/hanami
 	url = https://github.com/hanami/hanami
+[submodule "get_information/from_repositories/socketstream"]
+	path = get_information/from_repositories/socketstream
+	url = https://github.com/socketstream/socketstream
