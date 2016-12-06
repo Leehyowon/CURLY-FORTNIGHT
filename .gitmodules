@@ -433,3 +433,6 @@
 [submodule "get_information/from_repositories/clappr"]
 	path = get_information/from_repositories/clappr
 	url = https://github.com/clappr/clappr
+[submodule "get_information/from_repositories/kap"]
+	path = get_information/from_repositories/kap
+	url = https://github.com/wulkano/kap
