@@ -430,3 +430,6 @@
 [submodule "get_information/from_repositories/goji"]
 	path = get_information/from_repositories/goji
 	url = https://github.com/zenazn/goji
+[submodule "get_information/from_repositories/clappr"]
+	path = get_information/from_repositories/clappr
+	url = https://github.com/clappr/clappr
