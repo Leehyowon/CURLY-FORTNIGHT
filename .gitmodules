@@ -442,3 +442,6 @@
 [submodule "get_information/from_repositories/anijs"]
 	path = get_information/from_repositories/anijs
 	url = https://github.com/anijs/anijs
+[submodule "get_information/from_repositories/hummingbird"]
+	path = get_information/from_repositories/hummingbird
+	url = https://github.com/mnutt/hummingbird
