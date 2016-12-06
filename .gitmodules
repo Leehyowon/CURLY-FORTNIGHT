@@ -460,3 +460,6 @@
 [submodule "get_information/from_repositories/GCDWebServer"]
 	path = get_information/from_repositories/GCDWebServer
 	url = https://github.com/swisspol/GCDWebServer
+[submodule "get_information/from_repositories/jsoneditor"]
+	path = get_information/from_repositories/jsoneditor
+	url = https://github.com/josdejong/jsoneditor
