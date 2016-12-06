@@ -418,3 +418,6 @@
 [submodule "get_information/from_repositories/socketstream"]
 	path = get_information/from_repositories/socketstream
 	url = https://github.com/socketstream/socketstream
+[submodule "get_information/from_repositories/nodePPT"]
+	path = get_information/from_repositories/nodePPT
+	url = https://github.com/ksky521/nodePPT
