@@ -496,3 +496,6 @@
 [submodule "get_information/from_repositories/front-end-frameworks"]
 	path = get_information/from_repositories/front-end-frameworks
 	url = https://github.com/usablica/front-end-frameworks
+[submodule "get_information/from_repositories/web-app-theme"]
+	path = get_information/from_repositories/web-app-theme
+	url = https://github.com/pilu/web-app-theme
