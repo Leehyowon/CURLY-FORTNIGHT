@@ -427,3 +427,6 @@
 [submodule "get_information/from_repositories/x-ray"]
 	path = get_information/from_repositories/x-ray
 	url = https://github.com/lapwinglabs/x-ray
+[submodule "get_information/from_repositories/goji"]
+	path = get_information/from_repositories/goji
+	url = https://github.com/zenazn/goji
