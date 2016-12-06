@@ -436,3 +436,6 @@
 [submodule "get_information/from_repositories/kap"]
 	path = get_information/from_repositories/kap
 	url = https://github.com/wulkano/kap
+[submodule "get_information/from_repositories/emmet"]
+	path = get_information/from_repositories/emmet
+	url = https://github.com/emmetio/emmet
