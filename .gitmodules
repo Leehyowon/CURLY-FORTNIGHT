@@ -487,3 +487,6 @@
 [submodule "get_information/from_repositories/wttr.in"]
 	path = get_information/from_repositories/wttr.in
 	url = https://github.com/chubin/wttr.in
+[submodule "get_information/from_repositories/turbolinks"]
+	path = get_information/from_repositories/turbolinks
+	url = https://github.com/turbolinks/turbolinks
