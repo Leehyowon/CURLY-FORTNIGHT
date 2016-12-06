@@ -472,3 +472,6 @@
 [submodule "get_information/from_repositories/react-dates"]
 	path = get_information/from_repositories/react-dates
 	url = https://github.com/airbnb/react-dates
+[submodule "get_information/from_repositories/crow"]
+	path = get_information/from_repositories/crow
+	url = https://github.com/ipkn/crow
