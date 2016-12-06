@@ -493,3 +493,6 @@
 [submodule "get_information/from_repositories/Java-WebSocket"]
 	path = get_information/from_repositories/Java-WebSocket
 	url = https://github.com/TooTallNate/Java-WebSocket
+[submodule "get_information/from_repositories/front-end-frameworks"]
+	path = get_information/from_repositories/front-end-frameworks
+	url = https://github.com/usablica/front-end-frameworks
