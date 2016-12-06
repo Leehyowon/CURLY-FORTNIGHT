@@ -475,3 +475,6 @@
 [submodule "get_information/from_repositories/crow"]
 	path = get_information/from_repositories/crow
 	url = https://github.com/ipkn/crow
+[submodule "get_information/from_repositories/openresty"]
+	path = get_information/from_repositories/openresty
+	url = https://github.com/openresty/openresty
