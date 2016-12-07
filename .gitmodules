@@ -517,3 +517,6 @@
 [submodule "get_information/from_repositories/dev-setup"]
 	path = get_information/from_repositories/dev-setup
 	url = https://github.com/donnemartin/dev-setup
+[submodule "get_information/from_repositories/SublimeWebInspector"]
+	path = get_information/from_repositories/SublimeWebInspector
+	url = https://github.com/sokolovstas/SublimeWebInspector
