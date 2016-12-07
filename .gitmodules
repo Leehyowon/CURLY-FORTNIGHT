@@ -505,3 +505,6 @@
 [submodule "get_information/from_repositories/webdriverio"]
 	path = get_information/from_repositories/webdriverio
 	url = https://github.com/webdriverio/webdriverio
+[submodule "get_information/from_repositories/Ghost.py"]
+	path = get_information/from_repositories/Ghost.py
+	url = https://github.com/jeanphix/Ghost.py
