@@ -499,3 +499,6 @@
 [submodule "get_information/from_repositories/web-app-theme"]
 	path = get_information/from_repositories/web-app-theme
 	url = https://github.com/pilu/web-app-theme
+[submodule "get_information/from_repositories/discover-flask"]
+	path = get_information/from_repositories/discover-flask
+	url = https://github.com/realpython/discover-flask
