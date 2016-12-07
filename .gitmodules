@@ -511,3 +511,6 @@
 [submodule "get_information/from_repositories/juliusjs"]
 	path = get_information/from_repositories/juliusjs
 	url = https://github.com/zzmp/juliusjs
+[submodule "get_information/from_repositories/spring-mvc-showcase"]
+	path = get_information/from_repositories/spring-mvc-showcase
+	url = https://github.com/spring-projects/spring-mvc-showcase
