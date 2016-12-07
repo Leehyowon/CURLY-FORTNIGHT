@@ -502,3 +502,6 @@
 [submodule "get_information/from_repositories/discover-flask"]
 	path = get_information/from_repositories/discover-flask
 	url = https://github.com/realpython/discover-flask
+[submodule "get_information/from_repositories/webdriverio"]
+	path = get_information/from_repositories/webdriverio
+	url = https://github.com/webdriverio/webdriverio
