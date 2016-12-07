@@ -508,3 +508,6 @@
 [submodule "get_information/from_repositories/Ghost.py"]
 	path = get_information/from_repositories/Ghost.py
 	url = https://github.com/jeanphix/Ghost.py
+[submodule "get_information/from_repositories/juliusjs"]
+	path = get_information/from_repositories/juliusjs
+	url = https://github.com/zzmp/juliusjs
