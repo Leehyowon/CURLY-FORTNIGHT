@@ -532,3 +532,6 @@
 [submodule "get_information/from_repositories/node-osmosis"]
 	path = get_information/from_repositories/node-osmosis
 	url = https://github.com/rchipka/node-osmosis
+[submodule "get_information/from_repositories/alpaca"]
+	path = get_information/from_repositories/alpaca
+	url = https://github.com/pksunkara/alpaca
