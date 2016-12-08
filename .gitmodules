@@ -520,3 +520,6 @@
 [submodule "get_information/from_repositories/SublimeWebInspector"]
 	path = get_information/from_repositories/SublimeWebInspector
 	url = https://github.com/sokolovstas/SublimeWebInspector
+[submodule "get_information/from_repositories/web-socket-js"]
+	path = get_information/from_repositories/web-socket-js
+	url = https://github.com/gimite/web-socket-js
