@@ -529,3 +529,6 @@
 [submodule "get_information/from_repositories/AndroidAssetStudio"]
 	path = get_information/from_repositories/AndroidAssetStudio
 	url = https://github.com/romannurik/AndroidAssetStudio
+[submodule "get_information/from_repositories/node-osmosis"]
+	path = get_information/from_repositories/node-osmosis
+	url = https://github.com/rchipka/node-osmosis
