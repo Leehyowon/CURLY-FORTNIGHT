@@ -541,3 +541,6 @@
 [submodule "get_information/from_repositories/brick"]
 	path = get_information/from_repositories/brick
 	url = https://github.com/mozbrick/brick
+[submodule "get_information/from_repositories/Seriously.js"]
+	path = get_information/from_repositories/Seriously.js
+	url = https://github.com/brianchirls/Seriously.js
