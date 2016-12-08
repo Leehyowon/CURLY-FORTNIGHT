@@ -550,3 +550,6 @@
 [submodule "get_information/from_repositories/substance"]
 	path = get_information/from_repositories/substance
 	url = https://github.com/substance/substance
+[submodule "get_information/from_repositories/butterfly"]
+	path = get_information/from_repositories/butterfly
+	url = https://github.com/paradoxxxzero/butterfly
