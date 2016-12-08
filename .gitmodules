@@ -538,3 +538,6 @@
 [submodule "get_information/from_repositories/tracing-framework"]
 	path = get_information/from_repositories/tracing-framework
 	url = https://github.com/google/tracing-framework
+[submodule "get_information/from_repositories/brick"]
+	path = get_information/from_repositories/brick
+	url = https://github.com/mozbrick/brick
