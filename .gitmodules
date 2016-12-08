@@ -544,3 +544,6 @@
 [submodule "get_information/from_repositories/Seriously.js"]
 	path = get_information/from_repositories/Seriously.js
 	url = https://github.com/brianchirls/Seriously.js
+[submodule "get_information/from_repositories/h5ai"]
+	path = get_information/from_repositories/h5ai
+	url = https://github.com/lrsjng/h5ai
