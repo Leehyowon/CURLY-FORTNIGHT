@@ -526,3 +526,6 @@
 [submodule "get_information/from_repositories/goliath"]
 	path = get_information/from_repositories/goliath
 	url = https://github.com/postrank-labs/goliath
+[submodule "get_information/from_repositories/AndroidAssetStudio"]
+	path = get_information/from_repositories/AndroidAssetStudio
+	url = https://github.com/romannurik/AndroidAssetStudio
