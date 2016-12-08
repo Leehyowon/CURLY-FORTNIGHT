@@ -556,3 +556,6 @@
 [submodule "get_information/from_repositories/uppy"]
 	path = get_information/from_repositories/uppy
 	url = https://github.com/transloadit/uppy
+[submodule "get_information/from_repositories/walle-web"]
+	path = get_information/from_repositories/walle-web
+	url = https://github.com/meolu/walle-web
