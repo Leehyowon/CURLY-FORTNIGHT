@@ -523,3 +523,6 @@
 [submodule "get_information/from_repositories/web-socket-js"]
 	path = get_information/from_repositories/web-socket-js
 	url = https://github.com/gimite/web-socket-js
+[submodule "get_information/from_repositories/goliath"]
+	path = get_information/from_repositories/goliath
+	url = https://github.com/postrank-labs/goliath
