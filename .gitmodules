@@ -547,3 +547,6 @@
 [submodule "get_information/from_repositories/h5ai"]
 	path = get_information/from_repositories/h5ai
 	url = https://github.com/lrsjng/h5ai
+[submodule "get_information/from_repositories/substance"]
+	path = get_information/from_repositories/substance
+	url = https://github.com/substance/substance
