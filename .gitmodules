@@ -553,3 +553,6 @@
 [submodule "get_information/from_repositories/butterfly"]
 	path = get_information/from_repositories/butterfly
 	url = https://github.com/paradoxxxzero/butterfly
+[submodule "get_information/from_repositories/uppy"]
+	path = get_information/from_repositories/uppy
+	url = https://github.com/transloadit/uppy
