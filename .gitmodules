@@ -535,3 +535,6 @@
 [submodule "get_information/from_repositories/alpaca"]
 	path = get_information/from_repositories/alpaca
 	url = https://github.com/pksunkara/alpaca
+[submodule "get_information/from_repositories/tracing-framework"]
+	path = get_information/from_repositories/tracing-framework
+	url = https://github.com/google/tracing-framework
