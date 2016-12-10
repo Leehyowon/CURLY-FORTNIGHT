@@ -21,9 +21,9 @@
 			var Y_point			= 37.297090;
 			var X_point			= 126.836085;
 			var zoomLevel		= 17;
-			var markerTitle		= "0&1 Algorithm Academy";
+			var markerTitle1	= "0&1 Algorithm Academy";
 			var markerMaxWidth	= 300;
-			var contentString	= '<div>' +
+			var contentString1	= '<div>' +
 			'<h3>0&1 Algorithm Academy</h3>'+
 			'<p>Location of 0&1 Academy : in SMASH Room</p>' +
 			'</div>';
@@ -36,29 +36,29 @@
 			}
 			var map = new google.maps.Map(document.getElementById('map1'), mapOptions);
 
-			var marker = new google.maps.Marker({
+			var marker1 = new google.maps.Marker({
 				position: myLatlng,
 				map: map,
-				title: markerTitle
+				title: markerTitle1
 			});
 
-			var infowindow = new google.maps.InfoWindow(
+			var infowindow1 = new google.maps.InfoWindow(
 				{
-					content: contentString,
+					content: contentString1,
 					maxWidth: markerMaxWidth
 				}
 			);
 
-			google.maps.event.addListener(marker, 'click', function() {
-				infowindow.open(map, marker);
+			google.maps.event.addListener(marker1, 'click', function() {
+				infowindow1.open(map, marker1);
 			});
 
 			var Y_point			= 37.297363;
 			var X_point			= 126.836033;
 			var zoomLevel		= 17;
-			var markerTitle		= "Jaram Academy";
+			var markerTitle2	= "Jaram Academy";
 			var markerMaxWidth	= 300;
-			var contentString	= '<div>' +
+			var contentString2	= '<div>' +
 			'<h3>Jaram Academy</h3>'+
 			'<p>Location of Jaram Academy : in the 3rd Engineering Building, 1st basement</p>' +
 			'</div>';
@@ -71,29 +71,29 @@
 			}
 			var map = new google.maps.Map(document.getElementById('map2'), mapOptions);
 
-			var marker = new google.maps.Marker({
+			var marker2 = new google.maps.Marker({
 				position: myLatlng,
 				map: map,
-				title: markerTitle
+				title: markerTitle2
 			});
 
-			var infowindow = new google.maps.InfoWindow(
+			var infowindow2 = new google.maps.InfoWindow(
 				{
-					content: contentString,
+					content: contentString2,
 					maxWidth: markerMaxWidth
 				}
 			);
 
-			google.maps.event.addListener(marker, 'click', function() {
-				infowindow.open(map, marker);
+			google.maps.event.addListener(marker2, 'click', function() {
+				infowindow2.open(map, marker2);
 			});
 
 			var Y_point			= 37.297090;
 			var X_point			= 126.836085;
 			var zoomLevel		= 17;
-			var markerTitle		= "HYcube Academy";
+			var markerTitle3	= "HYcube Academy";
 			var markerMaxWidth	= 300;
-			var contentString	= '<div>' +
+			var contentString3	= '<div>' +
 			'<h3>HYcube Academy</h3>'+
 			'<p>Location of HYcube Academy : in SMASH Room</p>' +
 			'</div>';
@@ -106,21 +106,21 @@
 			}
 			var map = new google.maps.Map(document.getElementById('map3'), mapOptions);
 
-			var marker = new google.maps.Marker({
+			var marker3 = new google.maps.Marker({
 				position: myLatlng,
 				map: map,
-				title: markerTitle
+				title: markerTitle3
 			});
 
-			var infowindow = new google.maps.InfoWindow(
+			var infowindow3 = new google.maps.InfoWindow(
 				{
-					content: contentString,
+					content: contentString3,
 					maxWidth: markerMaxWidth
 				}
 			);
 
-			google.maps.event.addListener(marker, 'click', function() {
-				infowindow.open(map, marker);
+			google.maps.event.addListener(marker3, 'click', function() {
+				infowindow3.open(map, marker3);
 			});
 		}
 	</script>
