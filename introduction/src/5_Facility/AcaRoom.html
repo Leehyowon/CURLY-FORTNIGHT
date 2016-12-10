@@ -87,6 +87,41 @@
 			google.maps.event.addListener(marker, 'click', function() {
 				infowindow.open(map, marker);
 			});
+
+			var Y_point			= 37.297090;
+			var X_point			= 126.836085;
+			var zoomLevel		= 17;
+			var markerTitle		= "HYcube Academy";
+			var markerMaxWidth	= 300;
+			var contentString	= '<div>' +
+			'<h3>HYcube Academy</h3>'+
+			'<p>Location of HYcube Academy : in SMASH Room</p>' +
+			'</div>';
+
+			var myLatlng = new google.maps.LatLng(Y_point, X_point);
+			var mapOptions = {
+								zoom: zoomLevel,
+								center: myLatlng,
+								mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(document.getElementById('map3'), mapOptions);
+
+			var marker = new google.maps.Marker({
+													position: myLatlng,
+													map: map,
+													title: markerTitle
+			});
+
+			var infowindow = new google.maps.InfoWindow(
+														{
+															content: contentString,
+															maxWidth: markerMaxWidth
+														}
+			);
+
+			google.maps.event.addListener(marker, 'click', function() {
+				infowindow.open(map, marker);
+			});
 		}
 	</script>
 </head>
@@ -114,11 +149,11 @@
 		<img src="https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/420094_318625458188023_1823237204_n.jpg?oh=eb722fe96f9070dc19f124a13e0e91c4&oe=58C5B696" alt="Jaram logo" height="250">
 	</p>
 	<h3>HYcube Academy</h3>
+
+	<div id="map3" style="width:500px; height:300px;"></div>
+
 	<p>
-		<ins>Location of HYcube Academy : in SMASH Room</ins>
-	</p>
-	<p>
-		<img src="https://raw.githubusercontent.com/namhyein/CURLY-FORTNIGHT/310897113328736f45b3465b8d81a9ad761387de/introduction/src/facility/541097_152576178218848_558480619_n.png" alt="HYcube logo">
+		<img src="https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/541097_152576178218848_558480619_n.png?oh=4e4843cb62618d4330bbedcdfd591ea4&oe=58C95E1B" alt="HYcube logo">
 	</p>
 
 
