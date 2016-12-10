@@ -16,14 +16,14 @@
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script>
 		function initialize() {
-			var Y_point			= 37.297090;
-			var X_point			= 126.836085;
+			var Y_point			= ;
+			var X_point			= ;
 			var zoomLevel		= 17;
-			var markerTitle		= "0&1 Algorithm Academy";
+			var markerTitle1	= "Advanced Lecture Room";
 			var markerMaxWidth	= 300;
-			var contentString	= '<div>' +
-			'<h3>0&1 Algorithm Academy</h3>'+
-			'<p>Location of 0&1 Academy : in SMASH Room</p>' +
+			var contentString1	= '<div>' +
+			'<h3>Advanced Lecture Room</h3>'+
+			'<p>Location of Advanced Lecture Room : the 1st Engineering Building, 3rd floor</p>' +
 			'</div>';
 
 			var myLatlng = new google.maps.LatLng(Y_point, X_point);
@@ -34,31 +34,102 @@
 			}
 			var map = new google.maps.Map(document.getElementById('map1'), mapOptions);
 
-			var marker = new google.maps.Marker({
+			var marker1 = new google.maps.Marker({
 				position: myLatlng,
 				map: map,
-				title: markerTitle
+				title: markerTitle1
 			});
 
-			var infowindow = new google.maps.InfoWindow(
+			var infowindow1 = new google.maps.InfoWindow(
 				{
-					content: contentString,
+					content: contentString1,
 					maxWidth: markerMaxWidth
 				}
 			);
 
-			google.maps.event.addListener(marker, 'click', function() {
-				infowindow.open(map, marker);
+			google.maps.event.addListener(marker1, 'click', function() {
+				infowindow1.open(map, marker1);
 			});
+
+			var Y_point			= 37.297363;
+			var X_point			= 126.836033;
+			var zoomLevel		= 17;
+			var markerTitle2	= "Jaram Academy";
+			var markerMaxWidth	= 300;
+			var contentString2	= '<div>' +
+			'<h3>Jaram Academy</h3>'+
+			'<p>Location of Jaram Academy : in the 3rd Engineering Building, 1st basement</p>' +
+			'</div>';
+
+			var myLatlng = new google.maps.LatLng(Y_point, X_point);
+			var mapOptions = {
+				zoom: zoomLevel,
+				center: myLatlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(document.getElementById('map2'), mapOptions);
+
+			var marker2 = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				title: markerTitle2
+			});
+
+			var infowindow2 = new google.maps.InfoWindow(
+				{
+					content: contentString2,
+					maxWidth: markerMaxWidth
+				}
+			);
+
+			google.maps.event.addListener(marker2, 'click', function() {
+				infowindow2.open(map, marker2);
+			});
+
+			var Y_point			= 37.297090;
+			var X_point			= 126.836085;
+			var zoomLevel		= 17;
+			var markerTitle3	= "HYcube Academy";
+			var markerMaxWidth	= 300;
+			var contentString3	= '<div>' +
+			'<h3>HYcube Academy</h3>'+
+			'<p>Location of HYcube Academy : in SMASH Room</p>' +
+			'</div>';
+
+			var myLatlng = new google.maps.LatLng(Y_point, X_point);
+			var mapOptions = {
+				zoom: zoomLevel,
+				center: myLatlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(document.getElementById('map3'), mapOptions);
+
+			var marker3 = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				title: markerTitle3
+			});
+
+			var infowindow3 = new google.maps.InfoWindow(
+				{
+					content: contentString3,
+					maxWidth: markerMaxWidth
+				}
+			);
+
+			google.maps.event.addListener(marker3, 'click', function() {
+				infowindow3.open(map, marker3);
+			});
+		}
 	</script>
 </head>
 <body>
 	<h1><i><br><br><br><br><br>_Facilities</h1></i>
 
 	<h2>Advanced Lecture Room</h2>
-	<p>
-		<a href="http://map.naver.com/local/siteview.nhn?code=18999138"><b>Location of Advanced Lecture Room : the 1st Engineering Building, 3rd floor </b></a>
-	</p>
+	
+	<div id="map1" style="width:500px; height:300px;"></div>
+
 	<p>
 		<img src="http://cse.hanyang.ac.kr/wp-content/uploads/2014/07/smash_classroom1.jpg" alt="Advanced Lecture Room" height="400">
 		<img src="http://postfiles5.naver.net/MjAxNjEyMTBfNzMg/MDAxNDgxMzc3NTkzMjI4.RfwvC70DIN_5ZFyMRKXEMQthO5eItcoK6lGQbgDJHRcg.rt-RqYYRynhNCi-dVMuHnE2DE5H2HMVolDK6xc-yHUYg.PNG.geulims/스크린샷_2016-12-10_오후_10.44.19.png?type=w3">
