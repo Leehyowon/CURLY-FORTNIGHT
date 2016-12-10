@@ -13,9 +13,50 @@
 		h2{background-color: lightblue;}
 		/*p{color: grey;}*/
 	</style>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="euc-kr">
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script>
+		function initialize() {
+			var Y_point			= 37.297527;
+			var X_point			= 126.836431;
+			var zoomLevel		= 17;
+			var markerTitle		= "Department Room";
+			var markerMaxWidth	= 300;
+			var contentString	= '<div>' +
+			'<h3>Department Room</h3>'+
+			'<p>Location of Department Room : the 3rd Engineering Building, 1st basement</p>' +
+			'</div>';
+
+			var myLatlng = new google.maps.LatLng(Y_point, X_point);
+			var mapOptions = {
+								zoom: zoomLevel,
+								center: myLatlng,
+								mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(document.getElementById('map_view'), mapOptions);
+
+			var marker = new google.maps.Marker({
+													position: myLatlng,
+													map: map,
+													title: markerTitle
+			});
+
+			var infowindow = new google.maps.InfoWindow(
+														{
+															content: contentString,
+															maxWidth: markerMaxWidth
+														}
+			);
+
+			google.maps.event.addListener(marker, 'click', function() {
+				infowindow.open(map, marker);
+			});
+		}
+	</script>
 </head>
 
-<body>
+<body onload="initialize()">
 	<h1><i><br><br><br><br><br>_Facilities</h1></i>
 
 	<h2>Academy Room</h2>
