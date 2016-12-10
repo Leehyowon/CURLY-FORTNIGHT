@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:screenOrientation="portrait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:id="@+id/PrdLyt"
+        android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PrdImg"
+        android:src="@drawable/pencil"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="false"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/stack_height"
+        android:text="Product Name"
+        android:layout_weight="0.5"
+        android:textColor="#80000000"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/PrdImg"
+        android:gravity="center_vertical" />
+    </RelativeLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/ProductEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:textSize="@dimen/customEntry" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:screenOrientation="portrait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PrdLyt"
+        android:layout_marginTop="@dimen/margin_top"
+        android:id="@+id/ExpiryLyt"
+        android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CalendarImg"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/calendar"
+        android:layout_centerVertical="true" />
+
+
+
+    <TextView
+        android:text="Expiry date - "
+        android:layout_width="100dp"
+        android:layout_height="@dimen/stack_height"
+        android:id="@+id/ExpiryTitle"
+        android:hint="Expiry date"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:gravity="center_vertical|left"
+        android:textColor="#80000000"
+        android:background="#ffffff"
+        android:textSize="@dimen/customTitle"
+        android:textIsSelectable="false"
+        android:layout_toEndOf="@id/CalendarImg"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp" />
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/DateEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:inputType="date"
+        android:hint="    /    /  "
+        android:textColor="#000000"
+        android:textSize="@dimen/customEntry" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:screenOrientation="portrait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ExpiryLyt"
+        android:layout_marginTop="@dimen/margin_top"
+        android:id="@+id/QuantityLyt"
+        android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/QuantImg"
+        android:src="@drawable/qut"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="false"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/stack_height"
+        android:text="Quantity"
+        android:id="@+id/QuantityTitle"
+        android:layout_toEndOf="@id/QuantImg"
+        android:textColor="#80000000"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:textSize="@dimen/customTitle"
+        android:gravity="center_vertical" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/QtyEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#000000"
+        android:inputType="text|numberSigned"
+        android:textSize="@dimen/customEntry" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:screenOrientation="portrait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/QuantityLyt"
+        android:layout_marginTop="@dimen/margin_top"
+        android:id="@+id/PriceLyt"
+        android:background="#ffffff">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PriceImg"
+        android:src="@drawable/price"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:paddingLeft="10dp"
+        android:textSize="@dimen/customTitle"
+        android:id="@+id/PriceText"
+        android:textColor="#80000000"
+        android:layout_toEndOf="@id/PriceImg"
+        android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/priceEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:inputType="text|numberSigned"
+        android:textColor="#000000"
+        android:textSize="@dimen/customEntry" />
+
+
+</LinearLayout>
