@@ -18,14 +18,14 @@
 	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script>
 		function initialize() {
-			var Y_point			= 37.297527;
-			var X_point			= 126.836431;
+			var Y_point			= 37.297090;
+			var X_point			= 126.836085;
 			var zoomLevel		= 17;
-			var markerTitle		= "Department Room";
+			var markerTitle		= "0&1 Algorithm Academy";
 			var markerMaxWidth	= 300;
 			var contentString	= '<div>' +
-			'<h3>Department Room</h3>'+
-			'<p>Location of Department Room : the 3rd Engineering Building, 1st basement</p>' +
+			'<h3>0&1 Algorithm Academy</h3>'+
+			'<p>Location of 0&1 Academy : in SMASH Room</p>' +
 			'</div>';
 
 			var myLatlng = new google.maps.LatLng(Y_point, X_point);
@@ -34,7 +34,7 @@
 								center: myLatlng,
 								mapTypeId: google.maps.MapTypeId.ROADMAP
 			}
-			var map = new google.maps.Map(document.getElementById('map_view'), mapOptions);
+			var map = new google.maps.Map(document.getElementById('map1'), mapOptions);
 
 			var marker = new google.maps.Marker({
 													position: myLatlng,
@@ -63,9 +63,9 @@
 	<p><i>There are several rooms for academies in C.S.E.</i></p>
 	
 	<h3>0&1 Algorithm Academy</h3>
-	<p>
-		<ins>Location of 0&1 Academy : in SMASH Room</ins>
-	</p>
+	
+	<div id="map1" style="width:500px; height:300px;"></div>
+
 	<p>
 		<img src="https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/10403626_917419861666206_8552933554060635076_n.jpg?oh=d8d3e45ee92a73bb857c35897c356f6f&oe=588759AA" alt="0&1 room" height="400">
 		<img src="http://cfile5.uf.tistory.com/image/21508A4557F0958023B64E" alt="0&1 logo" height="250">
