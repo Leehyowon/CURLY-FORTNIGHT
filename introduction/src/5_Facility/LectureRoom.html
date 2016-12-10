@@ -11,10 +11,49 @@
 		h2{background-color: lightblue;}
 		/*p{color: grey;}*/
 	</style>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="euc-kr">
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script>
+		function initialize() {
+			var Y_point			= 37.297090;
+			var X_point			= 126.836085;
+			var zoomLevel		= 17;
+			var markerTitle		= "0&1 Algorithm Academy";
+			var markerMaxWidth	= 300;
+			var contentString	= '<div>' +
+			'<h3>0&1 Algorithm Academy</h3>'+
+			'<p>Location of 0&1 Academy : in SMASH Room</p>' +
+			'</div>';
+
+			var myLatlng = new google.maps.LatLng(Y_point, X_point);
+			var mapOptions = {
+				zoom: zoomLevel,
+				center: myLatlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(document.getElementById('map1'), mapOptions);
+
+			var marker = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				title: markerTitle
+			});
+
+			var infowindow = new google.maps.InfoWindow(
+				{
+					content: contentString,
+					maxWidth: markerMaxWidth
+				}
+			);
+
+			google.maps.event.addListener(marker, 'click', function() {
+				infowindow.open(map, marker);
+			});
+	</script>
 </head>
 <body>
 	<h1><i><br><br><br><br><br>_Facilities</h1></i>
-	<hr>
 
 	<h2>Advanced Lecture Room</h2>
 	<p>
