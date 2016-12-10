@@ -8,6 +8,13 @@
 		{
 			id.style[style] = value;
 		}
+		function opacity(el,opacity)
+		{
+		setStyle(el,"filter:","alpha(opacity="+opacity+")");
+		setStyle(el,"-moz-opacity",opacity/100);
+		setStyle(el,"-khtml-opacity",opacity/100);
+		setStyle(el,"opacity",opacity/100);
+		}
 	</script>
 </head>
 
