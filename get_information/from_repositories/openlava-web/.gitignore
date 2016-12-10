@@ -1,0 +1,10 @@
+*.log
+.idea
+core
+*.pot
+*.pyc
+local_settings.py
+build
+dist
+django_openlavaweb.egg-info
+_build

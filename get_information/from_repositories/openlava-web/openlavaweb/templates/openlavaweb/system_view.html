@@ -1,0 +1,123 @@
+{% extends "openlavaweb/base.html" %}
+{% block content %}
+<div id="failMessageBody"></div>
+<div id="hostsDownMessageBody"></div>
+<div id="hostsClosedMessageBody"></div>
+
+<h1>{{ cluster.name }}</h1>
+<dl class="dl-horizontal">
+	<dt>Cluster Name:</dt><dd>{{ cluster.name }}</dd>
+	<dt>Master Host:</dt><dd>{{ cluster.master.name }}</dd>
+	<dt>Admins:</dt><dd>{% for admin in cluster.admins %}{{ admin }}{% if not forloop.last %}<br />{% endif %}{% endfor %}</dd>
+</dl>
+<div class="container">
+    <div class="row">
+		<div class="col-md-4" id="hostChart"><h3>Host State</h3><svg width="100%"></svg></div>
+		<div class="col-md-4" id="jobUtilChart"><h3>Job Utilization</h3><svg width="100%"></svg></div>
+		<div class="col-md-4" id="slotUtilChart"><h3>Slot Utilization</h3><svg width="100%"></svg></div>
+    </div>
+</div>
+
+
+<script>
+function update_alerts(){
+    olwclient.getHostOverview(function(overview){
+        var total = 0;
+        var down = 0;
+        var closed = 0;
+        overview.forEach(function(entry){
+            if (entry.label =="Down"){
+                down += entry.value;
+            }
+            if (entry.label == "Closed"){
+                closed += entry.value;
+            }
+            total += entry.value;
+        });
+        if ( down/total > 0.25 ){
+            // Show alert
+            $("#hostsDownMessageBody").html('<div id="hostsDownMessage" class="fade in alert alert-danger"><b>Warning!</b> A large number of hosts are unavailable</div>');
+            $("#hostsDownMessage").alert();
+        }else{
+            // Remove the label
+            $("#hostsDownMessageBody").empty();
+        }
+        if ( closed/total > 0.25 ){
+            // Show alert
+            $("#hostsClosedMessageBody").html('<div id="hostsClosedMessage" class="fade in alert alert-danger"><b>Warning!</b> A large number of hosts are closed</div>');
+            $("#hostsClosedMessage").alert();
+        }else{
+            // Remove the label
+            $("#hostsClosedMessageBody").empty();
+        }
+        setTimeout(update_alerts, 30000);
+    }, function(errType, message){
+        console.log("Unable to load host overview information: " + message);
+        setTimeout(update_alerts, 30000);
+    });
+}
+
+function update_chart(chart, selector, callable){
+    callable(
+            function(data){
+                d3.select(selector)
+                .datum(data)
+                .transition().duration(500)
+                .call(chart);
+                setTimeout(function(){
+	                update_chart(chart, selector, callable);
+	            }, 30000);
+            }, function(errType, message){
+                $("#failMessageBody").html('<div id="failMessage" class="fade in alert alert-danger">Error! Unable to load cluster load information: ' + message + '</div>');
+                $("#failMessage").alert();
+                setTimeout(function(){
+                    $("#failMessage").alert('close');
+                },15000);
+                setTimeout(function(){
+	                update_chart(chart, selector, callable);
+	            }, 30000);
+            });
+	}
+
+
+function add_standard_pie(callable, selector){
+	nv.addGraph(function() {
+   	    var chart;
+       	chart = nv.models.pieChart()
+       	//.margin({top: 30, right: 20, bottom: 50, left: 175})
+       	.showLabels(true)     //Display pie labels
+       	.labelThreshold(.05)  //Configure the minimum slice size for labels to show up
+       	.labelType("percent") //Configure what type of data to show in the label. Can be "key", "value" or "percent"
+       	.donut(true)          //Turn on Donut mode. Makes pie chart look tasty!
+       	.donutRatio(0.35)     //Configure how big you want the donut hole size to be.
+       	.x(function(d) { return d.label })
+       	.y(function(d) { return d.value })
+       	;
+	    nv.utils.windowResize(chart.update);
+	    update_chart(chart, selector, callable);
+    });
+}
+
+$(function(){
+    olwclient.serverUrl("{% url 'olw_system_view' %}");
+    add_standard_pie(olwclient.getSlotsOverview, "#slotUtilChart svg");
+    add_standard_pie(olwclient.getJobOverview, "#jobUtilChart svg");
+    add_standard_pie(olwclient.getHostOverview, '#hostChart svg');
+    update_alerts();
+});
+</script>
+
+
+<h1>Problem Hosts</h1>
+{% include "openlavaweb/widgets/host_list.html" with host_list=cluster.problem_hosts %}
+
+<h1>Queue Utilization</h1>
+{% include "openlavaweb/widgets/queue_list.html" with queue_list=cluster.queues %}
+
+<h1>Active Users</h1>
+{% include "openlavaweb/widgets/user_list.html" with user_list=cluster.users %}
+
+<h1>Resources</h1>
+{% include "openlavaweb/widgets/resource_list.html" with resource_list=cluster.resources%}
+
+{% endblock %}

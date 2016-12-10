@@ -1,0 +1,18 @@
+[submodule "openlavaweb/static/openlavaweb/bootstrap"]
+	path = openlavaweb/static/openlavaweb/bootstrap
+	url = https://github.com/twbs/bootstrap.git
+[submodule "client-tools"]
+	path = client-tools
+	url = https://github.com/irvined1982/olweb-clients
+[submodule "openlavaweb/static/openlavaweb/nvd3"]
+	path = openlavaweb/static/openlavaweb/nvd3
+	url = https://github.com/novus/nvd3.git
+[submodule "openlavaweb/static/openlavaweb/d3"]
+	path = openlavaweb/static/openlavaweb/d3
+	url = https://github.com/mbostock/d3.git
+[submodule "openlava-python"]
+	path = openlava-python
+	url = https://github.com/irvined1982/openlava-python.git
+[submodule "lavastorm"]
+	path = lavastorm
+	url = https://github.com/irvined1982/lavastorm.git

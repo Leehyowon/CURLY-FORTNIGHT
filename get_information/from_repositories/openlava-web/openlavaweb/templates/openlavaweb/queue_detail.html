@@ -1,0 +1,355 @@
+{% extends "openlavaweb/base.html" %}
+{% block content %}
+<div id="failMessageBody"></div>
+<div id="closeMessageBody"></div>
+<div id="openMessageBody"></div>
+<div id="inactivateMessageBody"></div>
+<div id="activateMessageBody"></div>
+<div id="statusMessageBody"></div>
+<script>
+
+	function setStatus(message,cls) {
+		var html='<div id="statusMessage" class="fade in alert alert-'+cls+'">'+message+'</div>';
+		if ($("#statusMessageBody").html() != html ) {
+			$("#statusMessageBody").html(html);	
+		}
+	}
+	
+	{% if queue.is_accepting_jobs and queue.is_dispatching_jobs %}
+		setStatus("Queue is accepting and dispatching jobs", "success");
+	{% elif queue.is_accepting_jobs %}
+		setStatus("Queue is accepting jobs, however the queue is inactive and is not dispatching jobs at this time.", "warning");
+	{% elif queue.is_dispatching_jobs %}
+		setStatus("Queue is dispatching jobs, however the queue is closed and is not accepting new jobs at this time.", "warning");
+	{% else %}
+		setStatus("Queue is closed and inactive, no new jobs are being accepted or dispatched at this time.", "danger");
+	{% endif %}
+	function jobSorter(a,b){
+        if (a.job_id != b.job_id){
+            return a.job_id < b.job_id;
+        }
+        return a.array_index < b.array_index
+    }
+	function update() {
+        olwclient.Queue.getQueue('{{ queue.name }}', function (queue) {
+            if (queue.is_accepting_jobs && queue.is_dispatching_jobs) {
+                setStatus("Queue is accepting and dispatching jobs", "success");
+            } else if (queue.is_accepting_jobs) {
+                setStatus("Queue is accepting jobs, however the queue is inactive and is not dispatching jobs at this time.", "warning");
+            } else if (queue.is_dispatching_jobs) {
+                setStatus("Queue is dispatching jobs, however the queue is closed and is not accepting new jobs at this time.", "warning");
+            } else {
+                setStatus("Queue is closed and inactive, no new jobs are being accepted or dispatched at this time.", "danger");
+            }
+
+            var statuses = [];
+            jQuery.each(queue.statuses, function (index, item) {
+                statuses.push(item.friendly);
+            });
+            $("#statusList").html(statuses.join("<br>"));
+            var attributes = [];
+            jQuery.each(queue.attributes, function (index, item) {
+                attributes.push(item.friendly);
+            });
+            $("#attributeList").html(attributes.join("<br>"));
+            $("#totalJobSlots").text(queue.total_jobs + " (" + queue.total_slots + ")");
+            $("#pendingJobSlots").text(queue.num_pending_jobs + " (" + queue.num_pending_slots + ")");
+            $("#runningJobSlots").text(queue.num_running_jobs + " (" + queue.num_running_slots + ")");
+            $("#suspendedJobSlots").text(queue.num_suspended_jobs + " (" + queue.num_suspended_jobs + ")");
+            if (queue.cluster_type == "openlava") {
+                $("#userSuspendedJobSlots").text(queue.num_user_suspended_jobs + " (" + queue.num_user_suspended_slots + ")");
+                $("#systemSuspendedJobSlots").text(queue.num_system_suspended_jobs + " (" + queue.num_system_suspended_slots + ")");
+            }
+            $("#reservedSlots").text(queue.num_reserved_slots);
+            var newJobs = [];
+            var html = "";
+            jQuery.each(queue.jobs, function(index, job){
+                if (index > 20){
+                    return;
+                }
+                var js = 'jl_' + job.job_id + '_' + job.array_index + '_';
+                if ($(js + "_row").html()){
+                    html += "<tr>" + $(sel + "_row").html() + "</tr>";
+                }else {
+                    html += '<tr id="' + js + 'row" class="active">';
+                    html += '<td><a href="' + job.url + '">' + job.job_id;
+                    if (job.array_index > 0) {
+                        html += "[" + job.array_index + "]";
+                    }
+                    html += '</a></td>';
+                    html += '<td><a href="' + job.user_url + '">' + job.user_name + "</a></td>";
+                    html += '<td id="' + js + 'status">' + job.status['friendly'] + "</td>";
+                    html += '<td id="' + js + 'submit_time">Loading...</td>';
+                    html += '<td id="' + js + 'start_time">Loading...</td>';
+                    html += '<td id="' + js + 'end_time">Loading...</td';
+                    html += "</tr>";
+                    newJobs.push([job.job_id, job.array_index]);
+                }
+            });
+
+            if (html=="") {
+                html="<tr><td colspan='6'>No Jobs</td></tr>";
+            }
+
+            $("#jobs").html(html);
+            jQuery.each(newJobs, function(index, j){
+                updateJob(j[0], j[1]);
+            });
+            console.log("Setting timeout");
+            setTimeout(update, 30000);
+        }, function (errType, message) {
+            $("#failMessageBody").html('<div id="failMessage" class="fade in alert alert-danger">Error! Unable to load queue information:' + message + '</div>');
+            $("#failMessage").alert();
+            setTimeout(function () {
+                $("#failMessage").alert('close');
+            }, 15000);
+            setTimeout(update, 30000);
+        });
+    }
+
+    setTimeout(update, 30000);
+
+	function closeQueue() {
+        $("#closeModal").modal('hide');
+        olwclient.closeQueue('{{ queue.name }}', function () {
+            $("#closeMessageBody").html('<div id="closeMessage" class="fade in alert alert-success">Queue close request sent successfully.</div>');
+            $("#closeMessage").alert();
+            setTimeout(function () {
+                $("#closeMessage").alert('close');
+            }, 30000);
+
+        }, function (errType, message) {
+            $("#closeMessageBody").html('<div id="closeMessage" class="fade in alert alert-danger">' + message + '</div>');
+            $("#closeMessage").alert();
+            setTimeout(function () {
+                $("#closeMessage").alert('close');
+            }, 30000);
+        });
+    }
+    function openQueue() {
+        $("#openModal").modal('hide');
+        olwclient.openQueue('{{ queue.name }}', function () {
+            $("#openMessageBody").html('<div id="openMessage" class="fade in alert alert-success">Queue open request sent successfully.</div>');
+            $("#openMessage").alert();
+            setTimeout(function () {
+                $("#openMessage").alert('close');
+            }, 30000);
+
+        }, function (errType, message) {
+            $("#openMessageBody").html('<div id="openMessage" class="fade in alert alert-danger">' + message + '</div>');
+            $("#openMessage").alert();
+            setTimeout(function () {
+                $("#openMessage").alert('close');
+            }, 30000);
+        });
+    }
+    function inactivateQueue() {
+        $("#inactivateModal").modal('hide');
+        olwclient.inactivateQueue('{{ queue.name }}', function () {
+            $("#inactivateMessageBody").html('<div id="inactivateMessage" class="fade in alert alert-success">Queue inactivate request sent successfully.</div>');
+            $("#inactivateMessage").alert();
+            setTimeout(function () {
+                $("#inactivateMessage").alert('close');
+            }, 30000);
+
+        }, function (errType, message) {
+            $("#inactivateMessageBody").html('<div id="inactivateMessage" class="fade in alert alert-danger">' + message + '</div>');
+            $("#inactivateMessage").alert();
+            setTimeout(function () {
+                $("#inactivateMessage").alert('close');
+            }, 30000);
+        });
+    }
+    function activateQueue() {
+        $("#activateModal").modal('hide');
+        olwclient.activateQueue('{{ queue.name }}', function () {
+            $("#activateMessageBody").html('<div id="activateMessage" class="fade in alert alert-success">Queue activate request sent successfully.</div>');
+            $("#activateMessage").alert();
+            setTimeout(function () {
+                $("#activateMessage").alert('close');
+            }, 30000);
+
+        }, function (errType, message) {
+            $("#activateMessageBody").html('<div id="activateMessage" class="fade in alert alert-danger">' + message + '</div>');
+            $("#activateMessage").alert();
+            setTimeout(function () {
+                $("#activateMessage").alert('close');
+            }, 30000);
+        });
+    }
+</script>
+
+<div><!-- queue management -->
+	<button class="btn btn-primary btn-lg {% if user.username in queue.admins %}active{%else%}disabled{% endif %}" data-toggle="modal" data-target="#closeModal">Close</button>
+	<button class="btn btn-primary btn-lg {% if user.username in queue.admins %}active{%else%}disabled{% endif %}" data-toggle="modal" data-target="#openModal">Open</button>
+	<button class="btn btn-primary btn-lg {% if user.username in queue.admins %}active{%else%}disabled{% endif %}" data-toggle="modal" data-target="#inactivateModal">Inactivate</button>
+	<button class="btn btn-primary btn-lg {% if user.username in queue.admins %}active{%else%}disabled{% endif %}" data-toggle="modal" data-target="#activateModal">Activate</button>	
+
+	<div class="modal fade" id="closeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">Close Queue?</h4>
+				</div>
+				<div class="modal-body">
+					The queue will be closed, and will no longer accept jobs.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+					<button onClick="closeQueue(); return false;" type="button" class="btn btn-primary">Close</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->                                                                                                                
+	</div>
+	<div class="modal fade" id="openModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">Open Queue?</h4>
+				</div>
+				<div class="modal-body">
+					The queue will be opened, and will accept jobs.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+					<button onClick="openQueue(); return false;" type="button" class="btn btn-primary">Open</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->                                                                                                                
+	</div>
+	<div class="modal fade" id="inactivateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">Inactivate Queue?</h4>
+				</div>
+				<div class="modal-body">
+					The queue will be inactivated, it will accept jobs, but they will not be dispatched.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+					<button onClick="inactivateQueue(); return false;" type="button" class="btn btn-primary">Inactivate</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->                                                                                                                
+	</div>
+	<div class="modal fade" id="activateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">Activate Queue?</h4>
+				</div>
+				<div class="modal-body">
+					The queue will be activated, jobs in the queue will be dispatched.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+					<button onClick="activateQueue(); return false;" type="button" class="btn btn-primary">Activate</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->                                                                                                                
+	</div>
+	
+</div>
+
+
+<h1 data-toggle="tooltip" title="The name of the queue." >Queue: {{ queue.name }}</h1>
+<p data-toggle="tooltip" title="Describes the typical use of the queue.">{{ queue.description }}</p>
+<dl class="dl-horizontal">
+	<dt>Allowed Users</dt><dd>{% for user in queue.allowed_users %}{{ user }} {% empty %}All Users{% endfor %}</dd>
+	<dt>Attributes</dt><dd id="attributeList">{% for attr in queue.attributes %}{{ attr.friendly }}{% if not forloop.last %}<br />{% endif %} {% endfor %}</dd>
+	<dt>Host List</dt><dd>{% for h in queue.host_list %}{{ h }} {% empty %}All Hosts{% endfor %}</dd>
+	<dt>Nice</dt><dd>{{ queue.nice }}</dd>
+	<dt>Priority</dt><dd>{{ queue.priority }}</dd>
+	<dt>Queue Administrators</dt><dd>{% for ad in queue.admins %}{{ ad }}{% if not forloop.last %}<br />{% endif %} {% empty %}No Admins Defined{% endfor %}</dd>
+	<dt>Status</dt><dd id="statusList">{% for stat in queue.statuses %}{{ stat.friendly }}{% if not forloop.last %}<br />{% endif %}{% endfor %}</dd>
+	<dt>Admins</dt><dd>{% for admin in queue.admins %}{{ admin }}{% if not forloop.last %}<br />{% endif %}{% endfor %}</dd>
+	{% if queue.cluster_type == "openlava" %}
+		<dt>Accept Interval</dt><dd>{{ queue.accept_interval_timedelta }}</dd>
+		<dt>Checkpoint Data Directory</dt><dd>{{ queue.checkpoint_data_directory|default:"None configured" }}</dd>
+		<dt>Checkpoint Period</dt><dd>{% if queue.checkpoint_period != -1 %}{{ queue.checkpoint_period_timedelta }}{% else %}None configured{% endif %}</dd>
+		<dt>Default Processor Limit</dt><dd>{% if queue.default_slots_per_job != -1 %}{{ queue.default_slots_per_job }}{% else %}None configured{% endif %}</dd>
+		<dt>Host Specification</dt><dd>{{ queue.host_specification|default:"None configured" }}</dd>
+		<dt>Job Dispatch Window</dt><dd>{{ queue.dispatch_window|default:"None configured" }}</dd>
+		<dt>Job Limit per User</dt><dd>{% if queue.max_jobs_per_user == 2147483647 %}Unlimited{%else %}{{ queue.max_jobs_per_user }}{% endif %}</dd>
+		<dt>Job Limit per Processor</dt><dd>{% if queue.max_jobs_per_processor == 2147483648.0 %}Unlimited{% else %}{{ queue.max_jobs_per_processor }}{% endif %}</dd>
+		<dt>Job Run Window</dt><dd>{{ queue.run_window|default:"None configured" }}</dd>
+		<dt>Job Starter Command</dt><dd>{{ queue.job_starter_command|default:"None configured" }}</dd>
+		<dt>Max Jobs Per Host</dt><dd>{% if queue.max_jobs_per_host == 2147483647 %}Unlimited{% else %}{{ queue.max_jobs_per_host }}{% endif %}</dd>
+		<dt>Max Slots Per Job</dt><dd>{% if queue.max_slots_per_job == -1 %}Unlimited{% else %}{{ queue.max_slots_per_job }}{% endif %}</dd>
+		<dt>Migration Threashold</dt><dd>{% if queue.migration_threshold == 2147483647 %}Never migrate{% else %}{{ queue.migration_threshold_timedelta }}{% endif %}</dd>
+		<dt>Min Processor Limit</dt><dd>{% if queue.min_slots_per_job == -1 %}Unlimited{% else %}{{ queue.min_slots_per_job }}{% endif %}</dd>
+		<dt>Pre Execution Command</dt><dd>{{ queue.pre_execution_command|default:"None configured" }}</dd>
+		<dt>Pre Post Execution User</dt><dd>{{ queue.pre_post_user_name|default:"None configured" }}</dd>
+		<dt>Post Execution Command</dt><dd>{{ queue.post_execution_command|default:"None configured" }}</dd>
+		<dt>Requeue Exit Values</dt><dd>{% for value in queue.requeue_exit_values %}{{value}}{% if not forloop.last %}, {% endif %}{% empty %}None configured{% endfor %}</dd>
+		<dt>Resource Requirements</dt><dd>{{ queue.resource_requirements|default:"None configured" }}</dd>
+		<dt>Resume Command</dt><dd>{{ queue.resume_action_command|default:"None configured" }}</dd>
+		<dt>Resume Condition</dt><dd>{{ queue.resume_condition|default:"None configured" }}</dd>
+		<dt>Scheduling Delay</dt><dd>{% if queue.scheduling_delay == 2147483647 %}None configured{% else %}{{ queue.scheduling_delay_timedelta }}{% endif %}</dd>
+		<dt>Slot Hold Time</dt><dd>{{ queue.slot_hold_time_timedelta }}</dd>
+		<dt>Stop Condition</dt><dd>{{ queue.stop_condition|default:"None configured" }}</dd>
+		<dt>Suspend Command</dt><dd>{{ queue.suspend_action_command|default:"None configured" }}</dd>
+		<dt>Terminate Command</dt><dd>{{ queue.terminate_action_command|default:"None configured" }}</dd>
+	{% endif %}
+</dl>
+
+<h1>Utilization</h1>
+<table class="table table-striped table-condensed">
+	<thead>
+		<tr>
+			<th>Total Num Jobs (Slots)</th>
+			<th>Num Pending Jobs (Slots)</th>
+			<th>Num Running Jobs (Slots)</th>
+			<th>Num Suspended Jobs (Slots)</th>
+			{% if queue.cluster_type == "openlava" %}
+				<th>Num User Suspended Jobs (Slots)</th>
+				<th>Num System Suspended Jobs (Slots)</th>
+			{% endif %}
+			<th>Num Reserved Slots</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td id="totalJobSlots">{{ queue.total_jobs }} ({{ queue.total_slots }})</td>
+			<td id="pendingJobSlots">{{ queue.num_pending_jobs }} ({{queue.num_pending_slots}})</td>
+			<td id="runningJobSlots">{{ queue.num_running_jobs }} ({{ queue.num_running_slots }})</td>
+			<td id="suspendedJobSlots">{{ queue.num_suspended_jobs }} ({{ queue.num_suspended_jobs }})</td>
+			{% if queue.cluster_type == "openlava" %}
+				<td id="userSuspendedJobSlots">{{ queue.num_user_suspended_jobs }} ({{ queue.num_user_suspended_slots }})</td>
+				<td id="systemSuspendedJobSlots">{{ queue.num_system_suspended_jobs }} ({{ queue.num_system_suspended_slots }})</td>
+			{% endif %}
+			<td id="reservedSlots">{{ queue.num_reserved_slots }}</td>
+		</tr>
+	</tbody>
+</table>
+
+<h1>Runtime Resource Limits</h1>
+<table class="table table-striped table-condensed">
+    <thead>
+        <tr>
+            <th>Resource</th>
+            <th>Soft Limit</th>
+            <th>Hard Limit</th>
+        </tr>
+    </thead>
+    <tbody>
+		{% for res in queue.runtime_limits %}
+        <tr>
+			<td>{{ res.name }}</td>
+			<td>{% if queue.cluster_type == "openlava" and res.soft_limit == -1 %}Unlimited{% else %} {{ res.soft_limit }}{% if res.unit %} {{ res.unit }}{% endif %}{% endif %}</td>
+			<td>{% if queue.cluster_type == "openlava" and res.hard_limit == -1 %}Unlimited{% else %} {{ res.hard_limit }}{% if res.unit %} {{ res.unit }}{% endif %}{% endif %}</td>
+        </tr>
+		{% endfor %}
+	</tbody>
+</table>
+
+<h1>Jobs</h1>
+{% include "openlavaweb/widgets/job_list.html" with job_list=queue.jobs job_limit=20 %}
+
+<a href="{% url "olw_job_list" %}?queue_name={{ queue.name }}">View All Jobs</a>
+{% endblock %}

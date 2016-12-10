@@ -1,0 +1,301 @@
+{% extends "openlavaweb/base.html" %}
+{% block content %}
+<div id="failMessageBody"></div>
+<div id="closeMessageBody"></div>
+<div id="openMessageBody"></div>
+<div id="statusMessageBody"></div>
+<script>
+    var url='{% url "olw_host_view" host.name %}';
+    function setStatus(message,cls) {
+		var html='<div id="statusMessage" class="fade in alert alert-'+cls+'">'+message+'</div>';
+		if ($("#statusMessageBody").html() != html ) {
+			$("#statusMessageBody").html(html);	
+		}
+	}
+	{% if host.is_busy %}
+		setStatus("<strong>Busy</strong>: The host is busy, no new jobs can be accepted at this time.", "info");
+	{% elif host.is_down %}
+		setStatus("<strong>Down</strong>: The host is down.", "danger");
+	{% elif host.is_closed %}
+		setStatus("<strong>Closed</strong>: The host is closed.", "warning");
+	{% else %}
+		setStatus("<strong>OK</strong>: The host is ready to execute jobs", "success");
+	{% endif %}
+	
+	function updateHostInfo(host) {
+		if (host.is_busy) {
+			setStatus("<strong>Busy</strong>: The host is busy, no new jobs can be accepted at this time.", "info");
+		}else if (host.is_down) {
+			setStatus("<strong>Down</strong>: The host is down.", "danger");
+		}else if (host.is_closed) {
+			setStatus("<strong>Closed</strong>: The host is closed.", "warning");
+		}else{
+			setStatus("<strong>OK</strong>: The host is ready to execute jobs", "success");
+		}
+		var statuses=[];
+		jQuery.each(host.statuses, function(index, status) {
+			statuses.push( status.friendly + ": " + status.description );
+		});
+		$("#status").html(statuses.join("<br>"));
+		
+		$("#max_jobs").text(host.max_jobs);
+		$("#total_jobs").text(host.total_jobs);
+		$("#num_running_jobs").text(host.num_running_jobs);
+		$("#num_suspended_jobs").text(host.num_suspended_jobs);
+		$("#max_slots").text(host.max_slots);
+		$("#total_slots").text(host.total_slots);
+		$("#num_running_slots").text(host.num_running_slots);
+		$("#num_suspended_slots").text(host.num_suspended_slots);
+		$("#num_reserved_slots").text(host.num_reserved_slots);
+		
+		if (host.cluster_type=="openlava") {
+			$("#num_system_suspended_jobs").text(host.num_system_suspended_jobs);
+			$("#num_user_suspended_jobs").text(host.num_user_suspended_jobs);
+			$("#num_system_suspended_slots").text(host.num_system_suspended_slots);
+			$("#num_user_suspended_slots").text(host.num_user_suspended_slots);
+		}
+		var loadNames="<th>&nbsp;</th>";
+		jQuery.each(host.load_information.names, function(index, name) {
+			loadNames+="<th>"+name+"</th>";
+		});
+		$("#loadNames").empty();
+		$("#loadNames").html(loadNames);
+		var indexes="";
+		jQuery.each(host.load_information.values, function(idx, index) {
+			indexes+="<tr><th>"+index.name + "</th>";
+			jQuery.each(index.values, function(i, value) {
+				indexes+="<td>";
+				if (host.cluster_type == "openlava"){
+					indexes+=value.toFixed(2);
+				}else{
+					indexes+=value;
+				}
+				indexes+="</td>";
+			});
+			indexes+="</tr>";
+		});
+		$("#indexes").empty();
+		$("#indexes").html(indexes);
+		var html="";
+        var newJobs = [];
+		jQuery.each(host.jobs, function(index, job){
+            var js = 'jl_' + job.job_id + '_' + job.array_index + '_';
+            if ($(js + "_row").html()){
+                html += "<tr>" + $(sel + "_row").html() + "</tr>";
+            }else {
+                html += '<tr id="' + js + 'row" class="active">';
+                html += '<td><a href="' + job.url + '">' + job.job_id;
+                if (job.array_index > 0) {
+                    html += "[" + job.array_index + "]";
+                }
+                html += '</a></td>';
+                html += '<td><a href="' + job.user_url + '">' + job.user_name + "</a></td>";
+                html += '<td id="' + js + 'status">' + job.status['friendly'] + "</td>";
+                html += '<td id="' + js + 'submit_time">Loading...</td>';
+                html += '<td id="' + js + 'start_time">Loading...</td>';
+                html += '<td id="' + js + 'end_time">Loading...</td';
+                html += "</tr>";
+                newJobs.push([job.job_id, job.array_index]);
+            }
+		});
+
+		if (html=="") {
+			html="<tr><td colspan='6'>No Jobs</td></tr>";
+		}
+
+		$("#jobs").html(html);
+		jQuery.each(newJobs, function(index, j){
+            updateJob(j[0], j[1]);
+        });
+	}
+	
+	
+	function update(){
+        olwclient.serverUrl("{% url 'olw_system_view' %}");
+		olwclient.Host.getHost('{{ host.name }}', function(host){
+            updateHostInfo(host);
+            setTimeout(update, 30000);
+        }, function(exception, message){
+            $("#failMessageBody").html('<div id="failMessage" class="fade in alert alert-danger">Error! Unable to load host information: ' + message + '</div>');
+            $("#failMessage").alert();
+            $("#statusMessageBody").empty();
+            setTimeout(function(){
+				$("#failMessage").alert('close');
+			},15000);
+            setTimeout(update, 30000);
+        });
+    }
+
+    $(function(){
+            olwclient.serverUrl("{% url 'olw_system_view' %}");
+            setTimeout(update, 30000);
+    });
+	
+	function closeHost(){
+        $("#closeModal").modal('hide');
+        olwclient.serverUrl("{% url 'olw_system_view' %}");
+        olwclient.openHost("{{ host.name }}", function(){
+            $("#closeMessageBody").html('<div id="closeMessage" class="fade in alert alert-success">Host close request sent successfully.</div>');
+            setTimeout(function(){
+                $("#closeMessage").alert('close');
+            },30000);
+        }, function(exception, message){
+            $("#closeMessageBody").html('<div id="closeMessage" class="fade in alert alert-danger">Host close request failed.' + message +' </div>');
+            setTimeout(function(){
+                $("#closeMessage").alert('close');
+            },30000);
+        });
+    }
+
+    function openHost(){
+        $("#openModal").modal('hide');
+        olwclient.serverUrl("{% url 'olw_system_view' %}");
+        olwclient.openHost("{{ host.name }}", function(){
+            $("#openMessageBody").html('<div id="openMessage" class="fade in alert alert-success">Host open request sent successfully.</div>');
+            setTimeout(function(){
+                $("#openMessage").alert('close');
+            },30000);
+        }, function(exception, message){
+            $("#openMessageBody").html('<div id="openMessage" class="fade in alert alert-danger">Host open request failed.' + message +' </div>');
+            setTimeout(function(){
+                $("#openMessage").alert('close');
+            },30000);
+        });
+    }
+
+</script>
+
+<div><!-- queue management -->
+	<button class="btn btn-primary btn-lg {% if user.username in host.admins %}active{%else%}disabled{% endif %}" data-toggle="modal" data-target="#closeModal">Close</button>
+	<button class="btn btn-primary btn-lg {% if user.username in host.admins %}active{%else%}disabled{% endif %}" data-toggle="modal" data-target="#openModal">Open</button>
+	
+	<div class="modal fade" id="closeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">Close Host?</h4>
+				</div>
+				<div class="modal-body">
+					The host will be closed, and will no longer execute jobs.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+					<button onClick="closeHost(); return false;" type="button" class="btn btn-primary">Close</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->                                                                                                                
+	</div>
+	<div class="modal fade" id="openModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">Open Host?</h4>
+				</div>
+				<div class="modal-body">
+					The host will be opened, and will accept jobs.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+					<button onClick="openHost(); return false;" type="button" class="btn btn-primary">Open</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->                                                                                                                
+	</div>
+</div>
+	
+<h1>Host: {{ host.host_name }}</h1>
+
+<dl class="dl-horizontal">
+	<dt>Status</dt><dd id="status">{% for status in host.statuses %}{{ status.friendly }}: {{ status.description }}{% if not forloop.last %}<br />{% endif %}{% endfor %}</dd>
+	<dt>Host Type</dt><dd>{{ host.host_type }}</dd>
+	<dt>Host Model</dt><dd>{{ host.host_model }}</dd>
+	{% if host.cluster_type == "openlava" %}
+	<dt>Compute Type</dt><dd>{% if host.is_server %}Server{% else %}Submission Host{% endif %}</dd>
+	<dt>CPU Factor</dt><dd>{{ host.cpu_factor }}</dd>
+	<dt>Checkpoint Support</dt><dd>{% if host.has_checkpoint_support %}Yes{% else %}No{% endif %}</dd>
+	<dt>Kernel Checkpoint Copy Support</dt><dd>{% if host.has_kernel_checkpoint_support %}Yes{% else %}No{% endif %}</dd>
+	{% endif %}
+	<dt>Admins</dt><dd>{% for admin in host.admins %}{{ admin }}{% if not forloop.last %}<br />{% endif %}{% endfor%}</dd>
+	<dt>Max Processors</dt><dd>{{ host.max_processors }} Processors</dd>
+	<dt>Max Ram</dt><dd>{{ host.max_ram }}MB</dd>
+	<dt>Max Swap</dt><dd>{{ host.max_swap }}MB</dd>
+	<dt>Max Temp Space</dt><dd> {{ host.max_tmp }}MB</dd>
+	{% if host.cluster_type == "openlava" %}
+	<dt>Number of Disks</dt><dd>{{ host.num_disks }} Disks</dd>
+	{% endif %}
+</dl>
+
+<h1>Utilization</h1>
+<table class="table table-striped table-condensed">
+	<thead>
+		<tr>
+			<td>&nbsp;</td>
+			<th>Max</th>
+			<th>Total</th>
+			<th>Running</th>
+			<th>Suspended</th>
+			{% if host.cluster_type == "openlava" %}
+			<th>System Suspended</th>
+			<th>User Suspended</th>
+			{% endif %}
+			<th>Reserved</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Jobs</th>
+			<td id="max_jobs">{{ host.max_jobs }}</td>
+			<td id="total_jobs">{{ host.total_jobs }}</td>
+			<td id="num_running_jobs">{{ host.num_running_jobs }}</td>
+			<td id="num_suspended_jobs">{{ host.num_suspended_jobs }}</td>
+			{% if host.cluster_type == "openlava" %}
+			<td id="num_system_suspended_jobs">{{ host.num_system_suspended_jobs }}</td>
+			<td id="num_user_suspended_jobs">{{ host.num_user_suspended_jobs }}</td>
+			{% endif %}
+			<td>N/A</td>
+		</tr>
+		<tr>
+			<th>Slots</th>
+			<td id="max_slots">{{ host.max_slots }}</td>
+			<td id="total_slots">{{ host.total_slots }}</td>
+			<td id="num_running_slots">{{ host.num_running_slots }}</td>
+			<td id="num_suspended_slots">{{ host.num_suspended_slots }}</td>
+			{% if host.cluster_type == "openlava" %}
+			<td id="num_system_suspended_slots">{{ host.num_system_suspended_slots }}</td>
+			<td id="num_user_suspended_slots">{{ host.num_user_suspended_slots }}</td>
+			{% endif %}
+			<td id="num_reserved_slots">{{ host.num_reserved_slots|default_if_none:"Not Applicable" }}</td>
+		</tr>
+	</tbody>
+</table>
+<h1>Load Information</h1>
+<table class="table table-striped table-condensed">
+	<thead>
+		<tr id="loadNames">
+			<th>&nbsp;</th>
+			{% for name in host.load_information.names %}
+			<th>{{ name }}</th>
+			{% endfor %}
+		</tr>
+	</thead>
+	<tbody id="indexes">
+		{% for index in host.load_information.values %}
+		<tr>
+			<th>{{ index.name }}</th>
+			{% for value in index.values %}
+			<td>{% if host.cluster_type == "openlava" %}{{ value|floatformat:2 }}{% else %}{{value}}{% endif %}</td>
+			{% endfor %}
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+
+<h1>Resources</h1>
+{% include "openlavaweb/widgets/resource_list.html" with resource_list=host.resources%}
+
+
+<h1>Jobs</h1>
+{% include "openlavaweb/widgets/job_list.html" with job_list=host.jobs job_limit=20 %}
+{% endblock %}
