@@ -1,0 +1,518 @@
+@import "twitter/bootstrap/bootstrap";
+@import "twitter/bootstrap/responsive";
+@import "delta_input";
+
+body {
+  padding-top: 10px;
+}
+
+// Set the correct sprite paths
+@iconSpritePath: image-url('twitter/bootstrap/glyphicons-halflings.png');
+@iconWhiteSpritePath: image-url('twitter/bootstrap/glyphicons-halflings-white.png');
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+@fontAwesomeEotPath: asset-url('fontawesome-webfont.eot');
+@fontAwesomeEotPath_iefix: asset-url('fontawesome-webfont.eot?#iefix');
+@fontAwesomeWoffPath: asset-url('fontawesome-webfont.woff');
+@fontAwesomeTtfPath: asset-url('fontawesome-webfont.ttf');
+@fontAwesomeSvgPath: asset-url('fontawesome-webfont.svg#fontawesomeregular');
+@import 'fontawesome/font-awesome';
+
+// Glyphicons
+//@import "twitter/bootstrap/sprites.less";
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
+//
+// Example:
+// @linkColor: #ff0000;
+
+
+// main ui colours
+@mainRedColor: #ED0606;
+
+// article status
+@articleUsedColor: green;
+@articlePartusedColor: #d50;
+@articleUnusedColor: red;
+@articleUnavailColor: #999;
+@articleUpdatedColor: #468847;
+
+// dim colors by this amount when the information is less important
+@nonessentialDim: 35%;
+
+
+// Fix empty dd tags in horizontal dl, see https://github.com/twitter/bootstrap/issues/4062
+.dl-horizontal {
+    dd { .clearfix(); }
+}
+
+// Do not use additional margin for input in table
+.form-horizontal .control-group.control-group-intable,
+.form-horizontal .controls.controls-intable,
+.input-prepend.intable {
+  margin: 0;
+}
+
+// Light tooltips without empty space below tables
+.tooltip-inner {
+  color: #000;
+  background-color: rgb(245,245,245);
+  border: 1px solid #ccc;
+}
+.tooltip-inner .table {
+  margin-bottom: 0;
+}
+
+
+.logo {
+  margin: 10px 0 0 30px;
+  float: left;
+  font-size: 35px;
+  font-weight: bold;
+  display: block;
+  color: @mainRedColor;
+
+  span {
+    padding: 2px 4px;
+    color: #ffffff;
+    background-color: @mainRedColor;
+  }
+}
+
+
+section {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+footer {
+  color: #888;
+  margin-top: 40px;
+  padding-top: 14px;
+  margin-bottom: 20px;
+  border-top: 1px solid #e4e4e4;
+
+  a {
+    color: mix(#888, @linkColor, 70%);
+  }
+}
+
+
+table {
+
+  a.sortdown:after {
+    content: ' \25BC';
+  }
+  a.sortup:after {
+    content: ' \25B2';
+  }
+
+  tr.list-heading {
+    background-color: #efefef;
+    td:first-child {
+      text-align: left;
+    }
+    small {
+      color: inherit; // keep it readable instead of gray
+    }
+  }
+  th.numeric, td.numeric {
+    text-align: right;
+  }
+  td.odd {
+    background-color: @tableBackgroundAccent;
+  }
+  th.left, td.left     { text-align: left; }
+  th.right, td.right   { text-align: right; }
+  th.center, td.center { text-align: center; }
+
+  td.main_info {
+    font-weight: bold;
+  }
+
+  tr.selected td {
+    background-color: @successBackground;
+  }
+}
+
+.center, td.center, th.center {
+  text-align: center;
+}
+
+// Navigation with embedded tabs
+.nav-tabs-with-heading {
+  > li {
+    line-height: 40px;
+    margin-top: 16.5px;
+    a { padding-bottom: 9px; }
+  }
+  > li.heading {
+    > h1, > h2, > h3 {
+      font-size: 31.5px;
+      line-height: 40px;
+      margin: 0;
+    }
+    margin: 10px 1em 5px 0;
+  }
+}
+
+// Error page
+.large-error-icon {
+  float: left;
+  text-align: right;
+  font-size: 160px;
+  color: lightgrey;
+  margin-left: 25px;
+}
+
+// Tasks ..
+.accepted {
+  color: #468847;
+}
+.unaccepted {
+  color: #B94A48;
+}
+
+// Wiki
+#wikiContent {
+  .editsection {
+    display: none;
+  }
+  .mw-headline a {
+    color: @textColor;
+    text-decoration: none;
+  }
+}
+
+// ordering
+.used {
+  color: @articleUsedColor;
+}
+.unused {
+  color: @articleUnusedColor;
+  margin-right: 0.5em;
+}
+.partused {
+  color: @articlePartusedColor;
+}
+.btn-ordering, .btn-group .btn-ordering {
+  font-size: 10px;
+  line-height: 14px;
+  padding: 4px 8px;
+  margin-top: -2px;
+}
+
+#order-footer, .article-info {
+  text-align: left;
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  background-color: #E4EED6;
+  border-top: 2px solid #78B74E;
+
+  #total-sum {
+    width: 22em;
+    margin: .5em 2em 0 0;
+    float: right;
+    #order-button {
+      margin: .5em 0;
+
+      input:disabled {
+        background-color: red; }
+    }
+  }
+}
+
+#order-footer {
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+
+.article-info {
+  z-index: 2;
+  width: 40em;
+  height: 8em;
+  border: none;
+  left: 30px;
+
+  .article-name {
+    text-align: center;
+    margin: 2px 0;
+    margin-bottom: 5px;
+    width: 100%;
+    font-weight: bold;
+  }
+  .pull-right {
+    width: 35%;
+  }
+  .pull-left {
+    width: 60%;
+  }
+}
+
+tr.order-article .article-info {
+  display: none;
+}
+
+tr.order-article:hover .article-info {
+  display: block;
+}
+
+
+// ********* Articles
+
+tr.just-updated {
+  color: @articleUpdatedColor;
+}
+
+tr.unavailable {
+  color: @articleUnavailColor;
+}
+
+// articles edit all
+.field_with_errors {
+  input, select {
+    border-color: red;
+  }
+}
+
+// editable article list can be more compact
+.ordered-articles input {
+  margin-bottom: 0;
+}
+
+// allow content to appear without sudden table change (receive)
+.units_delta {
+  min-width: 3.5em;
+}
+
+// small cells with just a 'x' or '='
+td.symbol, th.symbol {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+.symbol              { color: tint(@textColor, @nonessentialDim); }
+.used        .symbol { color: tint(@articleUsedColor, @nonessentialDim); }
+.unused      .symbol { color: tint(@articleUnusedColor, @nonessentialDim); }
+.partused    .symbol { color: tint(@articlePartusedColor, @nonessentialDim); }
+.unavailable .symbol { color: @articleUnavailColor; }
+
+// hide symbols completely on small screens to save space
+@media (max-width: 768px) {
+  .symbol {
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+// ********* Tweaks & fixes
+
+// Fix bootstrap dropdown menu on mobile
+// https://github.com/twbs/bootstrap/issues/4550#issuecomment-31916049
+.dropdown-backdrop { position: static; }
+
+// need more space for supplier&order information (in German, at least)
+.dl-horizontal {
+  dt { width: 160px; }
+  dd { margin-left: 170px; }
+}
+
+// get rid of extra bottom margin inside well
+.well p:last-child {
+  margin-bottom: 0;
+}
+
+// center table rows vertically (including form elements)
+table.table {
+  td, th {
+    vertical-align: middle;
+  }
+  select, textarea, input, .uneditable-input,
+  .input-append, .input-prepend {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.settings {
+  .settings-group {
+    margin-bottom: 10px;
+    .control-label {
+      margin: 5px 0 0 0;
+    }
+  }
+  .control-group {
+    margin-bottom: 5px;
+  }
+  .control-group.h_wrapper {
+    margin-bottom: 5px;
+  }
+  .control-group.select {
+    margin-bottom: 15px
+  }
+}
+
+// inline (boolean) position after/before heading
+label {
+  h1, h2, h3, h4 {
+    input[type=checkbox] {
+      margin: auto 0.3em auto 0.3em;
+    }
+  }
+}
+// fix checkbox form height
+.controls > label.checkbox { margin-top: 5px; }
+.settings-group .controls > label.checkbox { margin-top: 0; }
+
+
+// it's a bit distracting
+.icon-asterisk {
+  font-size: 80%;
+  vertical-align: middle;
+  padding-bottom: 0.4ex;
+}
+
+// allow buttons as input add-on (with proper height)
+.input-append button.add-on {
+  height: inherit;
+}
+
+// inline form elements
+.inline {
+  display: inline;
+}
+
+// show package icon after amount of wholesale units
+.package-image (@align) {
+  background-image: image-url('package-bg.png');
+  background-repeat: no-repeat;
+  background-position: @align center;
+}
+input.package {
+  .package-image(right);
+  // disabled and readonly definitions though
+  &[disabled], &[readonly] {
+    background-color: @inputDisabledBackground;
+  }
+}
+i.package {
+  .package-image(left);
+  min-width: 18px;
+  min-height: 18px;
+  vertical-align: baseline;
+  font-style: normal;
+  padding-left: 20px;
+  @media (max-width: 979px) { padding-left: 0; }
+}
+i.package.icon-only {
+  padding-left: 6px;
+  background-position: right;
+  display: inline-block;
+}
+.package              { color: tint(@textColor, @nonessentialDim); }
+.used        .package { color: tint(@articleUsedColor, @nonessentialDim); }
+.unused      .package { color: tint(@articleUnusedColor, @nonessentialDim); }
+.partused    .package { color: tint(@articlePartusedColor, @nonessentialDim); }
+.unavailable .package { color: @articleUnavailColor; }
+
+// very small inputs - need !important for responsive selectors
+.input-nano {
+  width: 30px !important;
+}
+
+// get rid of extra space on bottom of dialog with form
+.modal form {
+  margin: 0;
+}
+
+// multiple-column layout in forms (landscape tablet and wider only)
+@media (min-width: 768px) {
+  .form-horizontal .fold-line {
+    .control-group {
+      float: left;
+    }
+    .control-group + .control-group {
+      .control-label {
+        width: auto;
+        margin: 0 10px;
+      }
+      .controls {
+        float: left;
+        margin-left: 0;
+      }
+      // fix margin somehow off
+      // XXX there must be a better way
+      margin-bottom: 0;
+      .help-block {
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+    }
+    .control-group:last-child {
+      float: none;
+      .controls {
+        float: none;
+      }
+    }
+    // allow to add a hint for the whole line
+    > .help-block {
+      clear: both;
+      margin-left: 180px;
+      position: relative;
+      top: -2.5ex;
+    }
+  }
+}
+// allow to have indicator text instead of input with same markup
+.control-text {
+  margin-top: 5px;
+}
+
+// unlock button same size as warning sign
+.input-prepend button.unlocker {
+  padding-right: 6px;
+  padding-left: 7px;
+}
+
+// TODO: Remove the .panel defines after updating Bootstrap to >=3.0
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.panel-default {
+  border-color: #ddd;
+}
+
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px
+}
+
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #f5f5f5;
+  border-color: #ddd
+}
+
+.panel-body {
+  padding: 15px;
+  padding-bottom: 0px;
+}

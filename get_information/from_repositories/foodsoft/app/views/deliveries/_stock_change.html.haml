@@ -1,0 +1,6 @@
+- if stock_change.stock_article.new_record?
+  = simple_fields_for "delivery[new_stock_changes_new_stock_article][]", stock_change do |f|
+    = render :partial => 'stock_change_fields', :locals => {:f => f}
+- else
+  = simple_fields_for "delivery[new_stock_changes][]", stock_change do |f|
+    = render :partial => 'stock_change_fields', :locals => {:f => f}

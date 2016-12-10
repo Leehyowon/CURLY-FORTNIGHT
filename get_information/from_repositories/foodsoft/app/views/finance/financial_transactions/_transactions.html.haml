@@ -1,0 +1,29 @@
+- with_ordergroup = local_assigns[:with_ordergroup]
+- with_csv = local_assigns[:with_csv]
+.pull-right
+  - if with_csv
+    .btn-group
+      = link_to url_for(search: params[:q], format: :csv), class: 'btn' do
+        = glyph :download
+        CSV
+  - if @financial_transactions.total_pages > 1
+    .btn-group= items_per_page wrap: false
+= pagination_links_remote @financial_transactions
+%table.table.table-striped
+  %thead
+    %tr
+      %th= sort_link_helper heading_helper(FinancialTransaction, :created_on), "date"
+      - if with_ordergroup
+        %th= heading_helper FinancialTransaction, :ordergroup
+      %th= heading_helper FinancialTransaction, :user
+      %th= sort_link_helper heading_helper(FinancialTransaction, :note), "note"
+      %th= sort_link_helper heading_helper(FinancialTransaction, :amount), "amount"
+  %tbody
+    - @financial_transactions.each do |t|
+      %tr
+        %td= format_time(t.created_on)
+        - if with_ordergroup
+          %td= h link_to t.ordergroup.name, finance_ordergroup_transactions_path(t.ordergroup)
+        %td= h show_user(t.user)
+        %td= h t.note
+        %td.currency{:style => "color:#{t.amount < 0 ? 'red' : 'black'}; width:5em"}= number_to_currency(t.amount)

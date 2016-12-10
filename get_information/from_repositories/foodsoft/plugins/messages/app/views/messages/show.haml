@@ -1,0 +1,32 @@
+- title t('.title')
+
+%div{:style => "width:40em"}
+  %table{:style => "width:25em"}
+    %tr
+      %td= t '.from'
+      %td=h @message.sender_name
+    %tr
+      %td= t '.to'
+      %td= @message.recipients.map {|e| e.name}.join(', ')
+    - if @message.group
+      %tr
+        %td= t '.group'
+        %td= @message.group.name
+    - if @message.reply_to
+      %tr
+        %td= t '.reply_to'
+        %td= link_to @message.reply_to_message.subject, message_path(@message.reply_to)
+    %tr
+      %td= t '.subject'
+      %td
+        %b=h @message.subject
+    %tr
+      %td= t '.sent_on'
+      %td= format_time(@message.created_at)
+  %hr/
+  %p= simple_format(h(@message.body))
+  %hr/
+  %p
+    = link_to t('.reply'), new_message_path(:message => {:reply_to => @message.id}), class: 'btn'
+    |
+    = link_to t('.all_messages'), messages_path

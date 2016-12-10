@@ -1,0 +1,52 @@
+- title t('.title')
+
+%dl
+  %dt= heading_helper Delivery, :supplier
+  %dd= @delivery.supplier.name
+  %dt= heading_helper Delivery, :delivered_on
+  %dd= @delivery.delivered_on
+  %dt= t 'deliveries.invoice_amount'
+  %dd= link_to_invoice(@delivery)
+  - if @delivery.invoice
+    %dt= t 'deliveries.invoice_net_amount'
+    %dd= number_to_currency @delivery.invoice.net_amount
+  %dt= heading_helper Delivery, :note
+  %dd= simple_format @delivery.note
+
+%h2= t '.title_articles'
+%table.table.table-striped(style="width:500px")
+  %thead
+    %tr
+      %th= Article.model_name.human
+      %th= heading_helper StockArticle, :unit
+      %th.numeric= heading_helper GroupOrderArticle, :quantity  # quantity to order, although technically this will be a StockChange
+      %th.numeric= heading_helper Article, :price
+      %th.numeric= t '.sum'
+  %tbody
+    - total_net, total_gross = 0,0
+    - @delivery.stock_changes.each do |stock_change|
+      - quantity = stock_change.quantity
+      - sum = quantity * stock_change.stock_article.price
+      - total_net += sum
+      - total_gross += quantity * stock_change.stock_article.gross_price
+      %tr
+        %td= stock_change.stock_article.name
+        %td= stock_change.stock_article.unit
+        %td.numeric= quantity
+        %td.numeric= number_to_currency stock_change.stock_article.price
+        %td.numeric= number_to_currency sum
+  %tfoot
+    %tr
+      %td(colspan="4")= t '.sum_net'
+      %td.numeric= number_to_currency total_net
+    %tr
+      %td(colspan="4")= t '.sum_gross'
+      %td.numeric= number_to_currency total_gross
+    - if @delivery.invoice
+      %tr
+        %td(colspan="4")= t '.sum_diff'
+        %td.numeric= number_to_currency total_gross - @delivery.invoice.net_amount
+
+%p
+  = link_to t('ui.edit'), edit_supplier_delivery_path(@supplier,@delivery), class: 'btn'
+  = link_to t('deliveries.suppliers_overview'), supplier_deliveries_path(@supplier)

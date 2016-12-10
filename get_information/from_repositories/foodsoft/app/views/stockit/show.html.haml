@@ -1,0 +1,37 @@
+- title @stock_article.name
+- content_for :javascript do
+  :javascript
+    $(function() {
+      // Subscribe to database changes.
+      // See publish/subscribe design pattern in /doc.
+      $(document).on('StockArticle#update', function(e) {
+        $.ajax({
+          url: '#{show_on_stock_article_update_stock_articles_path}',
+          type: 'get',
+          data: {id: e.stock_article_id},
+          contentType: 'application/json; charset=UTF-8'
+        });
+      });
+    });
+
+.row-fluid
+  .span6
+    = render :partial => 'stock_article_details', :locals => {:stock_article => @stock_article}
+  
+  .span6
+    %h2= t('.stock_changes')
+    %table.table.table-hover#stock_changes
+      %thead
+        %tr
+          %th= t '.datetime'
+          %th= t '.reason'
+          %th= t '.change_quantity'
+          %th= t '.new_quantity'
+      %tbody
+        - reversed_history = @stock_article.quantity_history.reverse
+        - @stock_changes.each_with_index do |stock_change, index|
+          %tr
+            %td= l stock_change.created_at
+            %td= link_to_stock_change_reason(stock_change)
+            %td= stock_change.quantity
+            %td= reversed_history[index]

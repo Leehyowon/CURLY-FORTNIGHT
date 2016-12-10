@@ -1,0 +1,8 @@
+- title t('.title', workgroup: @group.name)
+= render 'nav'
+
+%section
+  %h3= t '.title_all'
+  = render 'shared/task_list', tasks: @group.open_tasks
+  %br/
+  = link_to_top

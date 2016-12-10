@@ -1,0 +1,15 @@
+- title t('.title')
+
+- content_for :actionbar do
+  = link_to t('.new_ordergroup'), new_admin_ordergroup_path, class: 'btn btn-primary'
+
+- content_for :sidebar do
+  %p= t('.first_paragraph', url: link_to(t('.new_ordergroups'), new_admin_ordergroup_path)).html_safe
+  %p= t('.second_paragraph', url: link_to(t('.workgroup'), admin_workgroups_path)).html_safe
+.well.well-small
+  = form_tag admin_ordergroups_path, :method => :get, :remote => true,
+    'data-submit-onchange' => true, class: 'form-search' do
+    = text_field_tag :query, params[:query], class: 'input-medium search-query',
+      placeholder: t('admin.search_placeholder')
+#ordergroups
+  = render "ordergroups"

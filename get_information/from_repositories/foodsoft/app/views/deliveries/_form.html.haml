@@ -1,0 +1,138 @@
+- content_for :javascript do
+  :javascript
+    $(function() {
+      $('#stock_changes').on('touchclick', '.destroy_stock_change', function() {
+        $(this).prev('input').val('1'); // check for destruction
+
+        var stock_change = $(this).closest('tr');
+        stock_change.hide(); // do not remove (to ensure destruction)
+        stock_change.removeAttr('id'); // remove id to allow re-adding
+        mark_article_for_delivery( stock_change.data('id') );
+        return false;
+      });
+
+      $('#stock_changes').on('touchclick', '.remove_new_stock_change', function() {
+        var stock_change = $(this).closest('tr');
+        stock_change.remove();
+        mark_article_for_delivery( stock_change.data('id') );
+        return false;
+      })
+
+      $('#new_stock_article').removeAttr('disabled').select2({
+        tags: true,
+        placeholder: '#{t '.create_stock_article'}',
+        data: #{articles_for_select2(@supplier.articles).to_json},
+        createTag: function(data) {
+          return {
+            id: 'new',
+            name: data.term, // store for ajax request
+            text: data.term + ' (#{t '.create_from_blank'})'
+          };
+        }
+      }).on('select2:select', function(e) {
+        var selectedArticle = e.params.data;
+        if (!selectedArticle) {
+          return false;
+        }
+        if('new' == selectedArticle.id) {
+          $.ajax({
+            url: '#{new_stock_article_path}',
+            type: 'get',
+            data: {stock_article: {name: selectedArticle.name, supplier_id: #{@supplier.id}}},
+            contentType: 'application/json; charset=UTF-8'
+          });
+          $('#new_stock_article').val('').trigger('change');
+          return true;
+        }
+        if('' != selectedArticle.id) {
+          $.ajax({
+            url: '#{derive_stock_articles_path}',
+            type: 'get',
+            data: {old_article_id: selectedArticle.id},
+            contentType: 'application/json; charset=UTF-8'
+          });
+          $('#new_stock_article').val('').trigger('change');
+          return true;
+        }
+      });
+
+      // Subscribe to database changes.
+      // See publish/subscribe design pattern in /doc.
+      $(document).on('StockArticle#create', function(e) {
+        $.ajax({
+          url: '#{form_on_stock_article_create_supplier_deliveries_path(@supplier)}',
+          type: 'get',
+          data: {id: e.stock_article_id},
+          contentType: 'application/json; charset=UTF-8'
+        });
+      });
+
+      $(document).on('StockArticle#update', function(e) {
+        $.ajax({
+          url: '#{form_on_stock_article_update_supplier_deliveries_path(@supplier)}',
+          type: 'get',
+          data: {id: e.stock_article_id},
+          contentType: 'application/json; charset=UTF-8'
+        });
+      });
+    });
+
+    function mark_article_for_delivery(stock_article_id) {
+      var articleTr = $('#stock_article_' + stock_article_id);
+      if( is_article_available_for_delivery(stock_article_id) ) {
+        articleTr.removeClass('unavailable');
+        $('.button-add-stock-change', articleTr).removeAttr('disabled');
+      }
+      else {
+        articleTr.addClass('unavailable');
+        $('.button-add-stock-change', articleTr).attr('disabled', 'disabled');
+      }
+    }
+    function is_article_available_for_delivery(stock_article_id) {
+      return ( 0 == $('#stock_change_stock_article_' + stock_article_id).length );
+    }
+
+= simple_form_for [@supplier, @delivery], validate: true do |f|
+  = f.error_notification
+  = base_errors f.object
+  = f.association :supplier, :as => :hidden
+
+  %h2= t '.title_select_stock_articles'
+  %table#stock_articles_for_adding.table.table-hover.stupidtable
+    %thead
+      %tr
+        %th.default-sort{:data => {:sort => 'string'}}= Article.model_name.human
+        %th= heading_helper StockArticle, :price
+        %th= heading_helper StockArticle, :unit
+        %th= heading_helper StockArticle, :article_category
+        %th= t 'ui.actions'
+    %tfoot
+      %tr
+        %th{:colspan => 5}
+          - if @supplier.articles.empty?
+            = link_to t('.create_stock_article'), new_stock_article_path, :remote => true, :class => 'btn'
+          - else
+            %select#new_stock_article{:style => 'width: 500px;'}
+    %tbody
+      - for article in articles_for_table(@supplier.stock_articles)
+        = render :partial => 'stock_article_for_adding', :locals => {:article => article}
+
+  %h2= t '.title_fill_quantities'
+  %table.table#stock_changes.stupidtable
+    %thead
+      %tr
+        %th.default-sort{:data => {:sort => 'string'}}= Article.model_name.human
+        %th= heading_helper StockArticle, :price
+        %th= heading_helper StockArticle, :unit
+        %th= heading_helper GroupOrderArticle, :quantity  # quantity to order, although technically this will be a StockChange
+        %th= t 'ui.actions'
+    %tbody
+      = f.simple_fields_for :stock_changes do |stock_change_form|
+        = render :partial => 'stock_change_fields', :locals => {:f => stock_change_form}
+
+  %h2= t '.title_finish_delivery'
+  = f.input :delivered_on, as: :date_picker
+  = f.input :note, input_html: {size: '35x4'}
+  .form-actions
+    = f.submit class: 'btn btn-primary'
+    = link_to t('ui.or_cancel'), supplier_deliveries_path(@supplier)

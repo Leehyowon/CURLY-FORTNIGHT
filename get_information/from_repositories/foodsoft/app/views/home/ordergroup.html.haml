@@ -1,0 +1,24 @@
+- title t('.title'), false
+
+.row-fluid
+  .span4
+    %h2= @ordergroup.name
+    .well
+      - unless @ordergroup.description.blank?
+        %p= @ordergroup.description
+      %p
+        %b= heading_helper(Ordergroup, :available_funds) + ':'
+        = number_to_currency(@ordergroup.get_available_funds())
+      %p
+        %b= heading_helper(Ordergroup, :user_tokens) + ':'
+        = @ordergroup.memberships.map{|m| show_user m.user}.join(', ')
+      - unless FoodsoftConfig[:disable_invite]
+        = link_to t('.invite'), new_invite_path(:id => @ordergroup), :remote => true, class: 'btn btn-primary'
+  .span8
+    %h2= t('.account_summary')
+    .well.well-small
+      = form_tag my_ordergroup_path, :method => :get, :remote => true,
+        'data-submit-onchange' => true, class: 'form-search' do
+        = text_field_tag :query, params[:query], class: 'input-medium search-query',
+          placeholder: t('.search')
+    #transactions= render "finance/financial_transactions/transactions", with_csv: false

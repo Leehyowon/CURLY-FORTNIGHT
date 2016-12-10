@@ -1,0 +1,25 @@
+log/*.log
+tmp/**/*
+config/app_config.yml
+config/database.yml
+config/initializers/secret_token.rb
+db/*.sqlite3
+nbproject/
+config/environments/development.rb
+*.swp
+*~
+public/**/*_cached.*
+.idea
+.get-dump.yml
+.sass-cache/
+doc/app/
+doc/api/
+.yarddoc/
+# Deployment tools
+Capfile
+config/deploy.rb
+config/deploy/*
+.localeapp
+log/localeapp.yml
+.bundle
+rspec.failures

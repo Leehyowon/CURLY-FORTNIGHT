@@ -1,0 +1,6 @@
+- title t('.title')
+
+= render 'actionbar', active: 'messages'
+
+#messages
+  = render 'messages', messages: @messages, pagination: true

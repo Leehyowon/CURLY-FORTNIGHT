@@ -1,0 +1,18 @@
+- title t('.title')
+= render 'nav'
+
+- unless @non_group_tasks.empty?
+  %section
+    %h3= t '.title_non_group'
+    = render 'shared/task_list', tasks: @non_group_tasks
+
+
+- for group in @groups
+  - tasks = group.open_tasks
+  - unless tasks.empty?
+    %section
+      %h3
+        = group.name
+        %small= link_to t('.show_group_tasks'), workgroup_tasks_path(workgroup_id: group)
+      = render 'shared/task_list', tasks: tasks
+      = link_to_top

@@ -1,0 +1,78 @@
+- title t('.title', article_count: StockArticle.available.count)
+- content_for :javascript do
+  :javascript
+    $(function() {
+      $('tr.unavailable').hide();
+      
+      // Subscribe to database changes.
+      // See publish/subscribe design pattern in /doc.
+      $(document).on('StockArticle#create', function(e) {
+        $.ajax({
+          url: '#{index_on_stock_article_create_stock_articles_path}',
+          type: 'get',
+          data: {id: e.stock_article_id},
+          contentType: 'application/json; charset=UTF-8'
+        });
+      });
+      
+      $(document).on('StockArticle#destroy', function(e) {
+        $('#stockArticle-' + e.stock_article_id).remove();
+      });
+      
+      $(document).on('StockArticle#update', function(e) {
+        $.ajax({
+          url: '#{index_on_stock_article_update_stock_articles_path}',
+          type: 'get',
+          data: {id: e.stock_article_id},
+          contentType: 'application/json; charset=UTF-8'
+        });
+      });
+    })
+
+.well.well-small
+  .btn-toolbar
+    .btn-group.pull-right
+      = link_to '#', data: {toggle: 'dropdown'}, class: 'btn dropdown-toggle' do
+        = t '.view_options'
+        %span.caret
+      %ul.dropdown-menu
+        %li= link_to t('.toggle_unavailable'), "#", 'data-toggle-this' => 'tr.unavailable', tabindex: -1
+
+    .btn-group
+      = link_to_if @current_user.role_orders?, t('.order_online'), new_order_path(supplier_id: 0),
+        class: 'btn', class: 'btn btn-primary'
+      = link_to t('.new_stock_article'), new_stock_article_path, remote: true, class: 'btn'
+      = link_to t('.new_stock_taking'), new_stock_taking_path, class: 'btn'
+      = link_to t('.show_stock_takings'), stock_takings_path, class: 'btn'
+
+    .btn-group
+      = link_to '#', data: {toggle: 'dropdown'}, class: 'btn dropdown-toggle' do
+        = t '.new_delivery'
+        %span.caret
+      %ul.dropdown-menu
+        - Supplier.all.each do |supplier|
+          %li= link_to supplier.name, new_supplier_delivery_path(supplier), tabindex: -1
+
+%table.table.table-hover#articles
+  %thead
+    %tr
+      %th= Article.model_name.human
+      %th= heading_helper StockArticle, :quantity
+      %th= heading_helper StockArticle, :quantity_ordered
+      %th= heading_helper StockArticle, :available
+      %th= heading_helper StockArticle, :unit
+      %th= heading_helper StockArticle, :price
+      %th= heading_helper StockArticle, :tax
+      %th= heading_helper StockArticle, :supplier
+      %th= heading_helper StockArticle, :article_category
+      %th
+  %tbody#articles-tbody
+    - for stock_article in @stock_articles
+      = render :partial => 'stock_article', :locals => {:stock_article => stock_article}
+%p
+  = t '.stock_worth'
+  = number_to_currency StockArticle.stock_value
+  |
+  =t '.stock_count'
+  = StockArticle.available.count
+

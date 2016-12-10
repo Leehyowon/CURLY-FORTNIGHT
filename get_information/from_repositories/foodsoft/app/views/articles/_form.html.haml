@@ -1,0 +1,24 @@
+= simple_form_for [@supplier, @article], :validate => true, :remote => true do |f|
+  = f.hidden_field :shared_updated_on
+  = f.hidden_field :supplier_id
+  .modal-header
+    = close_button :modal
+    %h3= @article.new_record? ? t('.title_new') : t('.title_edit')
+  .modal-body
+    = f.input :availability
+    = f.input :name
+
+    = render partial: 'shared/article_fields_units', locals: {f: f}
+
+    = f.input :note
+    = f.association :article_category
+    / TODO labels
+
+    = render partial: 'shared/article_fields_price', locals: {f: f}
+
+    = f.input :origin
+    = f.input :manufacturer
+    = f.input :order_number
+  .modal-footer
+    = link_to t('ui.close'), '#', class: 'btn', data: {dismiss: 'modal'}
+    = f.submit class: 'btn btn-primary'

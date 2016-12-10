@@ -1,0 +1,9 @@
+- title t('.title')
+
+.well.well-small
+  .btn-group
+    = link_to t('.new_inventory'), new_stock_taking_path, class: 'btn'
+
+#StockTakingsTable= render 'stock_takings'
+
+

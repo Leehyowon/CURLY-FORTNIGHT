@@ -1,0 +1,17 @@
+- if Task.done.count > 20
+  = items_per_page
+= pagination_links_remote @tasks
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th= heading_helper Task, :due_date
+      %th= heading_helper Task, :name
+      %th= heading_helper Task, :user_list
+      %th
+  %tbody
+    - @tasks.each do |task|
+      %tr
+        %td= task.due_date unless task.due_date.nil?
+        %td= link_to task_title(task), task_path(task)
+        %td= task_assignments task

@@ -1,0 +1,45 @@
+- title t '.title'
+
+%p
+  %i= t '.first_paragraph'
+.row-fluid
+  .span6
+    %section
+      %h2= t '.newest_users'
+      %table.table.table-striped
+        %thead
+          %tr
+            - if FoodsoftConfig[:use_nick]
+              %th= t '.username'
+            %th= t '.name'
+            %th= t '.created_at'
+        - for user in @users
+          %tr{:class => cycle('even','odd', :name => 'users')}
+            %td= link_to show_user(user), [:admin, user]
+            - if FoodsoftConfig[:use_nick]
+              %td= link_to user.name
+            %td= format_date(user.created_on)
+      = link_to t('.all_users'), admin_users_path
+      |
+      = link_to t('.new_user'), new_admin_user_path, class: 'btn btn-primary btn-small'
+  .span6
+    %section
+      %h2= t '.newest_groups'
+      %table.table.table-striped
+        %thead
+          %tr
+            %th= t '.groupname'
+            %th= t '.type'
+            %th= t '.members'
+        - for group in @groups
+          %tr{:class => cycle('even','odd', :name => 'groups')}
+            %td= link_to group.name, [:admin, group]
+            %td= group.class.model_name.human
+            %td= group.users.size
+      = link_to t('.all_ordergroups'), admin_ordergroups_path
+      |
+      = link_to t('.new_ordergroup'), new_admin_ordergroup_path, class: 'btn btn-primary btn-small'
+      |
+      = link_to t('.all_workgroups'), admin_workgroups_path
+      |
+      = link_to t('.new_workgroup'), new_admin_workgroup_path, class: 'btn btn-primary btn-small'
