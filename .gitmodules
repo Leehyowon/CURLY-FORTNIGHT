@@ -619,3 +619,6 @@
 [submodule "get_information/from_repositories/MaterialDesignLibrary"]
 	path = get_information/from_repositories/MaterialDesignLibrary
 	url = https://github.com/navasmdc/MaterialDesignLibrary
+[submodule "get_information/from_repositories/awesome-design"]
+	path = get_information/from_repositories/awesome-design
+	url = https://github.com/gztchan/awesome-design
