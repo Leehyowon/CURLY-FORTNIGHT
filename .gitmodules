@@ -661,3 +661,6 @@
 [submodule "get_information/from_repositories/fixed-data-table"]
 	path = get_information/from_repositories/fixed-data-table
 	url = https://github.com/facebook/fixed-data-table
+[submodule "get_information/from_repositories/liquidprompt"]
+	path = get_information/from_repositories/liquidprompt
+	url = https://github.com/nojhan/liquidprompt
