@@ -664,3 +664,6 @@
 [submodule "get_information/from_repositories/liquidprompt"]
 	path = get_information/from_repositories/liquidprompt
 	url = https://github.com/nojhan/liquidprompt
+[submodule "get_information/from_repositories/Ionic-Material"]
+	path = get_information/from_repositories/Ionic-Material
+	url = https://github.com/zachfitz/Ionic-Material
