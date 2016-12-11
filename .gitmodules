@@ -631,3 +631,6 @@
 [submodule "get_information/from_repositories/material2"]
 	path = get_information/from_repositories/material2
 	url = https://github.com/angular/material2
+[submodule "get_information/from_repositories/IBAnimatable"]
+	path = get_information/from_repositories/IBAnimatable
+	url = https://github.com/IBAnimatable/IBAnimatable
