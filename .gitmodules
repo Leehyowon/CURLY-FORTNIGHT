@@ -637,3 +637,6 @@
 [submodule "get_information/from_repositories/north"]
 	path = get_information/from_repositories/north
 	url = https://github.com/north/north
+[submodule "get_information/from_repositories/Framer"]
+	path = get_information/from_repositories/Framer
+	url = https://github.com/koenbok/Framer
