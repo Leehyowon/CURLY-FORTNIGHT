@@ -682,3 +682,6 @@
 [submodule "get_information/from_repositories/Lungo.js"]
 	path = get_information/from_repositories/Lungo.js
 	url = https://github.com/tapquo/Lungo.js
+[submodule "get_information/from_repositories/uiGradients"]
+	path = get_information/from_repositories/uiGradients
+	url = https://github.com/ghosh/uiGradients
