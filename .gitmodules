@@ -655,3 +655,6 @@
 [submodule "get_information/from_repositories/InstaMaterial"]
 	path = get_information/from_repositories/InstaMaterial
 	url = https://github.com/frogermcs/InstaMaterial
+[submodule "get_information/from_repositories/origami"]
+	path = get_information/from_repositories/origami
+	url = https://github.com/facebookarchive/origami
