@@ -571,3 +571,6 @@
 [submodule "get_information/from_repositories/material-ui"]
 	path = get_information/from_repositories/material-ui
 	url = https://github.com/callemall/material-ui
+[submodule "get_information/from_repositories/java-design-patterns"]
+	path = get_information/from_repositories/java-design-patterns
+	url = https://github.com/iluwatar/java-design-patterns
