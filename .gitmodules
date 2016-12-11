@@ -616,3 +616,6 @@
 [submodule "get_information/from_repositories/Hystrix"]
 	path = get_information/from_repositories/Hystrix
 	url = https://github.com/Netflix/Hystrix
+[submodule "get_information/from_repositories/MaterialDesignLibrary"]
+	path = get_information/from_repositories/MaterialDesignLibrary
+	url = https://github.com/navasmdc/MaterialDesignLibrary
