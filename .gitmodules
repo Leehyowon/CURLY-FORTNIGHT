@@ -604,3 +604,6 @@
 [submodule "get_information/from_repositories/octopress"]
 	path = get_information/from_repositories/octopress
 	url = https://github.com/imathis/octopress
+[submodule "get_information/from_repositories/ant-design"]
+	path = get_information/from_repositories/ant-design
+	url = https://github.com/ant-design/ant-design
