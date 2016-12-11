@@ -643,3 +643,6 @@
 [submodule "get_information/from_repositories/RippleEffect"]
 	path = get_information/from_repositories/RippleEffect
 	url = https://github.com/traex/RippleEffect
+[submodule "get_information/from_repositories/MaterialEditText"]
+	path = get_information/from_repositories/MaterialEditText
+	url = https://github.com/rengwuxian/MaterialEditText
