@@ -610,3 +610,6 @@
 [submodule "get_information/from_repositories/elixir"]
 	path = get_information/from_repositories/elixir
 	url = https://github.com/elixir-lang/elixir
+[submodule "get_information/from_repositories/Hack"]
+	path = get_information/from_repositories/Hack
+	url = https://github.com/chrissimpkins/Hack
