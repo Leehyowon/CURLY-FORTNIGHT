@@ -568,3 +568,6 @@
 [submodule "get_information/from_repositories/materialize"]
 	path = get_information/from_repositories/materialize
 	url = https://github.com/Dogfalo/materialize
+[submodule "get_information/from_repositories/material-ui"]
+	path = get_information/from_repositories/material-ui
+	url = https://github.com/callemall/material-ui
