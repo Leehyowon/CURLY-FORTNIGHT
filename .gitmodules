@@ -634,3 +634,6 @@
 [submodule "get_information/from_repositories/IBAnimatable"]
 	path = get_information/from_repositories/IBAnimatable
 	url = https://github.com/IBAnimatable/IBAnimatable
+[submodule "get_information/from_repositories/north"]
+	path = get_information/from_repositories/north
+	url = https://github.com/north/north
