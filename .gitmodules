@@ -586,3 +586,6 @@
 [submodule "get_information/from_repositories/http-api-design"]
 	path = get_information/from_repositories/http-api-design
 	url = https://github.com/interagent/http-api-design
+[submodule "get_information/from_repositories/DesignPatternsPHP"]
+	path = get_information/from_repositories/DesignPatternsPHP
+	url = https://github.com/domnikl/DesignPatternsPHP
