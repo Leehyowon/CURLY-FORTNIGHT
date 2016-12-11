@@ -679,3 +679,6 @@
 [submodule "get_information/from_repositories/FloatingActionButton"]
 	path = get_information/from_repositories/FloatingActionButton
 	url = https://github.com/Clans/FloatingActionButton
+[submodule "get_information/from_repositories/Lungo.js"]
+	path = get_information/from_repositories/Lungo.js
+	url = https://github.com/tapquo/Lungo.js
