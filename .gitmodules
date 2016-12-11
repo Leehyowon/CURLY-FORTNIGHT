@@ -625,3 +625,6 @@
 [submodule "get_information/from_repositories/Design-Patterns-In-Swift"]
 	path = get_information/from_repositories/Design-Patterns-In-Swift
 	url = https://github.com/ochococo/Design-Patterns-In-Swift
+[submodule "get_information/from_repositories/design"]
+	path = get_information/from_repositories/design
+	url = https://github.com/WebAssembly/design
