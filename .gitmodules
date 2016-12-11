@@ -601,3 +601,6 @@
 [submodule "get_information/from_repositories/superset"]
 	path = get_information/from_repositories/superset
 	url = https://github.com/airbnb/superset
+[submodule "get_information/from_repositories/octopress"]
+	path = get_information/from_repositories/octopress
+	url = https://github.com/imathis/octopress
