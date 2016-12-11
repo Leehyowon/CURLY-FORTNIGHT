@@ -3,10 +3,82 @@
 <head>
 	<title>Main Page</title>
 	<style>
-		
+		body{
+			background-image: url(http://2.bp.blogspot.com/-l5x0Vc6-ihE/UZnLLEaI5XI/AAAAAAAAAzM/Y8gmPp76M7s/s1600/jgret.PNG);
+			background-size: 110%;
+		}
+		#topMenu{
+			height: 30px;
+			width: 850px;
+			/*float: right;*/
+		}
+		#topMenu ul li{
+			list-style: none;
+			color: white;
+			text-shadow: 2px 2px 5px black;
+			/*background-color: #2d2d2d;
+			background : rgba(0, 0, 0, 0.4);*/
+			float: left;
+			position: relative;
+			left: 80%;
+			line-height: 40px;
+			vertical-align: middle;
+			text-align: center;
+		}
+		#topMenu .menuLink{
+			text-decoration: none;
+			color: white;
+			display: block;
+			width: 120px;
+			font-size: 17px;
+			font-weight: bold;
+			font-family: "Trebuchet MS", Dotum, Arial;
+		}
+		#topMenu .menuLink:hover{
+			color: red;
+			background-color: #4d4d4d;
+			background : rgba(0, 0, 0, 0.2);
+		}
+		#back{
+			position: absolute;
+			top:50%;
+			left:50%;
+			height: 400px;
+			width: 800px;
+			background: black;
+			background : rgba(0, 0, 0, 0.5);
+			transform:translate(-50%, -50%)
+		}
+		#title{
+			text-align: center;
+			font-size: 90px;
+			font-family: "Tahoma";
+			color: white;
+			position: absolute;
+			top:50%;
+			left:50%;
+			/*height: 370px;
+			width: 800px;*/
+			/*background: black;
+			background : rgba(0, 0, 0, 0.5);*/
+			transform:translate(-50%, -50%)
+		}
 	</style>
 </head>
 <body>
-
+	<nav id="topMenu">
+		<ul>
+			<li><a class="menuLink" href="#">HOME</a></li>
+			<li><a class="menuLink" href="#">ABOUT</a></li>
+			<li><a class="menuLink" href="#">LAB</a></li>
+			<li><a class="menuLink" href="#">CURRICULUM</a></li>
+			<li><a class="menuLink" href="#">ACADEMY</a></li>
+			<li><a class="menuLink" href="#">FACILITY</a></li>
+		</ul>
+	</nav>
+	<div id="back"></div>
+	<div id="title">
+		Computer<br>Engineering<br>&Science
+	</div>
 </body>
 </html>
