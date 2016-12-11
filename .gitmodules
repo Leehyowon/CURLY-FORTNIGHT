@@ -640,3 +640,6 @@
 [submodule "get_information/from_repositories/Framer"]
 	path = get_information/from_repositories/Framer
 	url = https://github.com/koenbok/Framer
+[submodule "get_information/from_repositories/RippleEffect"]
+	path = get_information/from_repositories/RippleEffect
+	url = https://github.com/traex/RippleEffect
