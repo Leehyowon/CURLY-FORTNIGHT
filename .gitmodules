@@ -622,3 +622,6 @@
 [submodule "get_information/from_repositories/awesome-design"]
 	path = get_information/from_repositories/awesome-design
 	url = https://github.com/gztchan/awesome-design
+[submodule "get_information/from_repositories/Design-Patterns-In-Swift"]
+	path = get_information/from_repositories/Design-Patterns-In-Swift
+	url = https://github.com/ochococo/Design-Patterns-In-Swift
