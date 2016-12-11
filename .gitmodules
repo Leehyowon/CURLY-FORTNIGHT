@@ -595,3 +595,6 @@
 [submodule "get_information/from_repositories/cheerio"]
 	path = get_information/from_repositories/cheerio
 	url = https://github.com/cheeriojs/cheerio
+[submodule "get_information/from_repositories/python-patterns"]
+	path = get_information/from_repositories/python-patterns
+	url = https://github.com/faif/python-patterns
