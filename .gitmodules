@@ -658,3 +658,6 @@
 [submodule "get_information/from_repositories/origami"]
 	path = get_information/from_repositories/origami
 	url = https://github.com/facebookarchive/origami
+[submodule "get_information/from_repositories/fixed-data-table"]
+	path = get_information/from_repositories/fixed-data-table
+	url = https://github.com/facebook/fixed-data-table
