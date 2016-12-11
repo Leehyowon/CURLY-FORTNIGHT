@@ -589,3 +589,6 @@
 [submodule "get_information/from_repositories/DesignPatternsPHP"]
 	path = get_information/from_repositories/DesignPatternsPHP
 	url = https://github.com/domnikl/DesignPatternsPHP
+[submodule "get_information/from_repositories/mongoose"]
+	path = get_information/from_repositories/mongoose
+	url = https://github.com/Automattic/mongoose
