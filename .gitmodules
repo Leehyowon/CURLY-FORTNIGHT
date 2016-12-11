@@ -667,3 +667,6 @@
 [submodule "get_information/from_repositories/Ionic-Material"]
 	path = get_information/from_repositories/Ionic-Material
 	url = https://github.com/zachfitz/Ionic-Material
+[submodule "get_information/from_repositories/LiquidFloatingActionButton"]
+	path = get_information/from_repositories/LiquidFloatingActionButton
+	url = https://github.com/yoavlt/LiquidFloatingActionButton
