@@ -685,3 +685,6 @@
 [submodule "get_information/from_repositories/uiGradients"]
 	path = get_information/from_repositories/uiGradients
 	url = https://github.com/ghosh/uiGradients
+[submodule "get_information/from_repositories/Waves"]
+	path = get_information/from_repositories/Waves
+	url = https://github.com/fians/Waves
