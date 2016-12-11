@@ -559,3 +559,6 @@
 [submodule "get_information/from_repositories/walle-web"]
 	path = get_information/from_repositories/walle-web
 	url = https://github.com/meolu/walle-web
+[submodule "get_information/from_repositories/material-design-icons"]
+	path = get_information/from_repositories/material-design-icons
+	url = https://github.com/google/material-design-icons
