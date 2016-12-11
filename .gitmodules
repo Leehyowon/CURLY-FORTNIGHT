@@ -646,3 +646,6 @@
 [submodule "get_information/from_repositories/MaterialEditText"]
 	path = get_information/from_repositories/MaterialEditText
 	url = https://github.com/rengwuxian/MaterialEditText
+[submodule "get_information/from_repositories/knex"]
+	path = get_information/from_repositories/knex
+	url = https://github.com/tgriesser/knex
