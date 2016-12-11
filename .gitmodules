@@ -628,3 +628,6 @@
 [submodule "get_information/from_repositories/design"]
 	path = get_information/from_repositories/design
 	url = https://github.com/WebAssembly/design
+[submodule "get_information/from_repositories/material2"]
+	path = get_information/from_repositories/material2
+	url = https://github.com/angular/material2
