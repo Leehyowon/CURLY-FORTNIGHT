@@ -592,3 +592,6 @@
 [submodule "get_information/from_repositories/mongoose"]
 	path = get_information/from_repositories/mongoose
 	url = https://github.com/Automattic/mongoose
+[submodule "get_information/from_repositories/cheerio"]
+	path = get_information/from_repositories/cheerio
+	url = https://github.com/cheeriojs/cheerio
