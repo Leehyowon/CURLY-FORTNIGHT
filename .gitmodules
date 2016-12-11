@@ -583,3 +583,6 @@
 [submodule "get_information/from_repositories/Flat-UI"]
 	path = get_information/from_repositories/Flat-UI
 	url = https://github.com/designmodo/Flat-UI
+[submodule "get_information/from_repositories/http-api-design"]
+	path = get_information/from_repositories/http-api-design
+	url = https://github.com/interagent/http-api-design
