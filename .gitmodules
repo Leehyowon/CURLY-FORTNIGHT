@@ -574,3 +574,6 @@
 [submodule "get_information/from_repositories/java-design-patterns"]
 	path = get_information/from_repositories/java-design-patterns
 	url = https://github.com/iluwatar/java-design-patterns
+[submodule "get_information/from_repositories/material"]
+	path = get_information/from_repositories/material
+	url = https://github.com/angular/material
