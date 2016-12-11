@@ -676,3 +676,6 @@
 [submodule "get_information/from_repositories/Android-Material-Examples"]
 	path = get_information/from_repositories/Android-Material-Examples
 	url = https://github.com/saulmm/Android-Material-Examples
+[submodule "get_information/from_repositories/FloatingActionButton"]
+	path = get_information/from_repositories/FloatingActionButton
+	url = https://github.com/Clans/FloatingActionButton
