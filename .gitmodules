@@ -688,3 +688,6 @@
 [submodule "get_information/from_repositories/Waves"]
 	path = get_information/from_repositories/Waves
 	url = https://github.com/fians/Waves
+[submodule "get_information/from_repositories/MaterialKit"]
+	path = get_information/from_repositories/MaterialKit
+	url = https://github.com/nghialv/MaterialKit
