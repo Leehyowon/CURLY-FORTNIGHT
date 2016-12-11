@@ -652,3 +652,6 @@
 [submodule "get_information/from_repositories/react-in-patterns"]
 	path = get_information/from_repositories/react-in-patterns
 	url = https://github.com/krasimir/react-in-patterns
+[submodule "get_information/from_repositories/InstaMaterial"]
+	path = get_information/from_repositories/InstaMaterial
+	url = https://github.com/frogermcs/InstaMaterial
