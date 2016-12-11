@@ -691,3 +691,6 @@
 [submodule "get_information/from_repositories/MaterialKit"]
 	path = get_information/from_repositories/MaterialKit
 	url = https://github.com/nghialv/MaterialKit
+[submodule "get_information/from_repositories/open-color"]
+	path = get_information/from_repositories/open-color
+	url = https://github.com/yeun/open-color
