@@ -694,3 +694,6 @@
 [submodule "get_information/from_repositories/open-color"]
 	path = get_information/from_repositories/open-color
 	url = https://github.com/yeun/open-color
+[submodule "get_information/from_repositories/system-design-interview"]
+	path = get_information/from_repositories/system-design-interview
+	url = https://github.com/checkcheckzz/system-design-interview
