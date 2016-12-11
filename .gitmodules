@@ -580,3 +580,6 @@
 [submodule "get_information/from_repositories/weui"]
 	path = get_information/from_repositories/weui
 	url = https://github.com/weui/weui
+[submodule "get_information/from_repositories/Flat-UI"]
+	path = get_information/from_repositories/Flat-UI
+	url = https://github.com/designmodo/Flat-UI
