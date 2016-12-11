@@ -670,3 +670,6 @@
 [submodule "get_information/from_repositories/LiquidFloatingActionButton"]
 	path = get_information/from_repositories/LiquidFloatingActionButton
 	url = https://github.com/yoavlt/LiquidFloatingActionButton
+[submodule "get_information/from_repositories/MaterialDesign"]
+	path = get_information/from_repositories/MaterialDesign
+	url = https://github.com/Templarian/MaterialDesign
