@@ -673,3 +673,6 @@
 [submodule "get_information/from_repositories/MaterialDesign"]
 	path = get_information/from_repositories/MaterialDesign
 	url = https://github.com/Templarian/MaterialDesign
+[submodule "get_information/from_repositories/Android-Material-Examples"]
+	path = get_information/from_repositories/Android-Material-Examples
+	url = https://github.com/saulmm/Android-Material-Examples
