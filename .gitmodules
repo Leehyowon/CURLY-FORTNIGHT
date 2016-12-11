@@ -565,3 +565,6 @@
 [submodule "get_information/from_repositories/material-design-lite"]
 	path = get_information/from_repositories/material-design-lite
 	url = https://github.com/google/material-design-lite
+[submodule "get_information/from_repositories/materialize"]
+	path = get_information/from_repositories/materialize
+	url = https://github.com/Dogfalo/materialize
