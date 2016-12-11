@@ -598,3 +598,6 @@
 [submodule "get_information/from_repositories/python-patterns"]
 	path = get_information/from_repositories/python-patterns
 	url = https://github.com/faif/python-patterns
+[submodule "get_information/from_repositories/superset"]
+	path = get_information/from_repositories/superset
+	url = https://github.com/airbnb/superset
