@@ -607,3 +607,6 @@
 [submodule "get_information/from_repositories/ant-design"]
 	path = get_information/from_repositories/ant-design
 	url = https://github.com/ant-design/ant-design
+[submodule "get_information/from_repositories/elixir"]
+	path = get_information/from_repositories/elixir
+	url = https://github.com/elixir-lang/elixir
