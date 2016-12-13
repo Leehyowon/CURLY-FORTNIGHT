@@ -50,30 +50,6 @@
 			background-color: #4d4d4d;
 			background : rgba(0, 0, 0, 0.2);
 		}
-		#back{
-			position: absolute;
-			top:50%;
-			left:50%;
-			height: 400px;
-			width: 800px;
-			background: black;
-			background : rgba(0, 0, 0, 0.5);
-			transform:translate(-50%, -50%)
-		}
-		#title{
-			text-align: center;
-			font-size: 90px;
-			font-family: "Tahoma";
-			color: white;
-			position: absolute;
-			top:50%;
-			left:50%;
-			/*height: 370px;
-			width: 800px;*/
-			/*background: black;
-			background : rgba(0, 0, 0, 0.5);*/
-			transform:translate(-50%, -50%)
-		}
 .container{
 	width: 100%;
 	position: relative;
@@ -199,36 +175,6 @@ h1.main,p.demos {
 	-ms-transform: scale(5);
 	transform: scale(5);
 }
-.sp-circle-link {
-	position: absolute;
-	left: 50%;
-	bottom: 100px;
-	margin-left: -50px;
-	text-align: center;
-	line-height: 100px;
-	width: 100px;
-	height: 100px;
-	background: #fff;
-	color: #3f1616;
-	font-size: 25px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-	-webkit-animation: fadeInRotate 1s linear 16s backwards;
-	-moz-animation: fadeInRotate 1s linear 16s backwards;
-	-ms-animation: fadeInRotate 1s linear 16s backwards;
-	animation: fadeInRotate 1s linear 16s backwards;
-	-webkit-transform: scale(1) rotate(0deg);
-	-moz-transform: scale(1) rotate(0deg);
-	-o-transform: scale(1) rotate(0deg);
-	-ms-transform: scale(1) rotate(0deg);
-	transform: scale(1) rotate(0deg);
-}
-.sp-circle-link:hover {
-	background: #85373b;
-	color: #fff;
-}
-/**/
 @-webkit-keyframes blurFadeInOut{
 	0%{
 		opacity: 0;
@@ -331,17 +277,6 @@ h1.main,p.demos {
 		-moz-transform: scale(5);
 	}
 }
-@-moz-keyframes fadeInRotate{
-	0%{
-		opacity: 0;
-		-moz-transform: scale(0) rotate(360deg);
-	}
-	100%{
-		opacity: 1;
-		-moz-transform: scale(1) rotate(0deg);
-	}
-}
-/**/
 @keyframes blurFadeInOut{
 	0%{
 		opacity: 0;
@@ -390,21 +325,30 @@ h1.main,p.demos {
 		transform: scale(5);
 	}
 }
-@keyframes fadeInRotate{
-	0%{
-		opacity: 0;
-		transform: scale(0) rotate(360deg);
-	}
-	100%{
-		opacity: 1;
-		transform: scale(1) rotate(0deg);
-	}
-}	
-	</style>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 <body>
-	<nav id="topMenu">
+	<div class="container">
+	<div class="header">
+	<div class="clr"></div>
+	</div>
+	<div class="sp-container">
+		<div class="sp-content">
+			<div class="sp-globe"></div>
+				<h2 class="frame-1">HANYANG UNIVERSITY</h2>
+
+				<h2 class="frame-2">The Center of Engineering</h2>
+
+				<h2 class="frame-3">Computer Science & Engineering</h2>
+
+				<h2 class="frame-4">Welcome!</h2>
+
+				<h2 class="frame-5"><span>This is the website of,</span> <span>C.S.E.</span></h2>
+		</div>
+	</div>
+</div>
+<nav id="topMenu">
 		<ul>
 			<li><a class="menuLink" href="#">HOME</a></li>
 			<li><a class="menuLink" href="#">ABOUT</a></li>
@@ -414,32 +358,6 @@ h1.main,p.demos {
 			<li><a class="menuLink" href="#">FACILITY</a></li>
 		</ul>
 	</nav>
-	<!-- <div id="back"></div> -->
-	<!-- <div id="title">
-		Computer<br>Engineering<br>&Science
-	</div> -->
-	<div class="container">
-    <div class="header">
-        <div class="clr"></div>
-    </div>
-    <div class="sp-container">
-        <div class="sp-content">
-            <div class="sp-globe"></div>
-            	<h2 class="frame-1">HANYANG UNIVERSITY</h2>
-
-            	<h2 class="frame-2">The Center of Engineering</h2>
-
-            	<h2 class="frame-3">Computer Science & Engineering</h2>
-
-            	<h2 class="frame-4">Welcome!</h2>
-
-            	<h2 class="frame-5"><span>This is the website of,</span> <span>C.S.E.</span></h2>
-	<a class="sp-circle-link" href="#">Join us!</a>
-
-        </div>
-    </div>
-</div>
-
 <script type="text/javascript" src="/path/to/shared/js/EventHelpers.js">
 </script>
 <script type="text/javascript" src="/path/to/shared/js/cssQuery-p.js">
