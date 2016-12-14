@@ -724,3 +724,6 @@
 [submodule "get_information/from_repositories/JQuery-Mobile-Slide-Menu"]
 	path = get_information/from_repositories/JQuery-Mobile-Slide-Menu
 	url = https://github.com/tegansnyder/JQuery-Mobile-Slide-Menu
+[submodule "get_information/from_repositories/Swift-Slide-Menu"]
+	path = get_information/from_repositories/Swift-Slide-Menu
+	url = https://github.com/PhilippeBoisney/Swift-Slide-Menu
