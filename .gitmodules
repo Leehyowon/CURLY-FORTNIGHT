@@ -739,3 +739,6 @@
 [submodule "get_information/from_repositories/deckard"]
 	path = get_information/from_repositories/deckard
 	url = https://github.com/pete-otaqui/deckard
+[submodule "get_information/from_repositories/scrollreveal"]
+	path = get_information/from_repositories/scrollreveal
+	url = https://github.com/jlmakes/scrollreveal
