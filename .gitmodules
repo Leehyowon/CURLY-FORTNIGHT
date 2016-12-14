@@ -718,3 +718,6 @@
 [submodule "get_information/from_repositories/ng-material-floating-button"]
 	path = get_information/from_repositories/ng-material-floating-button
 	url = https://github.com/nobitagit/ng-material-floating-button
+[submodule "get_information/from_repositories/MetaballMenu"]
+	path = get_information/from_repositories/MetaballMenu
+	url = https://github.com/melvinjlobo/MetaballMenu
