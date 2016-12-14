@@ -745,3 +745,6 @@
 [submodule "get_information/from_repositories/TheatreJS"]
 	path = get_information/from_repositories/TheatreJS
 	url = https://github.com/AriaMinaei/TheatreJS
+[submodule "get_information/from_repositories/animachine"]
+	path = get_information/from_repositories/animachine
+	url = https://github.com/animachine/animachine
