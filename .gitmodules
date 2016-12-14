@@ -715,3 +715,6 @@
 [submodule "get_information/from_repositories/sliding-menu"]
 	path = get_information/from_repositories/sliding-menu
 	url = https://github.com/danielcardoso/sliding-menu
+[submodule "get_information/from_repositories/ng-material-floating-button"]
+	path = get_information/from_repositories/ng-material-floating-button
+	url = https://github.com/nobitagit/ng-material-floating-button
