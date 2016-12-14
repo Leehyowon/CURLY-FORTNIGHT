@@ -712,3 +712,6 @@
 [submodule "get_information/from_repositories/AMSlideMenu"]
 	path = get_information/from_repositories/AMSlideMenu
 	url = https://github.com/SocialObjects-Software/AMSlideMenu
+[submodule "get_information/from_repositories/sliding-menu"]
+	path = get_information/from_repositories/sliding-menu
+	url = https://github.com/danielcardoso/sliding-menu
