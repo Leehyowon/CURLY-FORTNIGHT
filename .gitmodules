@@ -709,3 +709,6 @@
 [submodule "get_information/from_repositories/SlideMenuControllerSwift"]
 	path = get_information/from_repositories/SlideMenuControllerSwift
 	url = https://github.com/dekatotoro/SlideMenuControllerSwift
+[submodule "get_information/from_repositories/AMSlideMenu"]
+	path = get_information/from_repositories/AMSlideMenu
+	url = https://github.com/SocialObjects-Software/AMSlideMenu
