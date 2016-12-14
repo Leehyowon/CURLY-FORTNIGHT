@@ -742,3 +742,6 @@
 [submodule "get_information/from_repositories/scrollreveal"]
 	path = get_information/from_repositories/scrollreveal
 	url = https://github.com/jlmakes/scrollreveal
+[submodule "get_information/from_repositories/TheatreJS"]
+	path = get_information/from_repositories/TheatreJS
+	url = https://github.com/AriaMinaei/TheatreJS
