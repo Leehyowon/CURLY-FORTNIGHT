@@ -736,3 +736,6 @@
 [submodule "get_information/from_repositories/PhotographyWebsiteConcept"]
 	path = get_information/from_repositories/PhotographyWebsiteConcept
 	url = https://github.com/codrops/PhotographyWebsiteConcept
+[submodule "get_information/from_repositories/deckard"]
+	path = get_information/from_repositories/deckard
+	url = https://github.com/pete-otaqui/deckard
