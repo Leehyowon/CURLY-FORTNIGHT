@@ -706,3 +706,6 @@
 [submodule "get_information/from_repositories/ViewDeck"]
 	path = get_information/from_repositories/ViewDeck
 	url = https://github.com/ViewDeck/ViewDeck
+[submodule "get_information/from_repositories/SlideMenuControllerSwift"]
+	path = get_information/from_repositories/SlideMenuControllerSwift
+	url = https://github.com/dekatotoro/SlideMenuControllerSwift
