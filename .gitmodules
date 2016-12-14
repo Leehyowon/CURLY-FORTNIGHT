@@ -730,3 +730,9 @@
 [submodule "get_information/from_repositories/paper-menu"]
 	path = get_information/from_repositories/paper-menu
 	url = https://github.com/PolymerElements/paper-menu
+[submodule "get_information/from_repositories/Slidebars"]
+	path = get_information/from_repositories/Slidebars
+	url = https://github.com/adchsm/Slidebars
+[submodule "get_information/from_repositories/PhotographyWebsiteConcept"]
+	path = get_information/from_repositories/PhotographyWebsiteConcept
+	url = https://github.com/codrops/PhotographyWebsiteConcept
