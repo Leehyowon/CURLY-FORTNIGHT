@@ -721,3 +721,6 @@
 [submodule "get_information/from_repositories/MetaballMenu"]
 	path = get_information/from_repositories/MetaballMenu
 	url = https://github.com/melvinjlobo/MetaballMenu
+[submodule "get_information/from_repositories/JQuery-Mobile-Slide-Menu"]
+	path = get_information/from_repositories/JQuery-Mobile-Slide-Menu
+	url = https://github.com/tegansnyder/JQuery-Mobile-Slide-Menu
