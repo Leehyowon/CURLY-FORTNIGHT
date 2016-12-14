@@ -703,3 +703,6 @@
 [submodule "get_information/from_repositories/SlidingMenu"]
 	path = get_information/from_repositories/SlidingMenu
 	url = https://github.com/jfeinstein10/SlidingMenu
+[submodule "get_information/from_repositories/ViewDeck"]
+	path = get_information/from_repositories/ViewDeck
+	url = https://github.com/ViewDeck/ViewDeck
