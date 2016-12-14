@@ -727,3 +727,6 @@
 [submodule "get_information/from_repositories/Swift-Slide-Menu"]
 	path = get_information/from_repositories/Swift-Slide-Menu
 	url = https://github.com/PhilippeBoisney/Swift-Slide-Menu
+[submodule "get_information/from_repositories/paper-menu"]
+	path = get_information/from_repositories/paper-menu
+	url = https://github.com/PolymerElements/paper-menu
