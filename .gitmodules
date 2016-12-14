@@ -697,3 +697,6 @@
 [submodule "get_information/from_repositories/system-design-interview"]
 	path = get_information/from_repositories/system-design-interview
 	url = https://github.com/checkcheckzz/system-design-interview
+[submodule "get_information/from_repositories/menubar"]
+	path = get_information/from_repositories/menubar
+	url = https://github.com/maxogden/menubar
