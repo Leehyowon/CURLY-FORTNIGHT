@@ -700,3 +700,6 @@
 [submodule "get_information/from_repositories/menubar"]
 	path = get_information/from_repositories/menubar
 	url = https://github.com/maxogden/menubar
+[submodule "get_information/from_repositories/SlidingMenu"]
+	path = get_information/from_repositories/SlidingMenu
+	url = https://github.com/jfeinstein10/SlidingMenu
