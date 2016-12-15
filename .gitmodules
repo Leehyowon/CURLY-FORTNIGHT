@@ -769,3 +769,6 @@
 [submodule "get_information/from_repositories/iView"]
 	path = get_information/from_repositories/iView
 	url = https://github.com/iprodev/iView
+[submodule "get_information/from_repositories/coin-slider"]
+	path = get_information/from_repositories/coin-slider
+	url = https://github.com/kopipejst/coin-slider
