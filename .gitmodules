@@ -760,3 +760,6 @@
 [submodule "get_information/from_repositories/threesixty-slider"]
 	path = get_information/from_repositories/threesixty-slider
 	url = https://github.com/creativeaura/threesixty-slider
+[submodule "get_information/from_repositories/DAAnisotropicImage"]
+	path = get_information/from_repositories/DAAnisotropicImage
+	url = https://github.com/danielamitay/DAAnisotropicImage
