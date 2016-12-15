@@ -754,3 +754,6 @@
 [submodule "get_information/from_repositories/AndroidImageSlider"]
 	path = get_information/from_repositories/AndroidImageSlider
 	url = https://github.com/daimajia/AndroidImageSlider
+[submodule "get_information/from_repositories/Ideal-Image-Slider-JS"]
+	path = get_information/from_repositories/Ideal-Image-Slider-JS
+	url = https://github.com/Codeinwp/Ideal-Image-Slider-JS
