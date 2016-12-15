@@ -757,3 +757,6 @@
 [submodule "get_information/from_repositories/Ideal-Image-Slider-JS"]
 	path = get_information/from_repositories/Ideal-Image-Slider-JS
 	url = https://github.com/Codeinwp/Ideal-Image-Slider-JS
+[submodule "get_information/from_repositories/threesixty-slider"]
+	path = get_information/from_repositories/threesixty-slider
+	url = https://github.com/creativeaura/threesixty-slider
