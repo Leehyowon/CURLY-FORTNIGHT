@@ -763,3 +763,6 @@
 [submodule "get_information/from_repositories/DAAnisotropicImage"]
 	path = get_information/from_repositories/DAAnisotropicImage
 	url = https://github.com/danielamitay/DAAnisotropicImage
+[submodule "get_information/from_repositories/Slicebox"]
+	path = get_information/from_repositories/Slicebox
+	url = https://github.com/codrops/Slicebox
