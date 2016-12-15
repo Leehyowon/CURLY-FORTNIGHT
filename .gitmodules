@@ -772,3 +772,6 @@
 [submodule "get_information/from_repositories/coin-slider"]
 	path = get_information/from_repositories/coin-slider
 	url = https://github.com/kopipejst/coin-slider
+[submodule "get_information/from_repositories/openslide"]
+	path = get_information/from_repositories/openslide
+	url = https://github.com/openslide/openslide
