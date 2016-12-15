@@ -748,3 +748,9 @@
 [submodule "get_information/from_repositories/animachine"]
 	path = get_information/from_repositories/animachine
 	url = https://github.com/animachine/animachine
+[submodule "get_information/from_repositories/motorcortexjs"]
+	path = get_information/from_repositories/motorcortexjs
+	url = https://github.com/andreas-trad/motorcortexjs
+[submodule "get_information/from_repositories/AndroidImageSlider"]
+	path = get_information/from_repositories/AndroidImageSlider
+	url = https://github.com/daimajia/AndroidImageSlider
