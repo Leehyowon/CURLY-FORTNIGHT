@@ -766,3 +766,6 @@
 [submodule "get_information/from_repositories/Slicebox"]
 	path = get_information/from_repositories/Slicebox
 	url = https://github.com/codrops/Slicebox
+[submodule "get_information/from_repositories/iView"]
+	path = get_information/from_repositories/iView
+	url = https://github.com/iprodev/iView
