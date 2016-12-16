@@ -778,3 +778,6 @@
 [submodule "get_information/from_repositories/StackSlider"]
 	path = get_information/from_repositories/StackSlider
 	url = https://github.com/codrops/StackSlider
+[submodule "get_information/from_repositories/TNImageSliderViewController"]
+	path = get_information/from_repositories/TNImageSliderViewController
+	url = https://github.com/frederik-jacques/TNImageSliderViewController
