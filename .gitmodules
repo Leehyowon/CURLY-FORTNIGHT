@@ -784,3 +784,6 @@
 [submodule "get_information/from_repositories/image-comparison-slider"]
 	path = get_information/from_repositories/image-comparison-slider
 	url = https://github.com/CodyHouse/image-comparison-slider
+[submodule "get_information/from_repositories/Devrama-Slider"]
+	path = get_information/from_repositories/Devrama-Slider
+	url = https://github.com/Devrama/Devrama-Slider
