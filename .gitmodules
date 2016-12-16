@@ -781,3 +781,6 @@
 [submodule "get_information/from_repositories/TNImageSliderViewController"]
 	path = get_information/from_repositories/TNImageSliderViewController
 	url = https://github.com/frederik-jacques/TNImageSliderViewController
+[submodule "get_information/from_repositories/image-comparison-slider"]
+	path = get_information/from_repositories/image-comparison-slider
+	url = https://github.com/CodyHouse/image-comparison-slider
