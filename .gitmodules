@@ -787,3 +787,6 @@
 [submodule "get_information/from_repositories/Devrama-Slider"]
 	path = get_information/from_repositories/Devrama-Slider
 	url = https://github.com/Devrama/Devrama-Slider
+[submodule "get_information/from_repositories/thumbelina"]
+	path = get_information/from_repositories/thumbelina
+	url = https://github.com/StarPlugins/thumbelina
