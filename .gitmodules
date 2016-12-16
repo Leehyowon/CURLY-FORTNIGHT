@@ -790,3 +790,6 @@
 [submodule "get_information/from_repositories/thumbelina"]
 	path = get_information/from_repositories/thumbelina
 	url = https://github.com/StarPlugins/thumbelina
+[submodule "get_information/from_repositories/Swiper"]
+	path = get_information/from_repositories/Swiper
+	url = https://github.com/nolimits4web/Swiper
