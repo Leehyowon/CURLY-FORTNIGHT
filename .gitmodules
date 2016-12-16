@@ -775,3 +775,6 @@
 [submodule "get_information/from_repositories/openslide"]
 	path = get_information/from_repositories/openslide
 	url = https://github.com/openslide/openslide
+[submodule "get_information/from_repositories/StackSlider"]
+	path = get_information/from_repositories/StackSlider
+	url = https://github.com/codrops/StackSlider
