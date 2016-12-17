@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Facilities_SMASH Room</title>
+	<style>
+		h1{background-image: url(http://mblogthumb4.phinf.naver.net/20120531_187/goumdo_1338431669930pICNn_JPEG/%C7%D1%BE%E7%B4%EB%C0%FC%B0%E6_02.jpg?type=w2);}
+
+		h1{color : lightyellow;}
+		h1{text-shadow: 5px 5px 3px black;}
+		h2{color : darkblue;}
+		h2{background-color: lightblue;}
+		/*p{color: grey;}*/
+	</style>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="euc-kr">
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script>
+		function initialize() {
+			var Y_point			= 37.297090;
+			var X_point			= 126.836085;
+			var zoomLevel		= 17;
+			var markerTitle		= "SMASH Room";
+			var markerMaxWidth	= 300;
+			var contentString	= '<div>' +
+			'<h3>SMASH Room</h3>'+
+			'<p>Location of SMASH Room : the 4rd Engineering Building, 1st floor</p>' +
+			'</div>';
+
+			var myLatlng = new google.maps.LatLng(Y_point, X_point);
+			var mapOptions = {
+								zoom: zoomLevel,
+								center: myLatlng,
+								mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(document.getElementById('map_view'), mapOptions);
+
+			var marker = new google.maps.Marker({
+													position: myLatlng,
+													map: map,
+													title: markerTitle
+			});
+
+			var infowindow = new google.maps.InfoWindow(
+														{
+															content: contentString,
+															maxWidth: markerMaxWidth
+														}
+			);
+
+			google.maps.event.addListener(marker, 'click', function() {
+				infowindow.open(map, marker);
+			});
+		}
+	</script>
+</head>
+
+<body onload = "initialize()">
+	<h1><i><br><br><br><br><br>_Facilities</h1></i>
+
+	<h2>SMASH Room</h2>
+	<p>This room has the several space for study. You can progress Team project, Mentoring, Tutoring and so on. 
+
+	<br>Only C.S.E students can use this room.</p>
+
+	<div id="map_view" style="width:500px; height:300px;"></div>
+	<p>
+		<img src="http://cse.hanyang.ac.kr/wp-content/uploads/2014/07/smash1.jpg" alt="SMASH Room" height="400">
+	</p>
+
+
+</body>
+
+</html>

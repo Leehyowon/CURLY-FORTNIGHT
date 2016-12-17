@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Facilities_Lecture Room</title>
+	<style>
+		h1{background-image: url(http://mblogthumb4.phinf.naver.net/20120531_187/goumdo_1338431669930pICNn_JPEG/%C7%D1%BE%E7%B4%EB%C0%FC%B0%E6_02.jpg?type=w2);}
+
+		h1{color : lightyellow;}
+		h1{text-shadow: 5px 5px 3px black;}
+		h2{color : darkblue;}
+		h2{background-color: lightblue;}
+		/*p{color: grey;}*/
+	</style>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="euc-kr">
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script>
+		function initialize() {
+			var Y_point			= 37.297763;
+			var X_point			= 126.836930;
+			var zoomLevel		= 17;
+			var markerTitle1	= "Advanced Lecture Room";
+			var markerMaxWidth	= 300;
+			var contentString1	= '<div>' +
+			'<h3>Advanced Lecture Room</h3>'+
+			'<p>Location of Advanced Lecture Room : the 1st Engineering Building, 3rd floor</p>' +
+			'</div>';
+
+			var myLatlng = new google.maps.LatLng(Y_point, X_point);
+			var mapOptions = {
+				zoom: zoomLevel,
+				center: myLatlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(document.getElementById('map1'), mapOptions);
+
+			var marker1 = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				title: markerTitle1
+			});
+
+			var infowindow1 = new google.maps.InfoWindow(
+				{
+					content: contentString1,
+					maxWidth: markerMaxWidth
+				}
+			);
+
+			google.maps.event.addListener(marker1, 'click', function() {
+				infowindow1.open(map, marker1);
+			});
+
+			var Y_point			= 37.296824;
+			var X_point			= 126.836297;
+			var zoomLevel		= 17;
+			var markerTitle2	= "Embedded Software Laboratory";
+			var markerMaxWidth	= 300;
+			var contentString2	= '<div>' +
+			'<h3>Embedded Software Laboratory</h3>'+
+			'<p>Location of Embedded Software Laboratory : the 4th Engineering Building, 4th floor</p>' +
+			'</div>';
+
+			var myLatlng = new google.maps.LatLng(Y_point, X_point);
+			var mapOptions = {
+				zoom: zoomLevel,
+				center: myLatlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(document.getElementById('map2'), mapOptions);
+
+			var marker2 = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				title: markerTitle2
+			});
+
+			var infowindow2 = new google.maps.InfoWindow(
+				{
+					content: contentString2,
+					maxWidth: markerMaxWidth
+				}
+			);
+
+			google.maps.event.addListener(marker2, 'click', function() {
+				infowindow2.open(map, marker2);
+			});
+
+			var Y_point			= 37.297481;
+			var X_point			= 126.836254;
+			var zoomLevel		= 17;
+			var markerTitle3	= "Computer Security Lab";
+			var markerMaxWidth	= 300;
+			var contentString3	= '<div>' +
+			'<h3>Computer Security Lab</h3>'+
+			'<p>Location of Computer Security Lab : the 3rd Engineering Building, 3rd floor</p>' +
+			'</div>';
+
+			var myLatlng = new google.maps.LatLng(Y_point, X_point);
+			var mapOptions = {
+				zoom: zoomLevel,
+				center: myLatlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(document.getElementById('map3'), mapOptions);
+
+			var marker3 = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				title: markerTitle3
+			});
+
+			var infowindow3 = new google.maps.InfoWindow(
+				{
+					content: contentString3,
+					maxWidth: markerMaxWidth
+				}
+			);
+
+			google.maps.event.addListener(marker3, 'click', function() {
+				infowindow3.open(map, marker3);
+			});
+		}
+	</script>
+</head>
+<body onload="initialize()">
+	<h1><i><br><br><br><br><br>_Facilities</h1></i>
+
+	<h2>Advanced Lecture Room</h2>
+	
+	<div id="map1" style="width:500px; height:300px;"></div>
+
+	<p>
+		<img src="http://cse.hanyang.ac.kr/wp-content/uploads/2014/07/smash_classroom1.jpg" alt="Advanced Lecture Room" height="400">
+		<img src="http://postfiles5.naver.net/MjAxNjEyMTBfNzMg/MDAxNDgxMzc3NTkzMjI4.RfwvC70DIN_5ZFyMRKXEMQthO5eItcoK6lGQbgDJHRcg.rt-RqYYRynhNCi-dVMuHnE2DE5H2HMVolDK6xc-yHUYg.PNG.geulims/스크린샷_2016-12-10_오후_10.44.19.png?type=w3">
+	</p>
+
+	<h2>Embedded Software Specialist Specialization Laboratory</h2>
+	
+	<div id="map2" style="width:500px; height:300px;"></div>
+
+	<p>
+		<img src="http://cse.hanyang.ac.kr/wp-content/uploads/2014/07/embedded1.jpg" alt="Embedded Software Laboratory" height="400">
+		<img src="http://postfiles8.naver.net/MjAxNjEyMTBfMTYz/MDAxNDgxMzc3NTkzNzAw.eU5ahv-LTlMq5FLY5r89tVkzO1d181p0BN9eKnUVPKcg.NZaLWTUxqAWpmRvLUDGW7_qoh-4wdU1PlyYQxdQ6Gh8g.PNG.geulims/스크린샷_2016-12-10_오후_10.45.49.png?type=w3">
+	</p>
+
+	<h2>Computer Security Lab</h2>
+	
+	<div id="map3" style="width:500px; height:300px;"></div>
+
+	<p>
+		<img src="http://cse.hanyang.ac.kr/wp-content/uploads/2014/07/security.jpg" alt="Computer Security Lab" height="400">
+		<img src="http://postfiles10.naver.net/MjAxNjEyMTBfMTk3/MDAxNDgxMzc3NTkzODI4.dP-3gCgzUUBrivYrJql4RqE12htpZhCMDq-BDdU2yEgg.PQFNgpoZXtSv3THao1QWj5SSVrebc-K09EeSFZAxCtog.PNG.geulims/스크린샷_2016-12-10_오후_10.45.55.png?type=w3">
+	</p>
+</body>
+</html>

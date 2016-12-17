@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Facilities_Department Office</title>
+	<style>
+		h1{background-image: url(http://mblogthumb4.phinf.naver.net/20120531_187/goumdo_1338431669930pICNn_JPEG/%C7%D1%BE%E7%B4%EB%C0%FC%B0%E6_02.jpg?type=w2);}
+
+		h1{color : lightyellow;}
+		h1{text-shadow: 5px 5px 3px black;}
+		h2{color : darkblue;}
+		h2{background-color: lightblue;}
+		/*p{color: grey;}*/
+	</style>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="euc-kr">
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script>
+		function initialize() {
+			var Y_point			= 37.297455;
+			var X_point			= 126.836291;
+			var zoomLevel		= 17;
+			var markerTitle		= "Department Office";
+			var markerMaxWidth	= 300;
+			var contentString	= '<div>' +
+			'<h3>Department Office</h3>'+
+			'<p>Location of Department Office : the 3rd Engineering Building, 2nd floor</p>' +
+			'</div>';
+
+			var myLatlng = new google.maps.LatLng(Y_point, X_point);
+			var mapOptions = {
+								zoom: zoomLevel,
+								center: myLatlng,
+								mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(document.getElementById('map_view'), mapOptions);
+
+			var marker = new google.maps.Marker({
+													position: myLatlng,
+													map: map,
+													title: markerTitle
+			});
+
+			var infowindow = new google.maps.InfoWindow(
+														{
+															content: contentString,
+															maxWidth: markerMaxWidth
+														}
+			);
+
+			google.maps.event.addListener(marker, 'click', function() {
+				infowindow.open(map, marker);
+			});
+		}
+	</script>
+</head>
+
+<body onload="initialize()">
+	<h1><i><br><br><br><br><br>_Facilities</h1></i>
+
+	<h2>Department Office</h2>
+	<p>If you want to ask information about department of Computer Science and Engineering, visit here.</p>
+	
+	<div id="map_view" style="width:500px; height:300px;"></div>
+
+	<p>
+		<img src="http://postfiles16.naver.net/MjAxNjExMTdfMjAz/MDAxNDc5MzU5NzExNzUz.r-zxvQkBgn3aZV_dWMsU6n36graxGB9C0XaAUz6m4pEg.f0eJ6RrLzNXMSwE3I9UcG8brqJsPksjXSa464uZSvJcg.JPEG.geulims/KakaoTalk_Photo_2016-11-17-14-09-39.jpeg?type=w3" alt="Department Office">
+	</p>
+
+
+</body>
+
+</html>
