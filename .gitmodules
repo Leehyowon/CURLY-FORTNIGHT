@@ -793,3 +793,6 @@
 [submodule "get_information/from_repositories/Swiper"]
 	path = get_information/from_repositories/Swiper
 	url = https://github.com/nolimits4web/Swiper
+[submodule "get_information/from_repositories/FantasySlide"]
+	path = get_information/from_repositories/FantasySlide
+	url = https://github.com/mzule/FantasySlide
