@@ -799,3 +799,6 @@
 [submodule "get_information/from_repositories/dzslides"]
 	path = get_information/from_repositories/dzslides
 	url = https://github.com/paulrouget/dzslides
+[submodule "get_information/from_repositories/NMRangeSlider"]
+	path = get_information/from_repositories/NMRangeSlider
+	url = https://github.com/muZZkat/NMRangeSlider
