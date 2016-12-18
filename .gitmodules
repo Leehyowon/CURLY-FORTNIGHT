@@ -808,3 +808,6 @@
 [submodule "get_information/from_repositories/webinars"]
 	path = get_information/from_repositories/webinars
 	url = https://github.com/rstudio/webinars
+[submodule "get_information/from_repositories/SlideSwitch"]
+	path = get_information/from_repositories/SlideSwitch
+	url = https://github.com/Leaking/SlideSwitch
