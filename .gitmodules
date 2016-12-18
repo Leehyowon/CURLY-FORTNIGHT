@@ -796,3 +796,6 @@
 [submodule "get_information/from_repositories/FantasySlide"]
 	path = get_information/from_repositories/FantasySlide
 	url = https://github.com/mzule/FantasySlide
+[submodule "get_information/from_repositories/dzslides"]
+	path = get_information/from_repositories/dzslides
+	url = https://github.com/paulrouget/dzslides
