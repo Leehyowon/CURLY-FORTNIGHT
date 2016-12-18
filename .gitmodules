@@ -805,3 +805,6 @@
 [submodule "get_information/from_repositories/Slide"]
 	path = get_information/from_repositories/Slide
 	url = https://github.com/ccrama/Slide
+[submodule "get_information/from_repositories/webinars"]
+	path = get_information/from_repositories/webinars
+	url = https://github.com/rstudio/webinars
