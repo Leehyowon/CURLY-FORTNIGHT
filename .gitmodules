@@ -802,3 +802,6 @@
 [submodule "get_information/from_repositories/NMRangeSlider"]
 	path = get_information/from_repositories/NMRangeSlider
 	url = https://github.com/muZZkat/NMRangeSlider
+[submodule "get_information/from_repositories/Slide"]
+	path = get_information/from_repositories/Slide
+	url = https://github.com/ccrama/Slide
