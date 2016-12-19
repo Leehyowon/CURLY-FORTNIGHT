@@ -826,3 +826,6 @@
 [submodule "get_information/from_repositories/turntable"]
 	path = get_information/from_repositories/turntable
 	url = https://github.com/PolarNotion/turntable
+[submodule "get_information/from_repositories/slippry"]
+	path = get_information/from_repositories/slippry
+	url = https://github.com/booncon/slippry
