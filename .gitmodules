@@ -829,3 +829,6 @@
 [submodule "get_information/from_repositories/slippry"]
 	path = get_information/from_repositories/slippry
 	url = https://github.com/booncon/slippry
+[submodule "get_information/from_repositories/Talkie"]
+	path = get_information/from_repositories/Talkie
+	url = https://github.com/ahomu/Talkie
