@@ -820,3 +820,6 @@
 [submodule "get_information/from_repositories/iosslider"]
 	path = get_information/from_repositories/iosslider
 	url = https://github.com/iosscripts/iosslider
+[submodule "get_information/from_repositories/GMStepper"]
+	path = get_information/from_repositories/GMStepper
+	url = https://github.com/gmertk/GMStepper
