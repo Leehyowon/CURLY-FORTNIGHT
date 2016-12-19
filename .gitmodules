@@ -817,3 +817,6 @@
 [submodule "get_information/from_repositories/slider"]
 	path = get_information/from_repositories/slider
 	url = https://github.com/react-component/slider
+[submodule "get_information/from_repositories/iosslider"]
+	path = get_information/from_repositories/iosslider
+	url = https://github.com/iosscripts/iosslider
