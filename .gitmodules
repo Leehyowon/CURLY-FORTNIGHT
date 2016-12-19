@@ -823,3 +823,6 @@
 [submodule "get_information/from_repositories/GMStepper"]
 	path = get_information/from_repositories/GMStepper
 	url = https://github.com/gmertk/GMStepper
+[submodule "get_information/from_repositories/turntable"]
+	path = get_information/from_repositories/turntable
+	url = https://github.com/PolarNotion/turntable
