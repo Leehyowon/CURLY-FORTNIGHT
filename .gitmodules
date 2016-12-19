@@ -832,3 +832,6 @@
 [submodule "get_information/from_repositories/Talkie"]
 	path = get_information/from_repositories/Talkie
 	url = https://github.com/ahomu/Talkie
+[submodule "get_information/from_repositories/slides"]
+	path = get_information/from_repositories/slides
+	url = https://github.com/briancavalier/slides
