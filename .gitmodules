@@ -814,3 +814,6 @@
 [submodule "get_information/from_repositories/multirange"]
 	path = get_information/from_repositories/multirange
 	url = https://github.com/LeaVerou/multirange
+[submodule "get_information/from_repositories/slider"]
+	path = get_information/from_repositories/slider
+	url = https://github.com/react-component/slider
