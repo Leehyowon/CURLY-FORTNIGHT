@@ -811,3 +811,6 @@
 [submodule "get_information/from_repositories/SlideSwitch"]
 	path = get_information/from_repositories/SlideSwitch
 	url = https://github.com/Leaking/SlideSwitch
+[submodule "get_information/from_repositories/multirange"]
+	path = get_information/from_repositories/multirange
+	url = https://github.com/LeaVerou/multirange
