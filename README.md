@@ -48,7 +48,7 @@ CURLY-FORTNIGHT is just a website. So you need to install,
 
 * curiosity about CURLY-FORTNIGHT❤
 * affection towards CURLY-FORTNIGHT❤
-* and, internet connected
+* and, let Internet connected
 
 ## RUNNING
 
