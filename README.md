@@ -30,6 +30,7 @@ CURLY-FORTNIGHT is a project at Hanyang University, with prof.Shin. We are.. umm
  * academy page
  * curriculum page
  * facility page 
+ * calendar : formal schedule of Department
 * Language
  * HTML
   * with CSS, and javascript
@@ -53,48 +54,8 @@ CURLY-FORTNIGHT is just a website. So you need to install,
 
 * 캡쳐화면
 
-## DOCUMENTATION
+## PLANS SUMMARY
 
-### USERS
-* [Shortcuts](https://github.com/Needlworks/Textcube/wiki/shortCutList)
-
-
-### SPECIFICATIONS AND STRUCTURES
-
-* [Requirements](https://github.com/Needlworks/Textcube/wiki/requirements)
-
-* [Upgrade instruction from 1.7 to 1.8 or higher version](https://github.com/Needlworks/Textcube/wiki/attentionOnInstallation)
-* [Configurable options](https://github.com/Needlworks/Textcube/wiki/configOptions)
-
-* [Skin](https://github.com/Needlworks/Textcube/wiki/SkinDocs)
-* [Skin replacer list](https://github.com/Needlworks/Textcube/wiki/replacer)
-* [Predefined styles](https://github.com/Needlworks/Textcube/wiki/skinpredefined)
-* [Skin information file specification](https://github.com/Needlworks/Textcube/wiki/skin/index_xml)
-* [Tattertools/Textcube online manual wiki](http://help.tattertools.com)
-
-* [Plugins](https://github.com/Needlworks/Textcube/wiki/PluginDocs)
-* [Plugin Creation](https://github.com/Needlworks/Textcube/wiki/PluginIntroduction)
-* [Plugin Specification](https://github.com/Needlworks/Textcube/wiki/pluginSpec)
-* [Plugin Event Listeners](https://github.com/Needlworks/Textcube/wiki/pluginEvents)
-
-* [TTXML format specification](https://github.com/Needlworks/Textcube/wiki/TTXML)
-* [WPI package creation](https://github.com/Needlworks/Textcube/wiki/WPI)
-
-### DEVELOPMENT
-* [Ticketing process](https://github.com/Needlworks/Textcube/wiki/ticketProcess)
-* [Coding guideline](https://github.com/Needlworks/Textcube/wiki/codingGuideline)
-* [Commiter/Reporter List](https://github.com/Needlworks/Textcube/wiki/contributorList)
-
-* [Developing references](https://github.com/Needlworks/Textcube/wiki/devReference)
-* [Textcube 1.10/2.0 changes for Plugin Developers](https://docs.google.com/document/d/1oEBmbT5t7_wDzJLxLg9tfjAu2QULCW6E9I00nKzV6jw/pub)
-* [Textcube 1.8 changes for Plugin Developers](http://docs.google.com/View?id=dgc24tzr_136ckbg4ngn)
-* [Textcube 1.8 changes for Skin Designers](http://docs.google.com/View?id=dgc24tzr_138hhfbmwdg)
-* [Textcube 1.8 changes for Server administrators and service hosts / maintainers](http://docs.google.com/View?id=dgc24tzr_137gr9xpdfb)
-* [Textcube 1.8 changes for coding geeks](http://docs.google.com/View?id=dgc24tzr_140c9wz6nc5)
-
-## EXTERNAL LINKS
-
-* [Textcube notice blog](http://notice.textcube.org/ko)
-* [Needlworks](http://www.needlworks.org)
-* [Needlworks Blog](http://blog.needlworks.org)
-* [Tatter Network Foundation forum](http://forum.tattersite.com/ko)
+* main page에 공지사항 파트 추가
+* 캘린더와 연동해서 모바일로 일정 등록할 수 있는 어플리케이션 개발
+* design
