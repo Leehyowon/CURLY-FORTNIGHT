@@ -44,7 +44,12 @@ CURLY-FORTNIGHT is just a website. So you need to install,
 * curiosity about CURLY-FORTNIGHT❤
 * affection towards CURLY-FORTNIGHT❤
 
-## 
+## GUHYEONCAE
+
+* 구현체가 영어로 뭐징
+ * 그리고 정확한 의미도 사실 잘 모르겠어 코드 설명을 하라는 걸까
+
+
 ## RUNNING
 
 * 캡쳐화면 넣으면 될 듯?
