@@ -30,6 +30,7 @@ CURLY-FORTNIGHT is a project at Hanyang University, Opensource SW lecture, with 
  * Share large chunks of department information in a speedy way
  * Generally manage most of information of department
  * Let official web site do its job well, by managing it periodically
+ * Get popularity of department students
 * Menu Component
  * [main page](https://github.com/namhyein/CURLY-FORTNIGHT/tree/master/main)
  * [introduction of Department page](https://github.com/namhyein/CURLY-FORTNIGHT/tree/master/introduction/src/1_Introduction)
