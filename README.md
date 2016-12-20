@@ -27,6 +27,9 @@ Therefore we decided to make our own official website, that is in good hands!
 ## REQUIREMENTS (CURRENT VERSION)
 Textcube supports various environments. However, you need at least one webserver supporting PHP environments, one database engine
 
+* Language
+ * HTML
+  * with CSS, and javascript
 * Web servers (Need at least one environment)
  * Apache > 2.1
   * fancyURL support with mod_rewrite module (recommended)
@@ -35,9 +38,6 @@ Textcube supports various environments. However, you need at least one webserver
  * PHP built-in Web Server > 5.5.7
  * IIS > 5.0
   * with ISAPI Rewrite Filter
-* Language
- * HTML
-  * with CSS, and javascript
 * Database Management System (Need at least one environment)
  * MySQL > 5.0 / MariaDB > 5.1 with UTF-8 character set and collation setting
   * With PHP MySQLi extension (MySQLnd support is in development stage.)
