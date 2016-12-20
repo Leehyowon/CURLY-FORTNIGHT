@@ -1,4 +1,4 @@
-CURLY-FORTNIGHT  :   The official Web site of C.S.E, Hanyang Univ.
+9-[CURLY-FORTNIGHT](https://github.com/namhyein/CURLY-FORTNIGHT)  :   The official Web site of C.S.E, Hanyang Univ.
 ===============================================================
 <img src="http://postfiles4.naver.net/MjAxNjExMTZfMTMy/MDAxNDc5MjU3OTEyMzg0.-2uzsAd8seTEdC0fAdsfzTK5YcNloGA497zpEAl3NuMg.1XdNfustDDvzwg2zwjWaN084OW01-axqyOVpx2TCO_og.PNG.skgpdls11/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2016-11-16_%EC%98%A4%EC%A0%84_9.56.50.png?type=w3" height="200" width="530">
 ## DESCRIPTION
@@ -17,11 +17,11 @@ This expeditious tool will let you more comfortable!
 
 
 ## INFORMATION
-CURLY-FORTNIGHT is a project at Hanyang University, with prof.Shin. We are.. umm.......hoho
+CURLY-FORTNIGHT is a project at Hanyang University, Opensource SW lecture, with prof.Shin.
 
 * Contributors
- * Hyein Nam, 2016001234
-  * Geurim Seo, 2016005678
+ * Hyein Nam, 2016003472
+  * Geurim Seo, 2016003581
    * Hyowon Lee, 2016003854
 * Menu Component
  * [main page](https://github.com/namhyein/CURLY-FORTNIGHT/tree/master/main)
@@ -48,7 +48,7 @@ CURLY-FORTNIGHT is just a website. So you need to install,
 
 * curiosity about CURLY-FORTNIGHT❤
 * affection towards CURLY-FORTNIGHT❤
-* and, internet connected
+* and, let Internet connected
 
 ## RUNNING
 
@@ -56,9 +56,14 @@ CURLY-FORTNIGHT is just a website. So you need to install,
 
 ## PLANS SUMMARY
 
-* add information notice banner at main page
-* Develop Application that can register schedule at mobile
-* design complementation
-* add spam block function by applying CAPCHA code(opensource)
-* implement server
+* Introduction and Main
+ * Add notice boards at main page
+ * Design complementation
+* Calendar
+ * Add spam block function by applying CAPCHA code(refer opensource)
+ * Complement schedule program at calendar.html
+ * Occur alarms of new schedule when schedule was modified (by javascript)
+* Mobile application
+ * Develop Application that let us manage schedules at mobile conviently
+* Implement server by C9 or AWS
 
