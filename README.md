@@ -26,7 +26,7 @@ CURLY-FORTNIGHT is a project at Hanyang University, with prof.Shin. We are.. umm
 * Menu Component
  * [main page](https://github.com/namhyein/CURLY-FORTNIGHT/tree/master/main)
  * [introduction of Department page](https://github.com/namhyein/CURLY-FORTNIGHT/tree/master/introduction/src/1_Introduction)
- * [lab page]()
+ * [lab page](https://github.com/namhyein/CURLY-FORTNIGHT/tree/master/introduction/src/2_LAB)
  * [academy page]()
  * [curriculum page]()
  * [facility page]() 
