@@ -51,13 +51,14 @@ CURLY-FORTNIGHT is a project at Hanyang University, Opensource SW lecture, with 
 CURLY-FORTNIGHT is just a website. So you need to install,
 
 * curiosity about CURLY-FORTNIGHT❤
-* affection towards CURLY-FORTNIGHT❤
+* affection towards CURLY-FORTNIG
 * and, let Internet connected
 
 ## RUNNING
 
 * Start page
-<img src="https://raw.githubusercontent.com/namhyein/CURLY-FORTNIGHT/master/image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202016-12-21%20%EC%98%A4%EC%A0%84%201.39.55.png" height="200" width="300">
+---------------------------------------------------------------------
+<img src="https://raw.githubusercontent.com/namhyein/CURLY-FORTNIGHT/master/image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202016-12-21%20%EC%98%A4%EC%A0%84%201.39.55.png" height="400" width="600">
 
 ## PLANS SUMMARY
 
