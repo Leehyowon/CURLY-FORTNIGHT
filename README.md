@@ -19,13 +19,19 @@ This expeditious tool will let you more comfortable!
 ## INFORMATION
 CURLY-FORTNIGHT is a project at Hanyang University, Opensource SW lecture, with prof.Shin.
 
-* Objective
- * 웩
-* Intention Point
 * Contributors
+ * 9. CURLY-FORTNIGHT
  * Hyein Nam, 2016003472
  * Geurim Seo, 2016003581
  * Hyowon Lee, 2016003854
+* Objective
+ * Make ofiicial Web site for Department of Computer & Science Engineering, Hanyang univ.
+* Intention Point
+ * Give informations to students more efficiently, and conviently
+ * Share large chunks of department information in a speedy way
+ * Generally manage most of information of department
+ * Let official web site do its job well, by managing it periodically
+ * Get popularity of department students
 * Menu Component
  * [main page](https://github.com/namhyein/CURLY-FORTNIGHT/tree/master/main)
  * [introduction of Department page](https://github.com/namhyein/CURLY-FORTNIGHT/tree/master/introduction/src/1_Introduction)
@@ -38,12 +44,7 @@ CURLY-FORTNIGHT is a project at Hanyang University, Opensource SW lecture, with 
  * HTML
   * with CSS, and javascript
 * License
- * GPL 3.0
-
-[![License](https://img.shields.io/badge/license-GPLv3-green.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
-[![Unstable](https://img.shields.io/badge/unstable-2.0a4-red.svg)](https://github.com/Needlworks/Textcube/archive/latest-unstable.zip)
-[![Testing](https://img.shields.io/badge/testing-1.10.10-green.svg)](https://github.com/Needlworks/Textcube/archive/latest-testing.zip)
-[![Stable](https://img.shields.io/badge/stable-1.10.10-blue.svg)](https://github.com/Needlworks/Textcube/archive/latest-stable.zip)
+ * [![License](https://img.shields.io/badge/license-GPLv3-green.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
 
 ## INSTALLATION
 
