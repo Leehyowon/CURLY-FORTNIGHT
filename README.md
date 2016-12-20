@@ -3,8 +3,9 @@ The official Web site of C.S.E, Hanyang Univ.
 
 ## DESCRIPTION
 
-CURLY-FORTNIGHT is an Website of Department of Computer & Science Endgineering of Hanyang University.
-You can see most informations of Department, in this official Web site.
+CURLY-FORTNIGHT is a project that want to make official Website of Department for everyone, being more efficient.
+You can see it equals a Website of Department of Computer & Science Engineering of Hanyang University.
+Most informations of Department are there, and it will be maintained perodically.
 
 그리고 난 요약과 소개의 차이점을 분간할 수 없다. 딱히 한줄평으로 중요하게 써 줄 말이 없다.
 
