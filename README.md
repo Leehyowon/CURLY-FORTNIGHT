@@ -66,10 +66,10 @@ are strongly recommended.
 
 ## INSTALLATION
 
-Before you start, you need to
+CURLY-FORTNIGHT is just a website. So you need to install,
 
-* know the port / username / password of your database
-* have the permission to modify webserver configuration.
+* curiosity about CURLY-FORTNIGHT
+* affection towards CURLY-FORTNIGHT
 
 ### Bower
 
