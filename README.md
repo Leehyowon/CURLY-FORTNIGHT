@@ -53,17 +53,6 @@ For massive service / Heavy load environments
 
 are strongly recommended.
 
-## REQUIREMENTS (OLD VERSIONS)
-
-* Web servers (Need at least one environment)
- * Apache > 1.3
-  * fancyURL support with mod_rewrite module
-* Language
- * (Till Textcube 1.7) PHP 4.3~5.1, (Till Textcube 1.10) PHP 5.0~5.3
-  * with iconv / gd module
-* Database Management System (Need at least one environment)
- * (Till Textcube 1.7) MySQL > 4.1 / MariaDB > 5 (lower version with UTF-8 emulation routine in Textcube)
-
 ## INSTALLATION
 
 CURLY-FORTNIGHT is just a website. So you need to install,
