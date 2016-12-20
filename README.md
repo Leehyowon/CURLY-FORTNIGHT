@@ -56,7 +56,8 @@ CURLY-FORTNIGHT is just a website. So you need to install,
 
 ## RUNNING
 
-* 캡쳐화면
+* Start page
+<img src="https://raw.githubusercontent.com/namhyein/CURLY-FORTNIGHT/master/image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202016-12-21%20%EC%98%A4%EC%A0%84%201.39.55.png" height="200" width="300">
 
 ## PLANS SUMMARY
 
