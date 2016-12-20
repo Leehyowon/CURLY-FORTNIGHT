@@ -1,4 +1,4 @@
-The official Web site of C.S.E
+The official Web site of C.S.E, Hanyang Univ.
 ===============================================================
 
 ## DESCRIPTION
