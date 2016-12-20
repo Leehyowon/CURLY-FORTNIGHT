@@ -24,13 +24,13 @@ CURLY-FORTNIGHT is a project at Hanyang University, with prof.Shin. We are.. umm
   * Geurim Seo, 2016005678
    * Hyowon Lee, 2016003854
 * Menu Component
- * main page
- * introduction of Department page
- * lab page
- * academy page
- * curriculum page
- * facility page 
- * calendar : formal schedule of Department
+ * [main page](https://github.com/namhyein/CURLY-FORTNIGHT/tree/master/main)
+ * [introduction of Department page](https://github.com/namhyein/CURLY-FORTNIGHT/tree/master/introduction/src/1_Introduction)
+ * [lab page](https://github.com/namhyein/CURLY-FORTNIGHT/tree/master/introduction/src/2_LAB)
+ * [academy page](https://github.com/namhyein/CURLY-FORTNIGHT/tree/master/introduction/src/3_academy)
+ * [curriculum page](https://github.com/namhyein/CURLY-FORTNIGHT/tree/master/introduction/src/4_Curriculum)
+ * [facility page](https://github.com/namhyein/CURLY-FORTNIGHT/tree/master/introduction/src/5_Facility) 
+ * [calendar : formal schedule of Department](https://github.com/namhyein/CURLY-FORTNIGHT/tree/master/calendar)
 * Language
  * HTML
   * with CSS, and javascript
