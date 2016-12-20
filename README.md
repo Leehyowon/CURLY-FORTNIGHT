@@ -57,10 +57,36 @@ CURLY-FORTNIGHT is just a website. So you need to install,
 ## RUNNING
 
 * Start page
+
 <img src="https://raw.githubusercontent.com/namhyein/CURLY-FORTNIGHT/master/image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202016-12-21%20%EC%98%A4%EC%A0%84%201.39.55.png" height="400" width="600">
 
 * Main page
+
 <img src="https://raw.githubusercontent.com/namhyein/CURLY-FORTNIGHT/master/image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202016-12-21%20%EC%98%A4%EC%A0%84%201.40.20.png" height="400" width="600">
+
+* Introduction of Department page
+
+<img src="https://raw.githubusercontent.com/namhyein/CURLY-FORTNIGHT/master/image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202016-12-21%20%EC%98%A4%EC%A0%84%201.41.51.png" height="400" width="600">
+
+* Labs page
+
+<img src="https://raw.githubusercontent.com/namhyein/CURLY-FORTNIGHT/master/image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202016-12-21%20%EC%98%A4%EC%A0%84%201.42.32.png" height="400" width="600">
+
+* Academy page
+
+<img src="https://raw.githubusercontent.com/namhyein/CURLY-FORTNIGHT/master/image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202016-12-21%20%EC%98%A4%EC%A0%84%201.43.25.png" height="400" width="600">
+
+* Curriculum page
+
+<img src="https://raw.githubusercontent.com/namhyein/CURLY-FORTNIGHT/master/image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202016-12-21%20%EC%98%A4%EC%A0%84%201.44.16.png" height="400" width="600">
+
+* Facility page
+
+<img src="https://raw.githubusercontent.com/namhyein/CURLY-FORTNIGHT/master/image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202016-12-21%20%EC%98%A4%EC%A0%84%201.45.24.png" height="400" width="600">
+
+* Calendar : formal schedule of Department page
+
+<img src="https://raw.githubusercontent.com/namhyein/CURLY-FORTNIGHT/master/image/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202016-12-21%20%EC%98%A4%EC%A0%84%201.45.59.png" height="400" width="600">
 
 ## PLANS SUMMARY
 
