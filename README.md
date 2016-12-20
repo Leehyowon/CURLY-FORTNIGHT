@@ -40,11 +40,7 @@ CURLY-FORTNIGHT is a project at Hanyang University, Opensource SW lecture, with 
   * with CSS, and javascript
 * License
  * GPL 3.0
-
-[![License](https://img.shields.io/badge/license-GPLv3-green.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
-[![Unstable](https://img.shields.io/badge/unstable-2.0a4-red.svg)](https://github.com/Needlworks/Textcube/archive/latest-unstable.zip)
-[![Testing](https://img.shields.io/badge/testing-1.10.10-green.svg)](https://github.com/Needlworks/Textcube/archive/latest-testing.zip)
-[![Stable](https://img.shields.io/badge/stable-1.10.10-blue.svg)](https://github.com/Needlworks/Textcube/archive/latest-stable.zip)
+ * [![License](https://img.shields.io/badge/license-GPLv3-green.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
 
 ## INSTALLATION
 
