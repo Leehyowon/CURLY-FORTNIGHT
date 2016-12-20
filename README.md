@@ -5,19 +5,7 @@ The official Web site of C.S.E, Hanyang Univ.
 
 CURLY-FORTNIGHT is an Website of Department of Computer & Science Endgineering of Hanyang University.
 
-Supports import/export individual data via XML compatible with other solutions in 'Tattertools Project'
-
-* Strong support of non-latin compatibility including Korean/Japanese/Chinese
-* Supports various installation environments (webservers,databases and languages)
-* Provides and extensible plugin and skin architecture
-* Expandable from individual blog to blog service platform.
-* Supports easy backup and restore via TTXML format, which is supported by various platforms of 'Project Tattertools.'
-
-
-[![License](https://img.shields.io/badge/license-GPLv2-green.svg)](http://www.gnu.org/licenses/gpl-2.0.html)
-[![Unstable](https://img.shields.io/badge/unstable-2.0a4-red.svg)](https://github.com/Needlworks/Textcube/archive/latest-unstable.zip)
-[![Testing](https://img.shields.io/badge/testing-1.10.10-green.svg)](https://github.com/Needlworks/Textcube/archive/latest-testing.zip)
-[![Stable](https://img.shields.io/badge/stable-1.10.10-blue.svg)](https://github.com/Needlworks/Textcube/archive/latest-stable.zip)
+요약과 소개의 차이점을 분간할 수 없다.
 
 ## HISTORY
 
@@ -31,9 +19,6 @@ CURLY-FORTNIGHT is just a website. So you don't need something to install. You j
  * Hyein Nam, 2016001234
   * Geurim Seo, 2016005678
    * Hyowon Lee, 2016003854
-* Language
- * HTML
-  * with CSS, and javascript
 * Menu Component
  * main page
  * introduction of Department page
@@ -41,15 +26,15 @@ CURLY-FORTNIGHT is just a website. So you don't need something to install. You j
  * academy page
  * curriculum page
  * facility page 
-
-
-For massive service / Heavy load environments
-
- * APC (Alternative PHP Cache) pecl package with PHP PEAR
- * XCache
- * memcached module
-
-are strongly recommended.
+* Language
+ * HTML
+  * with CSS, and javascript
+* License
+ * GPL 3.0
+[![License](https://img.shields.io/badge/license-GPLv2-green.svg)](http://www.gnu.org/licenses/gpl-2.0.html)
+[![Unstable](https://img.shields.io/badge/unstable-2.0a4-red.svg)](https://github.com/Needlworks/Textcube/archive/latest-unstable.zip)
+[![Testing](https://img.shields.io/badge/testing-1.10.10-green.svg)](https://github.com/Needlworks/Textcube/archive/latest-testing.zip)
+[![Stable](https://img.shields.io/badge/stable-1.10.10-blue.svg)](https://github.com/Needlworks/Textcube/archive/latest-stable.zip)
 
 ## INSTALLATION
 
