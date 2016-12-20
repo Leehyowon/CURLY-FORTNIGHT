@@ -17,7 +17,7 @@ This expeditious tool will let you more comfortable!
 
 
 ## INFORMATION
-CURLY-FORTNIGHT is a project at Hanyang University, with prof.Shin. We are.. umm.......hoho
+CURLY-FORTNIGHT is a project at Hanyang University, Opensource SW lecture, with prof.Shin.
 
 * Contributors
  * Hyein Nam, 2016003472
