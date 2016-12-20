@@ -1,65 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
 <html>
 <head>
-	<title>C.S.E Calendar</title>
-</head>
-
-<body>
-	<div style = "text-align: center">
-		<h1><big><big>Computer Science & Engineering 2016</big></big></h1>
-	</div>
+	<meta charset="UTF-8">
+	<title>Main Page</title>
 	<style>
-		#last_month{
-			width : 150px;
-			height : 150px;
+		body{
+			font-family: 'Electrolize';
+			background-image: url(https://raw.githubusercontent.com/namhyein/CURLY-FORTNIGHT/master/main/image/02.jpeg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: 50% 50%;
+		}
+		#topMenu{
+			height: 30px;
+			width: 900px;
+		}
+		#topMenu ul li{
+			list-style: none;
+			color: white;
+			text-shadow: 2px 2px 5px black;
 			float: left;
+			position: relative;
+			left: 62%;
+			line-height: 40px;
+			vertical-align: middle;
+			text-align: center;
 		}
-		#this_month{
-			width : 700px;
-			height : 600px;
-			background-color : pink;
-			float: left;
+		#topMenu .menuLink{
+			text-decoration: none;
+			color: white;
+			display: block;
+			width: 120px;
+			font-size: 17px;
+			font-weight: bold;
+			font-family: "Trebuchet MS", Dotum, Arial;
 		}
-		#next_month{
-			width : 150px;
-			height : 150px;
-			float: left;
-		
+		#topMenu .menuLink:hover{
+			color: red;
+			background-color: #4d4d4d;
+			background : rgba(0, 0, 0, 0.2);
 		}
-		#blank{
-			width: 50px;
-			height: 50px;
-			float: left;
+		#bottom{
+			font-size: 12px;
+			font-family: "Tahoma";
+			position: absolute;
+			background-color: #9e9a9a;
+			top: 85%;
+			left:0%;
+			right:0%;
+			bottom: 0%;
 		}
-		#register{
-			clear: both;
-			float: right;
-			width: 350px;
-			height: 100px;
+		#contact{
+			font-size: 15px;
+			font-family: "Tahoma";
+			position: absolute;
+			background-color: #9e9a9a;
+			top: 88%;
+			left: 7%;
 		}
-
+		#title{
+			font-size: 40px;
+			font-family: "Tahoma";
+			color: white;
+			text-shadow: 2px 2px 5px black;
+			position: absolute;
+			top: 30%;
+			left: 25%;
+			right: 3%;
+		}
+		#logo{
+			position: absolute;
+			left: 5.6%;
+			top: 4%;
+		}
 	</style>
-	<div id="last_month">
-		<img src="http://cfile205.uf.daum.net/image/207C3C4451273EA831B5B4" height="130" width="130">		
+</head>
+<body>
+	<div id="logo"><img src="http://printmania.co.kr/data/file/logo/988383267_Y8czCHrG_C7D1BEE7B4EBB7CEB0ED-BCBCB7CEC7FC28B1B9B9AE29.png" height="80"></div>
+	<nav id="topMenu">
+		<ul>
+			<li><a class="menuLink" href="file:///Users/seogeulim/Desktop/CURLY-FORTNIGHT/main/main.html">HOME</a></li>
+			<li><a class="menuLink" href="file:///Users/seogeulim/Desktop/CURLY-FORTNIGHT/introduction/src/1_Introduction/intro.html">ABOUT</a></li>
+			<li><a class="menuLink" href="file:///Users/seogeulim/Desktop/CURLY-FORTNIGHT/introduction/src/2_LAB/LAB.html">LAB</a></li>
+			<li><a class="menuLink" href="file:///Users/seogeulim/Desktop/CURLY-FORTNIGHT/introduction/src/4_Curriculum/curriculum.html">CURRICULUM</a></li>
+			<li><a class="menuLink" href="file:///Users/seogeulim/Desktop/CURLY-FORTNIGHT/introduction/src/3_academy/academy.html">ACADEMY</a></li>
+			<li><a class="menuLink" href="file:///Users/seogeulim/Desktop/CURLY-FORTNIGHT/introduction/src/5_Facility/facility_main.html">FACILITY</a></li>
+			<li><a class="menuLink" href="file:///Users/seogeulim/Desktop/CURLY-FORTNIGHT/calendar/schedule.html">CALENDAR</a></li>
+		</ul>
+	</nav>
+	<div id="title">
+		<b><i><big>Welcome</big> to the<br>&nbsp; &nbsp;<big>Computer Science & Engineering</big> Website</i></b>
+		<hr>
 	</div>
-
-	<div id="blank"></div>
-	
-	<div id="this_month">
-		this	
-	</div>
-
-	<div id="blank"></div>
-
-	<div id="next_month">
-		<img src="http://m1.daumcdn.net/cfile227/R400x0/120BC34451273EA822FF57" height="160" width="160">
-	</div>
-
-	<div id="register">
-		<a href="file:///Users/seogeulim/Desktop/CURLY-FORTNIGHT/calendar/register.html" target="_blank">
-			<img src="https://t3.ftcdn.net/jpg/00/35/05/98/240_F_35059809_M6BLZHeDHVAbspA32KKCDL9JEcmeH7GU.jpg" height="150" width="300">
-		</a>
+	<div id="bottom"></div>
+	<div id="contact">
+		<big><i>Contact Number Information</i></big><br>
+		&nbsp; &nbsp;HYU ERICA | 15588 경기도 안산시 상록구 한양대학로 55 대표전화번호 : 031-400-5114<br>
+		&nbsp; &nbsp;Engineering College | 031) 400-5115/4015<br>
+		&nbsp; &nbsp;Site Manager | 남혜인 010-4579-1322 서그림 010-5039-5620 이효원 010-2362-6724
 	</div>
 </body>
 </html>
