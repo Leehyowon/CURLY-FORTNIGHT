@@ -56,6 +56,9 @@ CURLY-FORTNIGHT is just a website. So you need to install,
 
 ## PLANS SUMMARY
 
-* main page에 공지사항 파트 추가
-* 캘린더와 연동해서 모바일로 일정 등록할 수 있는 어플리케이션 개발
-* design
+* add information notice banner at main page
+* Develop Application that can register schedule at mobile
+* design complementation
+* add spam block function by applying CAPCHA code(opensource)
+* implement server
+
