@@ -21,7 +21,8 @@ Supports import/export individual data via XML compatible with other solutions i
 
 ## HISTORY
 
-CURLY-FORTNIGHT is based on a website, http://cse.hanyang.ac.kr. Although it is official website of my department, it just was not being managed efficiently. When you visit that website, you can see that informations have not changed since 2013. 
+CURLY-FORTNIGHT is based on a website, http://cse.hanyang.ac.kr. Although it is official website of my department, it just was not being managed efficiently. When you visit that website, you can see that informations have not changed since 2013.
+Therefore we decided to make our own official website, that is in good hands! 
 
 ## REQUIREMENTS (CURRENT VERSION)
 Textcube supports various environments. However, you need at least one webserver supporting PHP environments, one database engine
