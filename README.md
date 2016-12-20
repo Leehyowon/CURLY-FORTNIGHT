@@ -25,7 +25,7 @@ CURLY-FORTNIGHT is based on a website, http://cse.hanyang.ac.kr. Although it was
 Therefore we decided to make our own official website, that is in good hands! 
 
 ## INFORMATION
-CURLY-FORTNIGHT is just a wevsite. So you don't need something to install. You just need internet connected. 
+CURLY-FORTNIGHT is just a website. So you don't need something to install. You just need internet connected. 
 
 * Contributors
  * Hyein Nam, 2016001234
@@ -34,6 +34,13 @@ CURLY-FORTNIGHT is just a wevsite. So you don't need something to install. You j
 * Language
  * HTML
   * with CSS, and javascript
+* Menu Component
+ * main page
+ * introduction of Department page
+ * lab page
+ * academy page
+ * curriculum page
+ * facility page 
 
 
 For massive service / Heavy load environments
