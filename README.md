@@ -1,9 +1,9 @@
-The official Web site of Depatment of Computer & Science Engineering
+The official Web site of C.S.E
 ===============================================================
 
 ## DESCRIPTION
 
-Textcube is an opensource tool to archive and share the experiences, ideas, opinions and thoughts.
+CURLY-FORTNIGHT is an Website of Department of Computer & Science Endgineering of Hanyang University.
 
 Supports import/export individual data via XML compatible with other solutions in 'Tattertools Project'
 
@@ -21,7 +21,7 @@ Supports import/export individual data via XML compatible with other solutions i
 
 ## HISTORY
 
-Textcube is based on online publishing platform 'Tattertools,' started by JH in 2004, developed by TNC in 2005 and GPLized in 2006. Tatter Network Foundation (TNF) developed Tattertools with TNC from Apr. 2006. Needlworks/TNF was dedicated to Tattertools' development from Nov. 2006, and started developing 'Project S2' as its successor. 'Textcube' was named by YJ Park, and made its debut in Aug. 2007.
+CURLY-FORTNIGHT is based on a website, http://cse.hanyang.ac.kr. Although it is official website of my department, it just was not being managed efficiently. When you visit that website, you can see that informations have not changed since 2013. 
 
 ## REQUIREMENTS (CURRENT VERSION)
 Textcube supports various environments. However, you need at least one webserver supporting PHP environments, one database engine
