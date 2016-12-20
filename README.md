@@ -9,11 +9,14 @@ Most informations of Department are there, and it will be maintained perodically
 
 ## HISTORY
 
-CURLY-FORTNIGHT is based on a website, http://cse.hanyang.ac.kr. Although it was official website of my department, it just was not being managed efficiently. When you visit that website, you can see that informations have not changed since 2013.
-Therefore we decided to make our own official website, that is in good hands! 
+CURLY-FORTNIGHT is based on a website, http://cse.hanyang.ac.kr. Although it was official website of my department, it just was not being managed efficiently. 
+When you visit that website, you can see that informations have not changed since 2013.
+So students who need informations about department cannot get them. (In fact, I'm the finest known example)
+Therefore we decided to make our own official website, that is in good hands!
+
 
 ## INFORMATION
-CURLY-FORTNIGHT is just a website. So you don't need something to install. You just need internet connected. 
+CURLY-FORTNIGHT is a project at Hanyang University, with prof.Shin. We are   
 
 * Contributors
  * Hyein Nam, 2016001234
@@ -43,6 +46,7 @@ CURLY-FORTNIGHT is just a website. So you need to install,
 
 * curiosity about CURLY-FORTNIGHT❤
 * affection towards CURLY-FORTNIGHT❤
+* and, internet connected
 
 ## RUNNING
 
