@@ -69,7 +69,7 @@ are strongly recommended.
 CURLY-FORTNIGHT is just a website. So you need to install,
 
 * curiosity about CURLY-FORTNIGHT
-* affection towards CURLY-FORTNIGHT
+* affection towards CURLY-FORTNIGHT❤
 
 ### Bower
 
