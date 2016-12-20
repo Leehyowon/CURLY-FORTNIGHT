@@ -1,9 +1,19 @@
+<!-- 
+* academy_01
+
+* 1번째 학회 관련 정보를 띄워주는 화면
+* 해당 학회의 홈페이지, 저지 사이트, 임원진 연락처 등 파악 가능
+* 상단 메뉴바를 통해 다른 페이지로 이동 가능
+* 좌단 메뉴바를 통해 타 학회 페이지로 이동 가능
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>LAB</title>
+	<title>ACADEMY_0&1</title>
 	<style>
+		/* 각 요소의 디자인적인 부분들 정의 */
 		body{
 			font-family: 'Electrolize';
 			background-image: url(https://raw.githubusercontent.com/namhyein/CURLY-FORTNIGHT/master/main/image/02.jpeg);
@@ -16,7 +26,7 @@
 			height: 30px;
 			width: 900px;
 		}
-		#topMenu ul li{
+		#topMenu ul li{ /* 상단 메뉴바 관련 디자인 */
 			list-style: none;
 			color: white;
 			text-shadow: 2px 2px 5px black;
@@ -41,11 +51,11 @@
 			background-color: #4d4d4d;
 			background : rgba(0, 0, 0, 0.2);
 		}
-		#subMenu{
+		#subMenu{ /* 좌측 메뉴바 관련 디자인 */
 			height: 800px;
 			width: 190px;
 			position: absolute;
-			top: 15%;
+			top: 20%;
 		}
 		#subMenu ul li{
 			list-style: none;
@@ -67,49 +77,41 @@
 			font-weight: bold;
 			font-family: "Trebuchet MS", Dotum, Arial;
 		}
-		#subMenu .menuLink:hover{
+		#subMenu .menuLink:hover{ 
 			color: skyblue;
 			background-color: #4d4d4d;
 			background : rgba(0, 0, 0, 0.2);
 		}
-		#logo{
+		#logo{ /* 로고 관련 디자인 */
 			position: absolute;
 			left: 5.6%;
 			top: 4%;
 		}
-		#box{
+		#box{ /* 텍스트 뒷 배경 관련 디자인 */
 			background-color: #2d2d2d;
 			background : rgba(0, 0, 0, 0.3);
 			position: absolute;
 			top: 17%;
-			left: 19%;
+			left: 20%;
 			width: 1080px;
-			height: 795px;
+			height: 500px;
 		}
-		#text{
-			color : white;
-			text-shadow: 2px 2px 5px black;
-			font-size: 20px;
-			font-weight: bold;
-			font-family: "Trebuchet MS", Dotum, Arial;
+		#information{ /* 학회 관련 텍스트 삽입할 부분 디자인 */ 
+			color: white;
 			position: absolute;
-			top: 25%;
-			left: 52%;
-		}
-		#back{
-			position: absolute;
-			top:205%;
-			left:50%;
-			height: 1070px;
-			width: 1250px;
-			background: black;
-			background : rgba(0, 0, 0, 0.5);
-			transform:translate(-50%, -50%)
+			left: 40%;
+			top: 23%;
+			font-size: 25px;
+			font-family: "Tahoma";
 		}
 	</style>
 </head>
+
 <body>
+	<!-- 좌측 상단 학교 로고-->
 	<div id="logo"><img src="http://printmania.co.kr/data/file/logo/988383267_Y8czCHrG_C7D1BEE7B4EBB7CEB0ED-BCBCB7CEC7FC28B1B9B9AE29.png" height="80"></div>
+	
+	<!-- 우측 상단 메뉴바 하이퍼링크-->
 	<nav id="topMenu">
 		<ul>
 			<li><a class="menuLink" href="file:///Users/seogeulim/Desktop/CURLY-FORTNIGHT/main/main.html">HOME</a></li>
@@ -121,37 +123,30 @@
 			<li><a class="menuLink" href="file:///Users/seogeulim/Desktop/CURLY-FORTNIGHT/calendar/schedule.html">CALENDAR</a></li>
 		</ul>
 	</nav>
+
+	<!-- 좌측 메뉴바 하이퍼링크-->
 	<nav id="subMenu">
 		<ul>
-			<li><a class="menuLink" href="#">이정규교수님</a></li>
-			<li><a class="menuLink" href="#">문영식교수님</a></li>
-			<li><a class="menuLink" href="#">마상백교수님</a></li>
-			<li><a class="menuLink" href="#">오희국교수님</a></li>
-			<li><a class="menuLink" href="#">박성주교수님</a></li>
-			<li><a class="menuLink" href="#">도경구교수님</a></li>
-			<li><a class="menuLink" href="#">김정선교수님</a></li>
-			<li><a class="menuLink" href="#">김태형교수님</a></li>
-			<li><a class="menuLink" href="#">이동호교수님</a></li>
-			<li><a class="menuLink" href="#">강경태교수님</a></li>
-			<li><a class="menuLink" href="#">스캇리교수님</a></li>
-			<li><a class="menuLink" href="#">조성현교수님</a></li>
-			<li><a class="menuLink" href="#">이석복교수님</a></li>
-			<li><a class="menuLink" href="#">윤종원교수님</a></li>
-			<li><a class="menuLink" href="#">김 광교수님</a></li>
-			<li><a class="menuLink" href="#">김형석교수님</a></li>
+			<li><a class="menuLink" href="file:///Users/seogeulim/Desktop/CURLY-FORTNIGHT/introduction/src/3_academy/academy_01.html">0&1</a></li>
+			<li><a class="menuLink" href="file:///Users/seogeulim/Desktop/CURLY-FORTNIGHT/introduction/src/3_academy/academy_Jaram.html">JARAM</a></li>
+			<li><a class="menuLink" href="file:///Users/seogeulim/Desktop/CURLY-FORTNIGHT/introduction/src/3_academy/academy_HYcube.html">HYCUBE</a></li>
 		</ul>
-		<br><br>
 	</nav>
+
+	<!-- 텍스트 뒷 배경 디자인-->
 	<div id="box">
-		<br><br><br>&nbsp; &nbsp;&nbsp; &nbsp;
-		<img src="http://cse.hanyang.ac.kr/wp-content/uploads/2014/07/Data_Communication_Laboratory.png" height="100">
+		<br><br>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+		<!-- 텍스트 좌측에 학회 로고-->
+		<img src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/11986915_892049317536594_7495626031674231404_n.png?oh=63f96ff08d88cdf1eeea513751260799&oe=58DEADF3" height="200">
 	</div>
-	<div id="text">
-		<big>정보통신 연구실</big><br>
-		지도교수 이정규<br>
-		연구실 위치 | 4공학관 311호<br>
-		연구실 연락처 | 031-406-1950<br>
-		홈페이지 | http://commlab.hanyang.ac.kr
+
+	<!-- 로고 우측의 텍스트 -->
+	<div id="information">
+		<big><b>O&1 ACADEMY</b></big><br>
+		Algorithm Academy of HYU ERICA C.S.E<br>
+		Website | <a href="https://www.facebook.com/zeronecode/" target="_blank">0&1 Facebook page</a><br>
+		Website | <a href="http://www.zeronecode.com/" target="_blank">0&1 Judge Online</a><br>
+		Contact | 010-1997-0415 [C.S.E 16 Lee Hyowon]
 	</div>
 </body>
 </html>
