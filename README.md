@@ -60,65 +60,9 @@ CURLY-FORTNIGHT is just a website. So you need to install,
 * curiosity about CURLY-FORTNIGHT❤
 * affection towards CURLY-FORTNIGHT❤
 
-### Server configuration
-
-This is apache setting ( < 2.4).
-
-    <VirtualHost *:80>
-        ServerName www.example.org
-        ServerAlias www.example.org
-        ServerAdmin admin@example.org
-        DocumentRoot /var/www/textcube/
-        <Directory /var/www/textcube>
-            AllowOverride FileInfo
-            Require all granted (+needed for apache > 2.4)
-            Order allow,deny
-            allow from all
-        </Directory>
-    </VirtualHost>
-
-This is nginx setting.
-
-    server {
-       listen  80;
-       server_name example.org *.example.org;
-       root    /var/www/textcube;
-
-       location /  {
-           root    /var/www/textcube;
-           set $rewrite_base '';
-           if (!-f $request_filename) {
-               rewrite ^(thumbnail)/([0-9]+/.+)$ cache/$1/$2;
-           }
-           if ($request_filename ~* ^(cache)+/+(.+[^/])\.(cache|xml|txt|log)$) {
-               return 403;
-           }
-           if (-d $request_filename) {
-               rewrite ^(.+[^/])$ $1/;
-           }
-           rewrite  ^(.*)$ $rewrite_base/rewrite.php last;
-       }
-
-       location ~ \.php$ {
-           fastcgi_pass   127.0.0.1:9000;
-           fastcgi_index  index.php;
-           fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
-           fastcgi_param  QUERY_STRING     $query_string;
-           fastcgi_param  REQUEST_METHOD   $request_method;
-           fastcgi_param  CONTENT_TYPE     $content_type;
-           fastcgi_param  CONTENT_LENGTH   $content_length;
-           include fastcgi_params;
-       }
-       location ~ /\.ht {
-           deny all;
-       }
-    }
-
-If the accessible URL is http://www.example.org, run the installation program by accessing http://www.example.org/setup.php. Follow the setup procedure.
-
-* [Installation (Korean)](http://help.tattertools.com/ko/index.php?title=Getting_Started)
-
 ## RUNNING
+
+* 캡쳐화면 넣으면 될 듯?
 
 ## DOCUMENTATION
 
