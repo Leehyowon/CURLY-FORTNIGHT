@@ -1,4 +1,6 @@
-CURLY-FORTNIGHT : The official Web site of C.S.E, Hanyang Univ.
+CURLY-FORTNIGHT
+
+ : The official Web site of C.S.E, Hanyang Univ.
 ===============================================================
 
 ## DESCRIPTION
