@@ -36,8 +36,8 @@ Textcube supports various environments. However, you need at least one webserver
  * IIS > 5.0
   * with ISAPI Rewrite Filter
 * Language
- * PHP > 5.5
-  * with iconv (for TTXML character converting from old servers) / gd module (for image resampling)
+ * HTML
+  * with CSS, and javascript
 * Database Management System (Need at least one environment)
  * MySQL > 5.0 / MariaDB > 5.1 with UTF-8 character set and collation setting
   * With PHP MySQLi extension (MySQLnd support is in development stage.)
