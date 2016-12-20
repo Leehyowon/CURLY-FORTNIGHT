@@ -24,7 +24,7 @@ CURLY-FORTNIGHT is a project at Hanyang University, Opensource SW lecture, with 
  * Geurim Seo, 2016003581
  * Hyowon Lee, 2016003854
 * Objective
- * 웩
+ * Make ofiicial Web site of Department of Computer & Science Engineering, Hanyang university
 * Intention Point
  * Give informations to students more efficiently, and conviently
  * Share large chunks of department information in a speedy way
