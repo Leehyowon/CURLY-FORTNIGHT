@@ -25,7 +25,7 @@ CURLY-FORTNIGHT is based on a website, http://cse.hanyang.ac.kr. Although it was
 Therefore we decided to make our own official website, that is in good hands! 
 
 ## REQUIREMENTS (CURRENT VERSION)
-Textcube supports various environments. However, you need at least one webserver supporting PHP environments, one database engine
+CURLY-FORTNIGHT is just a wevsite. So you don't need something to install. You just need internet connected. 
 
 * Language
  * HTML
