@@ -1,4 +1,4 @@
-Textcube: Brand Yourself - Personalized web publishing platform
+The official Web site of Depatment of Computer & Science Engineering
 ===============================================================
 
 ## DESCRIPTION
