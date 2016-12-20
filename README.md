@@ -19,10 +19,13 @@ This expeditious tool will let you more comfortable!
 ## INFORMATION
 CURLY-FORTNIGHT is a project at Hanyang University, Opensource SW lecture, with prof.Shin.
 
+* Objective
+ * 웩
+* Intention Point
 * Contributors
  * Hyein Nam, 2016003472
-  * Geurim Seo, 2016003581
-   * Hyowon Lee, 2016003854
+ * Geurim Seo, 2016003581
+ * Hyowon Lee, 2016003854
 * Menu Component
  * [main page](https://github.com/namhyein/CURLY-FORTNIGHT/tree/master/main)
  * [introduction of Department page](https://github.com/namhyein/CURLY-FORTNIGHT/tree/master/introduction/src/1_Introduction)
