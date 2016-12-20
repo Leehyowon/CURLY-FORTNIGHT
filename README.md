@@ -24,26 +24,17 @@ Supports import/export individual data via XML compatible with other solutions i
 CURLY-FORTNIGHT is based on a website, http://cse.hanyang.ac.kr. Although it was official website of my department, it just was not being managed efficiently. When you visit that website, you can see that informations have not changed since 2013.
 Therefore we decided to make our own official website, that is in good hands! 
 
-## REQUIREMENTS (CURRENT VERSION)
+## INFORMATION
 CURLY-FORTNIGHT is just a wevsite. So you don't need something to install. You just need internet connected. 
 
+* Contributors
+ * Hyein Nam, 2016001234
+  * Geurim Seo, 2016005678
+   * Hyowon Lee, 2016003854
 * Language
  * HTML
   * with CSS, and javascript
-* Web servers (Need at least one environment)
- * Apache > 2.1
-  * fancyURL support with mod_rewrite module (recommended)
- * Nginx > 1.1
- * Lighttpd > 1.4
- * PHP built-in Web Server > 5.5.7
- * IIS > 5.0
-  * with ISAPI Rewrite Filter
-* Database Management System (Need at least one environment)
- * MySQL > 5.0 / MariaDB > 5.1 with UTF-8 character set and collation setting
-  * With PHP MySQLi extension (MySQLnd support is in development stage.)
- * Cubrid > R2008
- * PostgreSQL > 8.3
- * Sqlite > 3.0
+
 
 For massive service / Heavy load environments
 
