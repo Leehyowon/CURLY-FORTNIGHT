@@ -61,4 +61,5 @@ CURLY-FORTNIGHT is just a website. So you need to install,
 * design complementation
 * add spam block function by applying CAPCHA code(opensource)
 * implement server
-
+* add schedule program at calendar.html
+* send the information of new schedule to management if someone register new schedule (by javascript)
