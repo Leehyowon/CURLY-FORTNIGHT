@@ -20,7 +20,7 @@ This expeditious tool will let you more comfortable!
 CURLY-FORTNIGHT is a project at Hanyang University, with prof.Shin. We are.. umm.......hoho
 
 * Contributors
- * Hyein Nam, 2016001234
+ * Hyein Nam, 2016003472
   * Geurim Seo, 2016003581
    * Hyowon Lee, 2016003854
 * Menu Component
