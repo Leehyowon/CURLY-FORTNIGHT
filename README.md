@@ -1,6 +1,6 @@
 CURLY-FORTNIGHT  :   The official Web site of C.S.E, Hanyang Univ.
 ===============================================================
-<img src="http://postfiles4.naver.net/MjAxNjExMTZfMTMy/MDAxNDc5MjU3OTEyMzg0.-2uzsAd8seTEdC0fAdsfzTK5YcNloGA497zpEAl3NuMg.1XdNfustDDvzwg2zwjWaN084OW01-axqyOVpx2TCO_og.PNG.skgpdls11/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2016-11-16_%EC%98%A4%EC%A0%84_9.56.50.png?type=w3" height="300" width="700">
+<img src="http://postfiles4.naver.net/MjAxNjExMTZfMTMy/MDAxNDc5MjU3OTEyMzg0.-2uzsAd8seTEdC0fAdsfzTK5YcNloGA497zpEAl3NuMg.1XdNfustDDvzwg2zwjWaN084OW01-axqyOVpx2TCO_og.PNG.skgpdls11/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2016-11-16_%EC%98%A4%EC%A0%84_9.56.50.png?type=w3" height="200" width="530">
 ## DESCRIPTION
 
 CURLY-FORTNIGHT is a project that want to make official Website of Department for everyone, being more efficient.
