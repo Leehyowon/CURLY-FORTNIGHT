@@ -1,56 +1,103 @@
-<html lang = "ko">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <title>Academy of C.S.E</title>
+	<meta charset="UTF-8">
+	<title>ACADEMY</title>
+	<style>
+		body{
+			font-family: 'Electrolize';
+			background-image: url(https://raw.githubusercontent.com/namhyein/CURLY-FORTNIGHT/master/main/image/02.jpeg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: 50% 50%;
+		}
+		#topMenu{
+			height: 30px;
+			width: 850px;
+			/*float: right;*/
+		}
+		#topMenu ul li{
+			list-style: none;
+			color: white;
+			text-shadow: 2px 2px 5px black;
+			float: left;
+			position: relative;
+			left: 80%;
+			line-height: 40px;
+			vertical-align: middle;
+			text-align: center;
+		}
+		#topMenu .menuLink{
+			text-decoration: none;
+			color: white;
+			display: block;
+			width: 120px;
+			font-size: 17px;
+			font-weight: bold;
+			font-family: "Trebuchet MS", Dotum, Arial;
+		}
+		#topMenu .menuLink:hover{
+			color: red;
+			background-color: #4d4d4d;
+			background : rgba(0, 0, 0, 0.2);
+		}
+		#subMenu{
+			height: 800px;
+			width: 190px;
+			position: absolute;
+			top: 20%;
+		}
+		#subMenu ul li{
+			list-style: none;
+			color: white;
+			text-shadow: 2px 2px 5px black;
+			background-color: #2d2d2d;
+			background : rgba(0, 0, 0, 0.3);
+			position: relative;
+			line-height: 50px;
+			vertical-align: middle;
+			text-align: center;
+		}
+		#subMenu .menuLink{
+			text-decoration: none;
+			color: white;
+			display: block;
+			width: 150px;
+			font-size: 20px;
+			font-weight: bold;
+			font-family: "Trebuchet MS", Dotum, Arial;
+		}
+		#subMenu .menuLink:hover{
+			color: skyblue;
+			background-color: #4d4d4d;
+			background : rgba(0, 0, 0, 0.2);
+		}
+		#logo{
+			position: absolute;
+			left: 5.6%;
+			top: 4%;
+		}
+	</style>
+</head>
 <body>
-    <div class = "main box"> 
-    <h1>
-        <strong> 
-            <hr><hr>
-            <div style="text-align:center">
-                <i><big>ACADEMY OF C.S.E</i></big>
-            </div>
-            <hr>
-        </strong>
-    </h1>
-
-    <style>
-      .ti1 {text-indent: 1em;}
-      .ti2 {text-indent: 2em;}
-      .tim {text-indent: -1em;}
-    </style>
-
-    <h2>
-        <hr>
-        ❤ 0&1</a><p>
-        <h3>
-            <p class="ti2">❐ Algorithm Academy of HYU ERICA C.S.E <p class="ti2">
-            <a href="https://www.facebook.com/zeronecode/">❐ 0&1 Facebook page</a><p class="ti2">
-            <a href="http://www.zeronecode.com/">❐ 0&1 Judge Online</a>
-            <p class="ti2">❐ Contact : C.S.E 15 Kim Soo-hyung (010 1234 5678)<p>
-            <p>
-            <p>
-            <p>
-        </h3>
-    <h2>
-        ❤ Jaram</a><p class="ti2">
-        <h3>
-            <p class="ti2">❐ Tell us what Jaram do! ho! <p class="ti2">
-            <a href="https://www.facebook.com/Jaram-316467848403784/?ref=ts&fref=ts">❐ Jaram Facebook page/ Facebook Message</a>
-            <p class="ti2">❐ Contact : C.S.E 15 Kim Ja-ram (010 9876 5432)<p>
-            <p>
-            <p>
-            <p>
-        </h3>
-
-    <h2>
-        ❤ HYcube</a><p class="ti2">
-        <h3>
-            <p class="ti2">❐ Hack Security Academy of HYU ERICA C.S.E<p class="ti2">
-            <a href="https://www.facebook.com/HyCube/"> ❐ HYcube Facebook page/ Facebook Message</a>
-            <p class="ti2">❐ Contact : C.S.E 15 Kim Hy-cube (010 1111 2222)<p>
-            <p>
-        </h3>
-
-    </h2>
+	<div id="logo"><img src="http://printmania.co.kr/data/file/logo/988383267_Y8czCHrG_C7D1BEE7B4EBB7CEB0ED-BCBCB7CEC7FC28B1B9B9AE29.png" height="80"></div>
+	<nav id="topMenu">
+		<ul>
+			<li><a class="menuLink" href="file:///Users/seogeulim/Desktop/CURLY-FORTNIGHT/main/main.html">HOME</a></li>
+			<li><a class="menuLink" href="file:///Users/seogeulim/Desktop/CURLY-FORTNIGHT/introduction/src/1_Introduction/intro.html">ABOUT</a></li>
+			<li><a class="menuLink" href="file:///Users/seogeulim/Desktop/CURLY-FORTNIGHT/introduction/src/2_LAB/LAB.html">LAB</a></li>
+			<li><a class="menuLink" href="file:///Users/seogeulim/Desktop/CURLY-FORTNIGHT/introduction/src/4_Curriculum/curriculum_main/curriculum.html">CURRICULUM</a></li>
+			<li><a class="menuLink" href="file:///Users/seogeulim/Desktop/CURLY-FORTNIGHT/introduction/src/3_academy/academy.html">ACADEMY</a></li>
+			<li><a class="menuLink" href="file:///Users/seogeulim/Desktop/CURLY-FORTNIGHT/introduction/src/5_Facility/facility_main.html">FACILITY</a></li>
+		</ul>
+	</nav>
+	<nav id="subMenu">
+		<ul>
+			<li><a class="menuLink" href="#">0&1</a></li>
+			<li><a class="menuLink" href="#">JARAM</a></li>
+			<li><a class="menuLink" href="#">HYCUBE</a></li>
+		</ul>
+	</nav>
+</body>
 </html>
