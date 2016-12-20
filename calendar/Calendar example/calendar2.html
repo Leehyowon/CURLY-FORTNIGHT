@@ -54,6 +54,7 @@
 					<feOffset in="blur" dx="2" dy="2"/>
 				 </filter>
 				<g>
+					<!--시계이미지 뜨는 부분-->
 					<circle id="clockshadow" style="fill:rgba(0,0,0,0.1)" cx="140" cy="140" r="130" filter="url(#clockShadow)"></circle>
 					<circle id="circle" style="stroke: #fff; stroke-width: 10px; fill:#20b7af" cx="140" cy="140" r="120"></circle>
 				</g>
@@ -123,8 +124,11 @@
 		var month = new Array ("Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec");
 		var  theday = new Array ("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat");
 		var fullday = new Array ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Satday");
+		//달력부분 출력
 		$("#cal_day").html(theday[date.getDay()]);
 		$("#cal_today").html(date.getDate());
+		//달력밑 출력
+		//날짜를 띄워줌
 		$("#date").html(month[date.getMonth()] + " "+ date.getDate() + ". " + date.getFullYear() + "<br>" +fullday[date.getDay()]);
 
 		function makeTime() {
