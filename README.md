@@ -104,4 +104,5 @@ CURLY-FORTNIGHT is just a website. So you need to install,
 ## LAST MESSAGE OF CURLY-FORTNIGHT
 
 * We love you guys T.T, thanks for showing us the way to open source❤
+* While studying opensource and preparing this project, I was so happy though the process was so hard. I'm so sorry for saying such harsh things to my team members. And thank you for you guys' great work. Love you.
 
