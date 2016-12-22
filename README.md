@@ -44,14 +44,14 @@ CURLY-FORTNIGHT is a project at Hanyang University, Opensource SW lecture, with 
  * HTML
   * with CSS, and javascript
 * License
- * [![License](https://img.shields.io/badge/license-GPLv3-green.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
+ * [![License](https://img.shields.io/badge/license-Apache-green.svg)](http://www.gnu.org/licenses/gpl-3.0.html)
 
 ## INSTALLATION
 
 CURLY-FORTNIGHT is just a website. So you need to install,
 
 * curiosity about CURLY-FORTNIGHT❤
-* affection towards CURLY-FORTNIG
+* affection towards CURLY-FORTNIGHT❤
 * and, let Internet connected
 
 ## RUNNING
@@ -100,4 +100,8 @@ CURLY-FORTNIGHT is just a website. So you need to install,
 * Mobile application
  * Develop Application that let us manage schedules at mobile conviently
 * Implement server by C9 or AWS
+
+## LAST MESSAGE OF CURLY-FORTNIGHT
+
+* We love you guys T.T, thanks for showing us the way to open source❤
 
